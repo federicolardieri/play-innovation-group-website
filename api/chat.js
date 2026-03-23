@@ -15,10 +15,10 @@ export default async function handler(req, res) {
   }
 
   const { contents, systemInstruction } = req.body;
-  
+
   // LOG per debug su Vercel (visibili nei log di Vercel Dashboard)
   console.log("Receiving request for ChatBot API");
-  
+
   const apiKey = (process.env.GEMINI_API_KEY || "").trim();
 
   if (!apiKey) {
@@ -31,14 +31,14 @@ export default async function handler(req, res) {
     const genAI = new GoogleGenerativeAI(apiKey);
     // Nota: L'SDK v0.24+ gestisce internamente la versione, ma possiamo assicurarci di usare gemini-1.5-flash 
     // che è disponibile globalmente su v1.
-    
+
     // Proviamo con il nome modello esatto della documentazione
-    const modelName = "gemini-1.5-flash";
-    
-    const modelOptions = { 
+    const modelName = "gemini-3-flash-preview";
+
+    const modelOptions = {
       model: modelName,
     };
-    
+
     if (systemInstruction) {
       modelOptions.systemInstruction = {
         parts: [{ text: systemInstruction }]
@@ -48,7 +48,7 @@ export default async function handler(req, res) {
     const model = genAI.getGenerativeModel(modelOptions);
 
     console.log(`Sending request to Google Gemini API (Model: ${modelName})...`);
-    
+
     if (!Array.isArray(contents)) {
       throw new Error("Invalid contents format: expected an array");
     }
@@ -57,7 +57,7 @@ export default async function handler(req, res) {
     const result = await model.generateContent({ contents });
     const response = await result.response;
     const text = response.text();
-    
+
     if (!text) {
       throw new Error("Empty response from AI");
     }
@@ -66,7 +66,7 @@ export default async function handler(req, res) {
     return res.status(200).json({ text });
   } catch (error) {
     console.error("DEBUG - Gemini API Error:", error);
-    
+
     let status = 500;
     let message = error.message;
 
@@ -78,8 +78,8 @@ export default async function handler(req, res) {
       message = "Chiave API non valida o permessi insufficienti.";
     }
 
-    return res.status(status).json({ 
-      error: 'AI Initialization Error', 
+    return res.status(status).json({
+      error: 'AI Initialization Error',
       message: message,
       type: error.constructor.name
     });
