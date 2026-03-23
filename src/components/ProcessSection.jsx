@@ -64,14 +64,14 @@ const ProcessSection = () => {
     }));
 
     return (
-        <section ref={sectionRef} id="process" className="py-24 bg-brand-graphite relative z-10 border-t border-white/5">
-            <div className="container mx-auto px-6 md:px-12">
-                <div className="text-center max-w-3xl mx-auto mb-20">
+        <section ref={sectionRef} id="process" className="py-20 md:py-24 bg-brand-graphite relative z-10 border-t border-white/5">
+            <div className="container mx-auto px-4 md:px-12">
+                <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20">
                     <span className="text-brand-orange font-mono text-xs uppercase tracking-wider mb-4 block">
                         {t('process.label')}
                     </span>
-                    <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">{t('process.title')}</h2>
-                    <p className="text-brand-steel text-lg">
+                    <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white">{t('process.title')}</h2>
+                    <p className="text-brand-steel text-base md:text-lg">
                         {t('process.subtitle')}
                     </p>
                 </div>

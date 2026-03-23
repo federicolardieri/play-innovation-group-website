@@ -74,25 +74,25 @@ const CategorizedGallery = () => {
     };
 
     return (
-        <section id="progetti" className="py-24 bg-brand-slate relative z-10 border-t border-white/5">
-            <div className="container mx-auto px-6 md:px-12">
-                <div className="text-center max-w-3xl mx-auto mb-16">
+        <section id="progetti" className="py-20 md:py-24 bg-brand-slate relative z-10 border-t border-white/5">
+            <div className="container mx-auto px-4 md:px-12">
+                <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
                     <span className="text-brand-cyan font-mono text-xs uppercase tracking-wider mb-4 block">
                         {t('categorizedGallery.label')}
                     </span>
-                    <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">{t('categorizedGallery.title')}</h2>
-                    <p className="text-brand-steel text-lg">
+                    <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white">{t('categorizedGallery.title')}</h2>
+                    <p className="text-brand-steel text-base md:text-lg">
                         {t('categorizedGallery.subtitle')}
                     </p>
                 </div>
 
                 {/* Category Filter */}
-                <div className="flex flex-wrap justify-center gap-4 mb-16">
+                <div className="flex flex-wrap justify-center gap-3 md:gap-4 mb-10 md:mb-16">
                     {categoryList.map((cat, idx) => (
                         <button
                             key={idx}
                             onClick={() => setActiveCategory(idx)}
-                            className={`px-6 py-2 rounded-full font-medium transition-all duration-300 text-sm ${activeCategory === idx
+                            className={`px-5 md:px-6 py-2 rounded-full font-medium transition-all duration-300 text-xs md:text-sm ${activeCategory === idx
                                 ? 'bg-brand-cyan text-brand-graphite shadow-[0_0_15px_rgba(0,240,255,0.4)]'
                                 : 'bg-white/5 text-white hover:bg-white/10'
                                 }`}

@@ -85,14 +85,14 @@ const Footer = () => {
     ];
 
     return (
-        <footer className="bg-brand-graphite py-16 border-t border-white/5 relative overflow-hidden">
+        <footer className="bg-brand-graphite py-12 md:py-16 border-t border-white/5 relative overflow-hidden">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[1px] bg-gradient-to-r from-transparent via-brand-cyan/20 to-transparent"></div>
 
-            <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-12">
-                <div className="space-y-4">
+            <div className="container mx-auto px-4 md:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-12">
+                <div className="space-y-4 flex flex-col items-center md:items-start text-center md:text-left">
                     <div className="flex items-center space-x-3 cursor-pointer group">
-                        <img src="/logo.png" alt="PlayInnovation Logo" className="w-14 h-14 rounded-full object-cover border-2 border-brand-cyan/20 group-hover:border-brand-cyan transition-colors duration-300" />
-                        <div className="text-2xl font-heading font-bold tracking-tight text-white">
+                        <img src="/logo.png" alt="PlayInnovation Logo" className="w-12 h-12 md:w-14 md:h-14 rounded-full object-cover border-2 border-brand-cyan/20 group-hover:border-brand-cyan transition-colors duration-300" />
+                        <div className="text-xl md:text-2xl font-heading font-bold tracking-tight text-white">
                             Play<span className="text-brand-cyan">Innovation</span>
                             <span className="ml-2 text-brand-orange">Group</span>
                         </div>
@@ -111,14 +111,14 @@ const Footer = () => {
 
                     <div className="flex items-center space-x-2 mt-6">
                         <div className="w-2 h-2 rounded-full bg-brand-orange animate-pulse"></div>
-                        <span className="text-xs font-mono text-brand-steel uppercase tracking-wider">{t('footer.systemReady')}</span>
-                        <span className="text-xs font-mono text-brand-steel uppercase tracking-wider ml-4">|</span>
-                        <span className="text-xs font-mono text-brand-steel uppercase tracking-wider ml-4 hidden md:inline">{t('footer.consultingAvailable')}</span>
+                        <span className="text-[10px] font-mono text-brand-steel uppercase tracking-wider">{t('footer.systemReady')}</span>
+                        <span className="text-[10px] font-mono text-brand-steel uppercase tracking-wider ml-4">|</span>
+                        <span className="text-[10px] font-mono text-brand-steel uppercase tracking-wider ml-4 hidden md:inline">{t('footer.consultingAvailable')}</span>
                     </div>
                 </div>
 
-                <div>
-                    <h4 className="text-white font-medium mb-6">{t('footer.productsTitle')}</h4>
+                <div className="text-center md:text-left">
+                    <h4 className="text-white font-medium mb-6 text-base md:text-lg">{t('footer.productsTitle')}</h4>
                     <ul className="space-y-3">
                         {(Array.isArray(productLinks) ? productLinks : []).map((link, idx) => (
                             <li key={idx}>
@@ -133,8 +133,8 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                <div>
-                    <h4 className="text-white font-medium mb-6">{t('footer.companyTitle')}</h4>
+                <div className="text-center md:text-left">
+                    <h4 className="text-white font-medium mb-6 text-base md:text-lg">{t('footer.companyTitle')}</h4>
                     <ul className="space-y-3">
                         {(Array.isArray(companyLinks) ? companyLinks : []).map((link, idx) => (
                             <li key={idx}>
@@ -150,16 +150,16 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                <div>
-                    <h4 className="text-white font-medium mb-6">{t('footer.contactsTitle')}</h4>
+                <div className="text-center md:text-left">
+                    <h4 className="text-white font-medium mb-6 text-base md:text-lg">{t('footer.contactsTitle')}</h4>
                     <ul className="space-y-3 text-sm text-brand-steel transition-all">
-                        <li className="hover:text-brand-cyan transition-colors">
+                        <li className="hover:text-brand-cyan transition-colors line-clamp-1">
                             <a href="mailto:info@playinnovationgroup.com">info@playinnovationgroup.com</a>
                         </li>
                         <li className="hover:text-brand-cyan transition-colors">
                             <a href="tel:+393349967161">+39 334 996 7161</a>
                         </li>
-                        <li className="pt-4">
+                        <li className="pt-4 flex justify-center md:justify-start">
                             <Link 
                                 to="/#quote" 
                                 onClick={(e) => handleNavClick(e, "/#quote")}
@@ -173,9 +173,9 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="container mx-auto px-6 md:px-12 mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-xs text-brand-steel">
+            <div className="container mx-auto px-4 md:px-12 mt-12 md:mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-[10px] md:text-xs text-brand-steel gap-4">
                 <p>&copy; {new Date().getFullYear()} PlayInnovation Group. {t('footer.rights')}</p>
-                <div className="space-x-4 mt-4 md:mt-0">
+                <div className="flex space-x-6">
                     <a href="#" className="hover:text-white transition-colors">{t('footer.privacy')}</a>
                     <a href="#" className="hover:text-white transition-colors">{t('footer.cookie')}</a>
                 </div>

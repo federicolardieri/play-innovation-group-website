@@ -79,36 +79,36 @@ const HeroSection = () => {
                 </div>
             </div>
 
-            <div className="container relative z-10 mx-auto px-6 md:px-12 pt-16 flex flex-col justify-end pb-20 h-full">
+            <div className="container relative z-10 mx-auto px-4 md:px-12 pt-20 md:pt-16 flex flex-col justify-end pb-12 md:pb-20 h-full">
                 <div className="max-w-3xl">
-                    <div className="inline-block px-3 py-1 mb-6 border border-brand-steel/30 rounded-full bg-brand-graphite/40 backdrop-blur-sm">
-                        <span className="text-xs font-mono font-medium tracking-widest text-brand-cyan uppercase">{t('hero.label')}</span>
+                    <div className="inline-block px-3 py-1 mb-4 md:mb-6 border border-brand-steel/30 rounded-full bg-brand-graphite/40 backdrop-blur-sm">
+                        <span className="text-[10px] md:text-xs font-mono font-medium tracking-widest text-brand-cyan uppercase">{t('hero.label')}</span>
                     </div>
 
-                    <h1 ref={headlineRef} className="text-5xl md:text-7xl font-bold leading-tight mb-6">
+                    <h1 ref={headlineRef} className="text-4xl sm:text-5xl md:text-7xl font-bold leading-[1.1] mb-6 tracking-tight">
                         {t('hero.headline')} <br className="hidden md:block" /><span className="text-brand-cyan">{t('hero.headlineAccent')}</span>
                     </h1>
 
-                    <p ref={subheadlineRef} className="text-lg md:text-xl text-brand-steel mb-10 max-w-2xl leading-relaxed">
+                    <p ref={subheadlineRef} className="text-base md:text-xl text-brand-steel mb-8 md:mb-10 max-w-2xl leading-relaxed">
                         {t('hero.subheadline')}
                     </p>
 
-                    <div ref={buttonsRef} className="flex flex-col sm:flex-row gap-4 mb-16">
-                        <a href="#quote" className="btn-primary text-base px-8 py-4 text-center">{t('hero.ctaPrimary')}</a>
+                    <div ref={buttonsRef} className="flex flex-col sm:flex-row gap-4 mb-12 md:mb-16">
+                        <a href="#quote" className="btn-primary text-sm md:text-base px-8 py-3.5 md:py-4 text-center">{t('hero.ctaPrimary')}</a>
                         <button 
                             onClick={() => setIsProductsOpen(true)}
-                            className="btn-secondary text-base px-8 py-4"
+                            className="btn-secondary text-sm md:text-base px-8 py-3.5 md:py-4"
                         >
                             {t('hero.ctaSecondary')}
                         </button>
                     </div>
                 </div>
 
-                <div ref={metricsRef} className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-10 border-t border-white/10 w-full max-w-4xl">
+                <div ref={metricsRef} className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 pt-8 md:pt-10 border-t border-white/10 w-full max-w-4xl">
                     {['expertise', 'structures', 'service', 'facilities'].map((key) => (
                         <div key={key} className="flex flex-col">
-                            <span className="text-xs font-mono text-brand-steel uppercase tracking-wider mb-1">{t(`hero.metrics.${key}.label`)}</span>
-                            <span className="text-sm md:text-base font-medium text-white">{t(`hero.metrics.${key}.value`)}</span>
+                            <span className="text-[10px] font-mono text-brand-steel uppercase tracking-wider mb-1 opacity-70">{t(`hero.metrics.${key}.label`)}</span>
+                            <span className="text-xs md:text-base font-medium text-white">{t(`hero.metrics.${key}.value`)}</span>
                         </div>
                     ))}
                 </div>

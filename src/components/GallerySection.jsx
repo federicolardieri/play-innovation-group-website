@@ -50,13 +50,13 @@ const GallerySection = () => {
     };
 
     return (
-        <section className="py-24 bg-brand-graphite flex flex-col justify-center relative border-t border-white/5 overflow-hidden">
-            <div className="container mx-auto px-6 md:px-12 z-10 w-full mb-12 flex flex-col md:flex-row justify-between items-end gap-6">
+        <section className="py-20 md:py-24 bg-brand-graphite flex flex-col justify-center relative border-t border-white/5 overflow-hidden">
+            <div className="container mx-auto px-4 md:px-12 z-10 w-full mb-10 md:mb-12 flex flex-col md:flex-row justify-between items-end gap-6">
                 <div>
                     <span className="text-brand-cyan font-mono text-xs uppercase tracking-wider mb-4 block">
                         {t('gallery.label')}
                     </span>
-                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-2">{t('gallery.title')}</h2>
+                    <h2 className="text-3xl md:text-5xl font-bold text-white mb-2">{t('gallery.title')}</h2>
                     <p className="text-brand-steel text-sm md:text-base">{t('gallery.subtitle')}</p>
                 </div>
 

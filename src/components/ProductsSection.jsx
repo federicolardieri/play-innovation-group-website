@@ -53,27 +53,27 @@ const ProductsSection = () => {
     }));
 
     return (
-        <section ref={sectionRef} id="products" className="py-24 bg-brand-graphite relative z-10">
-            <div className="container mx-auto px-6 md:px-12">
-                <div className="mb-20 max-w-2xl">
+        <section ref={sectionRef} id="products" className="py-20 md:py-24 bg-brand-graphite relative z-10">
+            <div className="container mx-auto px-4 md:px-12">
+                <div className="mb-12 md:mb-20 max-w-2xl">
                     <span className="text-brand-cyan font-mono text-xs uppercase tracking-wider mb-4 block">
                         {t('products.label')}
                     </span>
-                    <h2 className="text-4xl md:text-5xl font-bold mb-6">{t('products.title')}</h2>
-                    <p className="text-brand-steel text-lg">
+                    <h2 className="text-3xl md:text-5xl font-bold mb-6">{t('products.title')}</h2>
+                    <p className="text-brand-steel text-base md:text-lg">
                         {t('products.subtitle')}
                     </p>
                 </div>
 
-                <div className="flex flex-col gap-12 md:gap-24">
+                <div className="flex flex-col gap-16 md:gap-24">
                     {products.map((product, index) => (
                         <div
                             key={product.id}
                             ref={el => cardsRef.current[index] = el}
-                            className={`flex flex-col ${index % 2 !== 0 ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-8 md:gap-16 group`}
+                            className={`flex flex-col ${index % 2 !== 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-8 md:gap-16 group`}
                         >
                             {/* Image Box */}
-                            <div className="w-full md:w-1/2 h-[450px] overflow-hidden rounded-[2rem] relative">
+                            <div className="w-full lg:w-1/2 h-[300px] sm:h-[400px] md:h-[450px] overflow-hidden rounded-[1.5rem] md:rounded-[2rem] relative">
                                 <div className="absolute inset-0 bg-brand-graphite/20 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
                                 <img
                                     src={product.image}
@@ -83,14 +83,14 @@ const ProductsSection = () => {
                             </div>
 
                             {/* Content Box */}
-                            <div className="w-full md:w-1/2 flex flex-col justify-center">
-                                <div className="text-brand-steel font-mono text-sm mb-4">0{index + 1} // {product.title?.toUpperCase()}</div>
-                                <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">{product.title}</h3>
-                                <p className="text-brand-steel leading-relaxed mb-8">{product.desc}</p>
+                            <div className="w-full lg:w-1/2 flex flex-col justify-center">
+                                <div className="text-brand-steel font-mono text-[10px] md:text-sm mb-4">0{index + 1} // {product.title?.toUpperCase()}</div>
+                                <h3 className="text-2xl md:text-4xl font-bold text-white mb-4 md:mb-6">{product.title}</h3>
+                                <p className="text-brand-steel text-sm md:text-base leading-relaxed mb-6 md:mb-8">{product.desc}</p>
 
-                                <ul className="mb-10 space-y-4 border-l border-white/10 pl-6">
+                                <ul className="mb-8 md:mb-10 space-y-3 md:space-y-4 border-l border-white/10 pl-6">
                                     {(product.features || []).map((feature, idx) => (
-                                        <li key={idx} className="text-white text-sm flex items-center">
+                                        <li key={idx} className="text-white text-xs md:text-sm flex items-center">
                                             <div className="w-1.5 h-1.5 rounded-full bg-brand-orange mr-4"></div>
                                             {feature}
                                         </li>
@@ -99,7 +99,7 @@ const ProductsSection = () => {
 
                                 <Link 
                                     to={`/prodotti/${product.id}`}
-                                    className="flex items-center text-brand-cyan font-medium hover:text-white transition-colors w-fit group/btn"
+                                    className="flex items-center text-brand-cyan text-sm md:text-base font-medium hover:text-white transition-colors w-fit group/btn"
                                 >
                                     {t('products.cta')}
                                     <ArrowRight size={18} className="ml-2 group-hover/btn:translate-x-1 transition-transform" />

@@ -44,16 +44,16 @@ const WhySection = () => {
     const featureList = Array.isArray(features) ? features : [];
 
     return (
-        <section ref={sectionRef} id="company" className="py-24 bg-brand-slate relative border-t border-b border-white/5">
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-cyan/5 rounded-full blur-[100px] pointer-events-none"></div>
+        <section ref={sectionRef} id="company" className="py-20 md:py-24 bg-brand-slate relative border-t border-b border-white/5">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full md:w-[600px] h-full md:h-[600px] bg-brand-cyan/5 rounded-full blur-[100px] pointer-events-none"></div>
 
-            <div className="container mx-auto px-6 md:px-12 relative z-10">
-                <div className="text-center max-w-3xl mx-auto mb-20">
+            <div className="container mx-auto px-4 md:px-12 relative z-10">
+                <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20">
                     <span className="text-brand-cyan font-mono text-xs uppercase tracking-wider mb-4 block">
                         {t('why.label')}
                     </span>
-                    <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">{t('why.title')}</h2>
-                    <p className="text-brand-steel text-lg">
+                    <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white">{t('why.title')}</h2>
+                    <p className="text-brand-steel text-base md:text-lg">
                         {t('why.subtitle')}
                     </p>
                 </div>

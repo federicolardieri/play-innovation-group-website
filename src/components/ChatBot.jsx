@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { GoogleGenAI } from '@google/genai';
 import { MessageSquare, Send, X, Bot, User, Loader2, Minimize2 } from 'lucide-react';
 import { AI_SYSTEM_PROMPT } from '../utils/aiKnowledge';
 
@@ -13,19 +12,8 @@ const ChatBot = () => {
   const [isLoading, setIsLoading] = useState(false);
   const scrollRef = useRef(null);
 
-  // Initialize Gemini with the new SDK (@google/genai)
-  const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
-  
-  // Debug log
-  useEffect(() => {
-    if (apiKey) {
-      console.log("Nuovo SDK @google/genai rilevato. API Key caricata.");
-    } else {
-      console.error("Gemini API Key NON trovata in import.meta.env");
-    }
-  }, [apiKey]);
-
-  const client = apiKey ? new GoogleGenAI({ apiKey }) : null;
+  // Chat logic now handled through /api/chat serverless function
+  // to keep the API KEY secure on the server.
 
   useEffect(() => {
     if (scrollRef.current) {
@@ -42,44 +30,45 @@ const ChatBot = () => {
     setIsLoading(true);
 
     try {
-      if (!client) {
-        throw new Error("API Key mancante. Verifica il file .env e riavvia il server.");
-      }
-
-      // Convert history to the format expected by @google/genai
+      // Convert history to the format expected by Gemini
       const contents = messages.slice(1).map(msg => ({
         role: msg.role === 'user' ? 'user' : 'model',
         parts: [{ text: msg.text }]
       }));
 
-      // Add the current message
+      // Add current message
       contents.push({
         role: 'user',
         parts: [{ text: input }]
       });
 
-      // Using the new generateContent structure from @google/genai
-      const response = await client.models.generateContent({
-        model: "gemini-3-flash-preview",
-        contents: contents,
-        config: {
+      // Call our internal Vercel Serverless Function
+      const response = await fetch('/api/chat', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          contents: contents,
           systemInstruction: AI_SYSTEM_PROMPT
-        }
+        })
       });
 
-      const botText = response.text;
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || 'Server error');
+      }
+
+      const data = await response.json();
+      const botText = data.text;
 
       setMessages(prev => [...prev, { role: 'bot', text: botText }]);
     } catch (error) {
       console.error("AI Error:", error);
       let errorMessage = 'Scusami, ho riscontrato un errore tecnico. Riprova più tardi.';
 
-      if (error.message?.includes('API Key')) {
-        errorMessage = "La chiave API non è stata configurata correttamente nel file .env.";
-      } else if (error.message?.includes('403')) {
-        errorMessage = "Accesso negato. La tua API Key potrebbe non essere valida o avere restrizioni.";
-      } else if (error.message?.includes('404')) {
-        errorMessage = "Modello non trovato. Controlla la configurazione del modello Gemini.";
+      if (error.message?.includes('Server error')) {
+        errorMessage = "Il server ha riscontrato un problema. Verifica la configurazione su Vercel.";
       } else if (error.message?.includes('fetch')) {
         errorMessage = "Errore di connessione. Verifica la tua rete internet.";
       }

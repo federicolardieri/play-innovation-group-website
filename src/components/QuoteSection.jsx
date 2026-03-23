@@ -48,20 +48,20 @@ const QuoteSection = () => {
     const interestList = Array.isArray(interests) ? interests : [];
 
     return (
-        <section ref={sectionRef} id="quote" className="py-24 bg-brand-slate relative border-t border-brand-cyan/10">
+        <section ref={sectionRef} id="quote" className="py-20 md:py-24 bg-brand-slate relative border-t border-brand-cyan/10">
             <div className="absolute inset-0 bg-gradient-to-b from-brand-graphite to-brand-slate opacity-50"></div>
 
-            <div className="container mx-auto px-6 md:px-12 relative z-10">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+            <div className="container mx-auto px-4 md:px-12 relative z-10">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
 
                     <div className="max-w-xl">
                         <span className="text-brand-cyan font-mono text-xs uppercase tracking-wider mb-4 block">
                             {t('quote.label')}
                         </span>
-                        <h2 className="text-4xl md:text-6xl font-bold mb-6 text-white leading-tight">
-                            {t('quote.title')} <br />{t('quote.titleAccent')}
+                        <h2 className="text-3xl md:text-6xl font-bold mb-6 text-white leading-tight">
+                            {t('quote.title')} <br className="hidden md:block" />{t('quote.titleAccent')}
                         </h2>
-                        <p className="text-brand-steel text-lg mb-10 leading-relaxed">
+                        <p className="text-brand-steel text-base md:text-lg mb-8 md:mb-10 leading-relaxed">
                             {t('quote.subtitle')}
                         </p>
 
