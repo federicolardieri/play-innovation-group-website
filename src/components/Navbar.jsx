@@ -90,9 +90,9 @@ const Navbar = () => {
                     onClick={(e) => handleNavClick(e, '#home')}
                 >
                     <img src="/logo.png" alt="PlayInnovation Logo" className="w-12 h-12 md:w-16 md:h-16 rounded-full object-cover border-2 border-brand-cyan/20 group-hover:border-brand-cyan transition-colors duration-300" />
-                    <div className="text-xl md:text-3xl font-heading font-bold tracking-tight text-white leading-none">
-                        Play<span className="text-brand-cyan">Innovation</span>
-                        <div className="text-xs md:text-sm text-brand-orange uppercase tracking-[0.2em] font-mono mt-0.5">Group</div>
+                    <div className="flex flex-col md:block text-xl md:text-3xl font-heading font-bold tracking-tight text-white leading-none">
+                        <span>Play<span className="text-brand-cyan">Innovation</span></span>
+                        <span className="text-[10px] md:text-sm text-brand-orange uppercase tracking-[0.2em] font-mono md:ml-3 block md:inline-block mt-1 md:mt-0">Group</span>
                     </div>
                 </div>
 

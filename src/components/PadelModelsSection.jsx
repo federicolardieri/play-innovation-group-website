@@ -98,17 +98,24 @@ const PadelModelsSection = () => {
 
     useEffect(() => {
         let ctx = gsap.context(() => {
+            // Configuration for smoother mobile performance
+            gsap.config({ force3D: true });
+            
+            const isMobile = window.innerWidth < 768;
+
             panelsRef.current.forEach((panel, i) => {
                 gsap.fromTo(panel,
-                    { opacity: 0, y: 50 },
+                    { opacity: 0, y: isMobile ? 0 : 50 },
                     {
                         opacity: 1,
                         y: 0,
                         duration: 0.8,
                         scrollTrigger: {
                             trigger: panel,
-                            start: "top 80%",
-                            toggleActions: "play none none reverse"
+                            start: "top 85%",
+                            toggleActions: "play none none reverse",
+                            fastScrollEnd: true,
+                            preventOverlaps: true
                         }
                     }
                 );
