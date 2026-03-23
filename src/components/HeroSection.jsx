@@ -76,7 +76,9 @@ const HeroSection = () => {
                     autoPlay
                     loop
                     muted
+                    defaultMuted
                     playsInline
+                    preload="auto"
                     className="absolute inset-0 w-full h-full object-cover brightness-50 mix-blend-overlay pointer-events-none"
                     style={{ minHeight: '100%', minWidth: '100%' }}
                 >
