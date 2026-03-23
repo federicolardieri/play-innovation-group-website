@@ -27,11 +27,14 @@ export default async function handler(req, res) {
   }
 
   try {
+    // Forza la versione v1 dell'API se v1beta dà problemi 404
     const genAI = new GoogleGenerativeAI(apiKey);
     
-    // Configurazione del modello con system instruction nel formato corretto
+    // Proviamo con il nome modello esatto della documentazione
+    const modelName = "gemini-1.5-flash";
+    
     const modelOptions = { 
-      model: "gemini-1.5-flash",
+      model: modelName,
     };
     
     if (systemInstruction) {
@@ -42,7 +45,7 @@ export default async function handler(req, res) {
 
     const model = genAI.getGenerativeModel(modelOptions);
 
-    console.log("Sending request to Google Gemini API...");
+    console.log(`Sending request to Google Gemini API (Model: ${modelName})...`);
     
     if (!Array.isArray(contents)) {
       throw new Error("Invalid contents format: expected an array");
@@ -54,25 +57,27 @@ export default async function handler(req, res) {
     const text = response.text();
     
     if (!text) {
-      throw new Error("Lo script ha ricevuto un contenuto vuoto da Gemini.");
+      throw new Error("Empty response from AI");
     }
 
     console.log("Response received successfully from Gemini");
     return res.status(200).json({ text });
   } catch (error) {
-    console.error("Gemini API Error details:", error);
+    console.error("DEBUG - Gemini API Error:", error);
     
-    // Gestione errori specifica per 404 o altri problemi comuni
     let status = 500;
     let message = error.message;
 
     if (error.message?.includes('404')) {
-      message = "Il modello Gemini non è stato trovato (404). Verifica la chiave API e la regione.";
       status = 404;
+      message = `Modello non trovato (404). Ho provato 'gemini-1.5-flash'. Dettagli: ${error.message}`;
+    } else if (error.message?.includes('403') || error.message?.includes('API_KEY_INVALID')) {
+      status = 403;
+      message = "Chiave API non valida o permessi insufficienti.";
     }
 
     return res.status(status).json({ 
-      error: 'Failed to generate content', 
+      error: 'AI Initialization Error', 
       message: message,
       type: error.constructor.name
     });
