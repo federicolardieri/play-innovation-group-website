@@ -103,21 +103,21 @@ const CategorizedGallery = () => {
                 </div>
 
                 {/* Projects Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     {filteredProjects.map((project) => {
                         const globalIdx = projects.indexOf(project);
                         const meta = projectList[globalIdx] || {};
                         const heroImage = project.images[0];
                         const thumbs = project.images.slice(1);
-
+ 
                         return (
                             <div
                                 key={project.id}
-                                className="group relative bg-brand-graphite rounded-[2rem] overflow-hidden border border-white/5 hover:border-brand-cyan/30 transition-all duration-500"
+                                className="group relative bg-brand-graphite rounded-[2rem] overflow-hidden border border-white/5 hover:border-brand-cyan/30 transition-all duration-500 w-full max-w-lg mx-auto"
                             >
                                 {/* Hero Image */}
                                 <div
-                                    className="relative h-[350px] md:h-[400px] overflow-hidden cursor-pointer"
+                                    className="relative h-[300px] sm:h-[350px] md:h-[400px] overflow-hidden cursor-pointer"
                                     onClick={() => openLightbox(globalIdx, 0)}
                                 >
                                     <img
@@ -126,7 +126,7 @@ const CategorizedGallery = () => {
                                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-brand-graphite via-brand-graphite/20 to-transparent" />
-
+ 
                                     {/* Project Info Overlay */}
                                     <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
                                         <span className="text-brand-cyan font-mono text-xs uppercase tracking-wider mb-2 block">
@@ -139,20 +139,20 @@ const CategorizedGallery = () => {
                                             {meta.description || ''}
                                         </p>
                                     </div>
-
+ 
                                     {/* Photo Count Badge */}
                                     <div className="absolute top-4 right-4 bg-brand-graphite/80 backdrop-blur-md px-3 py-1.5 rounded-full flex items-center gap-2">
                                         <Maximize2 size={14} className="text-brand-cyan" />
                                         <span className="text-white text-xs font-mono">{project.images.length} {t('categorizedGallery.photosLabel') || 'foto'}</span>
                                     </div>
                                 </div>
-
+ 
                                 {/* Thumbnail Strip */}
                                 <div className="flex gap-2 p-4">
                                     {thumbs.map((thumb, tIdx) => (
                                         <div
                                             key={tIdx}
-                                            className="flex-1 h-20 md:h-24 rounded-xl overflow-hidden cursor-pointer relative group/thumb"
+                                            className="flex-1 h-16 sm:h-20 md:h-24 rounded-xl overflow-hidden cursor-pointer relative group/thumb"
                                             onClick={() => openLightbox(globalIdx, tIdx + 1)}
                                         >
                                             <img

@@ -130,10 +130,10 @@ const PadelModelsSection = () => {
     const specLabels = t('padelModels.specLabels') || {};
 
     return (
-        <section ref={containerRef} id="padel-models" className="bg-brand-graphite relative z-10 text-white pb-32">
-            <div className="container mx-auto px-4 md:px-8 pt-24 pb-12 text-center flex flex-col items-center">
-                <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">{t('padelModels.title')}</h2>
-                <p className="text-brand-steel text-lg max-w-2xl mx-auto mb-8">{t('padelModels.subtitle')}</p>
+        <section ref={containerRef} id="padel-models" className="bg-brand-graphite relative z-10 text-white pb-20 md:pb-32">
+            <div className="container mx-auto px-4 md:px-8 pt-20 md:pt-24 pb-12 text-center flex flex-col items-center">
+                <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">{t('padelModels.title')}</h2>
+                <p className="text-brand-steel text-base md:text-lg max-w-2xl mx-auto mb-8">{t('padelModels.subtitle')}</p>
 
                 <button
                     onClick={() => setIsCompareOpen(true)}
@@ -143,23 +143,23 @@ const PadelModelsSection = () => {
                 </button>
             </div>
 
-            <div className="relative flex flex-col gap-12 px-4 md:px-8">
+            <div className="relative flex flex-col gap-8 md:gap-12 px-4 md:px-8">
                 {models.map((model, index) => (
                     <div
                         key={model.id}
                         ref={el => panelsRef.current[index] = el}
-                        className={`w-full flex items-center justify-center p-8 md:p-12 sticky top-24 bg-brand-slate rounded-3xl border border-white/10 shadow-2xl`}
-                        style={{ zIndex: index, top: `${5 + index * 2}rem` }}
+                        className={`w-full flex items-center justify-center p-5 md:p-12 sticky top-24 bg-brand-slate rounded-2xl md:rounded-3xl border border-white/10 shadow-2xl`}
+                        style={{ zIndex: index, top: `${6 + index * 1.5}rem` }}
                     >
-                        <div className="w-full max-w-7xl content-wrapper">
+                        <div className="w-full max-w-7xl">
                             <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
-                                {/* Left Side: Title, Image */}
+                                 {/* Left Side: Title, Image */}
                                 <div className="w-full lg:w-1/2 flex flex-col">
-                                    <h3 className="text-5xl md:text-6xl font-bold text-brand-orange mb-2 tracking-wide uppercase">{model.name}</h3>
-                                    <p className="text-brand-steel text-sm md:text-base tracking-widest uppercase mb-8">{model.subtitle}</p>
-
+                                    <h3 className="text-3xl md:text-6xl font-bold text-brand-orange mb-2 tracking-wide uppercase">{model.name}</h3>
+                                    <p className="text-brand-steel text-xs md:text-base tracking-widest uppercase mb-6 md:mb-8">{model.subtitle}</p>
+ 
                                     <div className="relative w-full aspect-video md:aspect-[4/3] rounded-sm mt-4">
-                                        <div className="absolute top-0 left-0 w-[90%] h-[90%] bg-brand-orange z-0 transform -translate-x-4 -translate-y-4 rounded-tl-[3rem] rounded-br-[3rem]"></div>
+                                        <div className="absolute top-0 left-0 w-[90%] h-[90%] bg-brand-orange z-0 transform -translate-x-3 -translate-y-3 md:-translate-x-4 md:-translate-y-4 rounded-tl-[2rem] md:rounded-tl-[3rem] rounded-br-[2rem] md:rounded-br-[3rem]"></div>
                                         <img src={model.image} alt={model.name} className="relative z-10 w-full h-full object-cover shadow-2xl" />
                                     </div>
                                 </div>
@@ -172,12 +172,12 @@ const PadelModelsSection = () => {
                                         ))}
                                     </div>
 
-                                    <div className="mt-4 mb-10 w-full rounded-xl bg-brand-graphite/50 overflow-hidden border border-brand-orange/10">
-                                        <div className="grid grid-cols-2 lg:grid-cols-2 gap-4 p-6">
+                                     <div className="mt-4 mb-8 md:mb-10 w-full rounded-xl bg-brand-graphite/50 overflow-hidden border border-brand-orange/10">
+                                        <div className="grid grid-cols-2 gap-4 p-5 md:p-6">
                                             {specKeys.map((key, idx) => (
                                                 <div key={idx} className="flex flex-col justify-start">
-                                                    <h4 className="text-brand-orange text-xs tracking-widest mb-1 uppercase opacity-80">{specLabels[key] || key}</h4>
-                                                    <p className="text-brand-steel text-sm leading-tight">{model.specs?.[key]}</p>
+                                                    <h4 className="text-brand-orange text-[10px] md:text-xs tracking-widest mb-1 uppercase opacity-80">{specLabels[key] || key}</h4>
+                                                    <p className="text-brand-steel text-xs md:text-sm leading-tight">{model.specs?.[key]}</p>
                                                 </div>
                                             ))}
                                         </div>

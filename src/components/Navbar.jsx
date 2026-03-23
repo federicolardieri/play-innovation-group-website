@@ -83,7 +83,7 @@ const Navbar = () => {
             className={`fixed top-0 w-full z-[100] transition-all duration-500 ease-in-out ${isScrolled ? 'glass-nav py-3' : 'bg-transparent py-5 md:py-6'
                 }`}
         >
-            <div className="container mx-auto px-4 md:px-12 flex justify-between items-center">
+            <div className="container mx-auto px-4 md:px-12 flex justify-between items-center h-full">
                 {/* Logo */}
                 <div 
                     className="flex items-center space-x-2 md:space-x-3 cursor-pointer group"

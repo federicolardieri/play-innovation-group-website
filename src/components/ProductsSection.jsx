@@ -65,15 +65,15 @@ const ProductsSection = () => {
                     </p>
                 </div>
 
-                <div className="flex flex-col gap-16 md:gap-24">
+                <div className="flex flex-col gap-16 md:gap-24 items-center">
                     {products.map((product, index) => (
                         <div
                             key={product.id}
                             ref={el => cardsRef.current[index] = el}
-                            className={`flex flex-col ${index % 2 !== 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-8 md:gap-16 group`}
+                            className={`flex flex-col ${index % 2 !== 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-8 md:gap-16 group w-full ${index % 2 !== 0 ? 'lg:justify-end' : 'lg:justify-start'}`}
                         >
                             {/* Image Box */}
-                            <div className="w-full lg:w-1/2 h-[300px] sm:h-[400px] md:h-[450px] overflow-hidden rounded-[1.5rem] md:rounded-[2rem] relative">
+                            <div className="w-full lg:w-1/2 h-[300px] sm:h-[400px] md:h-[450px] overflow-hidden rounded-[1.5rem] md:rounded-[2rem] relative max-w-lg lg:max-w-none mx-auto lg:mx-0">
                                 <div className="absolute inset-0 bg-brand-graphite/20 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
                                 <img
                                     src={product.image}
@@ -83,7 +83,7 @@ const ProductsSection = () => {
                             </div>
 
                             {/* Content Box */}
-                            <div className="w-full lg:w-1/2 flex flex-col justify-center">
+                            <div className="w-full lg:w-1/2 flex flex-col justify-center max-w-lg lg:max-w-none mx-auto lg:mx-0">
                                 <div className="text-brand-steel font-mono text-[10px] md:text-sm mb-4">0{index + 1} // {product.title?.toUpperCase()}</div>
                                 <h3 className="text-2xl md:text-4xl font-bold text-white mb-4 md:mb-6">{product.title}</h3>
                                 <p className="text-brand-steel text-sm md:text-base leading-relaxed mb-6 md:mb-8">{product.desc}</p>
