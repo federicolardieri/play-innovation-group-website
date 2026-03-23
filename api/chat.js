@@ -29,6 +29,8 @@ export default async function handler(req, res) {
   try {
     // Forza la versione v1 dell'API se v1beta dà problemi 404
     const genAI = new GoogleGenerativeAI(apiKey);
+    // Nota: L'SDK v0.24+ gestisce internamente la versione, ma possiamo assicurarci di usare gemini-1.5-flash 
+    // che è disponibile globalmente su v1.
     
     // Proviamo con il nome modello esatto della documentazione
     const modelName = "gemini-1.5-flash";
