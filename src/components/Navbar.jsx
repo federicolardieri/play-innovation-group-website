@@ -86,13 +86,13 @@ const Navbar = () => {
             <div className="container mx-auto px-4 md:px-12 flex justify-between items-center h-full">
                 {/* Logo */}
                 <div 
-                    className="flex items-center space-x-2 md:space-x-3 cursor-pointer group"
+                    className="flex items-center space-x-2 md:space-x-4 cursor-pointer group"
                     onClick={(e) => handleNavClick(e, '#home')}
                 >
-                    <img src="/logo.png" alt="PlayInnovation Logo" className="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover border-2 border-brand-cyan/20 group-hover:border-brand-cyan transition-colors duration-300" />
-                    <div className="text-lg md:text-2xl font-heading font-bold tracking-tight text-white leading-none">
+                    <img src="/logo.png" alt="PlayInnovation Logo" className="w-12 h-12 md:w-16 md:h-16 rounded-full object-cover border-2 border-brand-cyan/20 group-hover:border-brand-cyan transition-colors duration-300" />
+                    <div className="text-xl md:text-3xl font-heading font-bold tracking-tight text-white leading-none">
                         Play<span className="text-brand-cyan">Innovation</span>
-                        <div className="text-[10px] md:text-xs text-brand-orange uppercase tracking-[0.2em] font-mono mt-0.5">Group</div>
+                        <div className="text-xs md:text-sm text-brand-orange uppercase tracking-[0.2em] font-mono mt-0.5">Group</div>
                     </div>
                 </div>
 

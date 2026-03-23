@@ -90,11 +90,14 @@ const Footer = () => {
 
             <div className="container mx-auto px-4 md:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-12">
                 <div className="space-y-4 flex flex-col items-center md:items-start text-center md:text-left">
-                    <div className="flex items-center space-x-3 cursor-pointer group">
-                        <img src="/logo.png" alt="PlayInnovation Logo" className="w-12 h-12 md:w-14 md:h-14 rounded-full object-cover border-2 border-brand-cyan/20 group-hover:border-brand-cyan transition-colors duration-300" />
-                        <div className="text-xl md:text-2xl font-heading font-bold tracking-tight text-white">
+                    <div 
+                        className="flex items-center space-x-3 cursor-pointer group"
+                        onClick={(e) => handleNavClick(e, '/#home')}
+                    >
+                        <img src="/logo.png" alt="PlayInnovation Logo" className="w-14 h-14 md:w-16 md:h-16 rounded-full object-cover border-2 border-brand-cyan/20 group-hover:border-brand-cyan transition-colors duration-300" />
+                        <div className="text-2xl md:text-3xl font-heading font-bold tracking-tight text-white leading-tight">
                             Play<span className="text-brand-cyan">Innovation</span>
-                            <span className="ml-2 text-brand-orange">Group</span>
+                            <div className="text-xs md:text-sm text-brand-orange uppercase tracking-[0.2em] font-mono mt-0.5">Group</div>
                         </div>
                     </div>
                     <p className="text-brand-steel text-sm leading-relaxed max-w-sm mt-4">

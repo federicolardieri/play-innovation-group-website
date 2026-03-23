@@ -65,7 +65,7 @@ const ProcessSection = () => {
 
     return (
         <section ref={sectionRef} id="process" className="py-20 md:py-24 bg-brand-graphite relative z-10 border-t border-white/5">
-            <div className="container mx-auto px-4 md:px-12">
+            <div className="container mx-auto px-6 md:px-12">
                 <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20">
                     <span className="text-brand-orange font-mono text-xs uppercase tracking-wider mb-4 block">
                         {t('process.label')}
@@ -90,7 +90,7 @@ const ProcessSection = () => {
                                 className={`flex flex-col md:flex-row items-center gap-8 md:gap-16 ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}
                             >
                                 <div className="w-full md:w-1/2">
-                                    <div className="glass-panel p-8 rounded-3xl relative">
+                                    <div className="glass-panel p-6 md:p-8 rounded-3xl relative">
                                         <span className="text-brand-orange font-mono text-4xl font-bold opacity-30 absolute top-4 right-6">{step.num}</span>
                                         <h3 className="text-2xl font-bold text-white mb-3">{step.title}</h3>
                                         <p className="text-brand-steel leading-relaxed text-sm">{step.desc}</p>

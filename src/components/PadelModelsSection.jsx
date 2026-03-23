@@ -131,7 +131,7 @@ const PadelModelsSection = () => {
 
     return (
         <section ref={containerRef} id="padel-models" className="bg-brand-graphite relative z-10 text-white pb-20 md:pb-32">
-            <div className="container mx-auto px-4 md:px-8 pt-20 md:pt-24 pb-12 text-center flex flex-col items-center">
+            <div className="container mx-auto px-6 md:px-8 pt-20 md:pt-24 pb-12 text-center flex flex-col items-center">
                 <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">{t('padelModels.title')}</h2>
                 <p className="text-brand-steel text-base md:text-lg max-w-2xl mx-auto mb-8">{t('padelModels.subtitle')}</p>
 
@@ -143,12 +143,12 @@ const PadelModelsSection = () => {
                 </button>
             </div>
 
-            <div className="relative flex flex-col gap-8 md:gap-12 px-4 md:px-8">
+            <div className="relative flex flex-col gap-8 md:gap-12 px-6 md:px-8">
                 {models.map((model, index) => (
                     <div
                         key={model.id}
                         ref={el => panelsRef.current[index] = el}
-                        className={`w-full flex items-center justify-center p-5 md:p-12 md:sticky top-24 bg-brand-slate rounded-2xl md:rounded-3xl border border-white/10 shadow-2xl transition-all duration-300`}
+                        className={`w-full flex items-center justify-center p-6 md:p-12 md:sticky top-24 bg-brand-slate rounded-2xl md:rounded-3xl border border-white/10 shadow-2xl transition-all duration-300`}
                         style={{ 
                             zIndex: index, 
                             top: typeof window !== 'undefined' && window.innerWidth >= 768 ? `${6 + index * 1.5}rem` : 'auto' 
