@@ -7,7 +7,7 @@ const ChatBot = () => {
   const [isMinimized, setIsMinimized] = useState(false);
   const [input, setInput] = useState('');
   const [messages, setMessages] = useState([
-    { role: 'bot', text: "Ciao! Sono **William**, l'assistente di PlayInnovation Group. Come posso aiutarti oggi? 🎾" }
+    { role: 'bot', text: "Ciao! Sono **Willy**, l'assistente di PlayInnovation Group. Come posso aiutarti oggi? 🎾" }
   ]);
   const [isLoading, setIsLoading] = useState(false);
   const scrollRef = useRef(null);
@@ -125,8 +125,8 @@ const ChatBot = () => {
             {messages.map((msg, index) => (
               <div key={index} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                 <div className={`max-w-[85%] p-4 rounded-2xl text-sm ${msg.role === 'user'
-                    ? 'bg-brand-cyan text-brand-graphite rounded-tr-none'
-                    : 'bg-white/5 text-brand-offwhite border border-white/5 rounded-tl-none'
+                  ? 'bg-brand-cyan text-brand-graphite rounded-tr-none'
+                  : 'bg-white/5 text-brand-offwhite border border-white/5 rounded-tl-none'
                   }`}>
                   <div className="whitespace-pre-wrap">
                     {msg.text.split(/(\*\*.*?\*\*)/g).map((part, i) => {
