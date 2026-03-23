@@ -84,16 +84,16 @@ const ChatBot = () => {
     return (
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-6 right-6 w-16 h-16 bg-brand-cyan rounded-full shadow-2xl flex items-center justify-center text-brand-graphite hover:scale-110 transition-transform z-[100] group"
+        className="fixed bottom-4 right-4 md:bottom-6 md:right-6 w-14 h-14 md:w-16 md:h-16 bg-brand-cyan rounded-full shadow-2xl flex items-center justify-center text-brand-graphite hover:scale-110 transition-transform z-[100] group"
       >
-        <MessageSquare size={28} className="group-hover:rotate-12 transition-transform" />
-        <div className="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full border-2 border-brand-graphite"></div>
+        <MessageSquare size={24} className="md:size-[28px] group-hover:rotate-12 transition-transform" />
+        <div className="absolute -top-1 -right-1 w-3.5 h-3.5 bg-red-500 rounded-full border-2 border-brand-graphite"></div>
       </button>
     );
   }
 
   return (
-    <div className={`fixed bottom-6 right-6 w-[90vw] md:w-[400px] ${isMinimized ? 'h-16' : 'h-[600px]'} max-h-[80vh] bg-brand-graphite/95 backdrop-blur-xl rounded-[2rem] border border-white/10 shadow-2xl flex flex-col z-[100] overflow-hidden transition-all duration-300`}>
+    <div className={`fixed bottom-0 right-0 sm:bottom-6 sm:right-6 w-full sm:w-[400px] ${isMinimized ? 'h-16' : 'h-[100dvh] sm:h-[600px]'} sm:max-h-[80vh] bg-brand-graphite/95 backdrop-blur-xl rounded-t-[2rem] sm:rounded-[2rem] border border-white/10 shadow-2xl flex flex-col z-[100] overflow-hidden transition-all duration-300`}>
       {/* Header */}
       <div className="p-4 border-b border-white/10 flex justify-between items-center bg-white/5">
         <div className="flex items-center gap-3">
@@ -101,7 +101,7 @@ const ChatBot = () => {
             <Bot size={20} className="text-brand-cyan" />
           </div>
           <div>
-            <h4 className="text-white font-bold text-sm">William</h4>
+            <h4 className="text-white font-bold text-sm">Willy</h4>
             <div className="flex items-center gap-1.5">
               <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span>
               <span className="text-[10px] text-brand-steel uppercase font-mono tracking-widest">Online</span>

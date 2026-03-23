@@ -192,44 +192,49 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {/* Mobile Menu Full Screen Overlay - PremiumGSAP driven */}
+            {/* Mobile Menu Full Screen Overlay - Premium GSAP driven */}
             {isMobileMenuOpen && (
                 <div 
                     ref={mobileMenuRef}
-                    className="fixed inset-0 top-[70px] bg-brand-graphite/98 backdrop-blur-2xl z-[90] flex flex-col p-6 lg:hidden border-t border-white/10 overflow-y-auto"
+                    className="fixed inset-0 top-[60px] md:top-[70px] bg-brand-graphite/98 backdrop-blur-2xl z-[90] flex flex-col p-6 lg:hidden border-t border-white/10 overflow-y-auto"
                 >
-                    <div className="flex flex-col space-y-8 mt-4">
-                        <a href="#home" className="text-3xl font-bold text-white tracking-tight" onClick={(e) => handleNavClick(e, '#home')}>
-                            <span className="text-brand-steel text-sm font-mono block mb-2 opacity-50">01</span>
+                    <div className="flex flex-col space-y-6 md:space-y-8 mt-4">
+                        <a href="#home" className="text-2xl md:text-3xl font-bold text-white tracking-tight flex items-center gap-4" onClick={(e) => handleNavClick(e, '#home')}>
+                            <span className="text-brand-cyan text-xs font-mono opacity-50">01</span>
                             {t('navbar.home')}
                         </a>
                         
                         <div className="flex flex-col">
-                            <span className="text-brand-steel text-sm font-mono block mb-2 opacity-50">02</span>
-                            <span className="text-3xl font-bold text-brand-cyan tracking-tight mb-4">{t('navbar.products')}</span>
-                            <div className="flex flex-col space-y-4 pl-4 border-l-2 border-brand-cyan/20">
-                                <Link to="/prodotti/padel" onClick={closeMobileMenu} className="text-xl text-brand-offwhite font-medium">Campi da Padel</Link>
-                                <Link to="/prodotti/tennis" onClick={closeMobileMenu} className="text-xl text-brand-offwhite font-medium">Campi da Tennis</Link>
-                                <Link to="/prodotti/pickleball" onClick={closeMobileMenu} className="text-xl text-brand-offwhite font-medium">Campi da Pickleball</Link>
-                                <Link to="/prodotti/multisport" onClick={closeMobileMenu} className="text-xl text-brand-offwhite font-medium">Campi Multisport</Link>
-                                <Link to="/prodotti/coperture" onClick={closeMobileMenu} className="text-xl text-brand-offwhite font-medium">Coperture Sportive</Link>
+                            <div className="flex items-center gap-4 mb-4">
+                                <span className="text-brand-cyan text-xs font-mono opacity-50">02</span>
+                                <span className="text-2xl md:text-3xl font-bold text-brand-cyan tracking-tight">{t('navbar.products')}</span>
+                            </div>
+                            <div className="flex flex-col space-y-3 pl-8 border-l border-white/10">
+                                <Link to="/prodotti/padel" onClick={closeMobileMenu} className="text-lg text-brand-offwhite hover:text-brand-cyan transition-colors">Campi da Padel</Link>
+                                <Link to="/prodotti/tennis" onClick={closeMobileMenu} className="text-lg text-brand-offwhite hover:text-brand-cyan transition-colors">Campi da Tennis</Link>
+                                <Link to="/prodotti/pickleball" onClick={closeMobileMenu} className="text-lg text-brand-offwhite hover:text-brand-cyan transition-colors">Campi da Pickleball</Link>
+                                <Link to="/prodotti/multisport" onClick={closeMobileMenu} className="text-lg text-brand-offwhite hover:text-brand-cyan transition-colors">Campi Multisport</Link>
+                                <Link to="/prodotti/coperture" onClick={closeMobileMenu} className="text-lg text-brand-offwhite hover:text-brand-cyan transition-colors">Coperture Sportive</Link>
                             </div>
                         </div>
-
-                        <a href="#solutions" className="text-3xl font-bold text-white tracking-tight" onClick={(e) => handleNavClick(e, '#solutions')}>
-                            <span className="text-brand-steel text-sm font-mono block mb-2 opacity-50">03</span>
+ 
+                        <a href="#solutions" className="text-2xl md:text-3xl font-bold text-white tracking-tight flex items-center gap-4" onClick={(e) => handleNavClick(e, '#solutions')}>
+                            <span className="text-brand-cyan text-xs font-mono opacity-50">03</span>
                             {t('navbar.solutions')}
                         </a>
-                        <Link to="/azienda" onClick={closeMobileMenu} className="text-3xl font-bold text-white tracking-tight">
-                            <span className="text-brand-steel text-sm font-mono block mb-2 opacity-50">04</span>
+                        <Link to="/azienda" onClick={closeMobileMenu} className="text-2xl md:text-3xl font-bold text-white tracking-tight flex items-center gap-4">
+                            <span className="text-brand-cyan text-xs font-mono opacity-50">04</span>
                             {t('navbar.company')}
                         </Link>
                     </div>
-
-                    <div className="mt-auto pt-10 pb-6 border-t border-white/10">
-                        <Link to="/#quote" onClick={closeMobileMenu} className="btn-primary w-full py-5 text-lg flex items-center justify-center">
+ 
+                    <div className="mt-auto pt-8 pb-4">
+                        <Link to="/#quote" onClick={closeMobileMenu} className="btn-primary w-full py-4 text-base flex items-center justify-center rounded-2xl">
                             {t('navbar.cta')}
                         </Link>
+                        <p className="text-center text-brand-steel text-[10px] font-mono uppercase tracking-widest mt-6 opacity-40">
+                            PlayInnovation Group — Premium Infrastructure
+                        </p>
                     </div>
                 </div>
             )}

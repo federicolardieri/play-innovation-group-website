@@ -148,8 +148,11 @@ const PadelModelsSection = () => {
                     <div
                         key={model.id}
                         ref={el => panelsRef.current[index] = el}
-                        className={`w-full flex items-center justify-center p-5 md:p-12 sticky top-24 bg-brand-slate rounded-2xl md:rounded-3xl border border-white/10 shadow-2xl`}
-                        style={{ zIndex: index, top: `${6 + index * 1.5}rem` }}
+                        className={`w-full flex items-center justify-center p-5 md:p-12 md:sticky top-24 bg-brand-slate rounded-2xl md:rounded-3xl border border-white/10 shadow-2xl transition-all duration-300`}
+                        style={{ 
+                            zIndex: index, 
+                            top: typeof window !== 'undefined' && window.innerWidth >= 768 ? `${6 + index * 1.5}rem` : 'auto' 
+                        }}
                     >
                         <div className="w-full max-w-7xl">
                             <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
