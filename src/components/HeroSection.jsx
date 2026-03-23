@@ -61,7 +61,7 @@ const HeroSection = () => {
     ];
 
     return (
-        <section id="home" ref={containerRef} className="relative h-[100dvh] w-full flex items-center justify-start overflow-hidden pt-20">
+        <section id="home" ref={containerRef} className="relative h-[100dvh] w-full flex items-center justify-start overflow-hidden pt-28 md:pt-20">
             {/* Background Video & Overlay */}
             <div className="absolute inset-0 z-0 bg-brand-slate">
                 <video
@@ -79,7 +79,7 @@ const HeroSection = () => {
                 </div>
             </div>
 
-            <div className="container relative z-10 mx-auto px-4 md:px-12 pt-20 md:pt-16 flex flex-col justify-end pb-12 md:pb-20 h-full">
+            <div className="container relative z-10 mx-auto px-4 md:px-12 pt-28 md:pt-16 flex flex-col justify-end pb-12 md:pb-20 h-full">
                 <div className="max-w-3xl">
                     <div className="inline-block px-3 py-1 mb-4 md:mb-6 border border-brand-steel/30 rounded-full bg-brand-graphite/40 backdrop-blur-sm">
                         <span className="text-[10px] md:text-xs font-mono font-medium tracking-widest text-brand-cyan uppercase">{t('hero.label')}</span>

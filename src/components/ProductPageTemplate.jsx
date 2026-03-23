@@ -42,7 +42,7 @@ const ProductPageTemplate = ({
     const items = Array.isArray(features) ? features : [];
 
     return (
-        <div className="bg-brand-graphite min-h-screen pt-16 md:pt-24 pb-20">
+        <div className="bg-brand-graphite min-h-screen pt-24 md:pt-24 pb-20">
             {/* Hero Section */}
             <div className="relative w-full h-[50dvh] md:h-[70vh] flex items-end pb-8 md:pb-12 overflow-hidden">
                 <div className="absolute inset-0">

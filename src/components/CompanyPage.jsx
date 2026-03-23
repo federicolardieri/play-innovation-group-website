@@ -81,7 +81,7 @@ const CompanyPage = () => {
     const values = t('companyPage.values.items') || [];
 
     return (
-        <div ref={pageRef} className="pt-16 md:pt-20 bg-brand-graphite min-h-screen">
+        <div ref={pageRef} className="pt-24 md:pt-20 bg-brand-graphite min-h-screen">
             {/* Hero Section */}
             <section className="hero-section relative h-[60dvh] md:h-[70vh] flex items-center justify-center overflow-hidden">
                 <div 
