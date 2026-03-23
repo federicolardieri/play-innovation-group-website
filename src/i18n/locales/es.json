@@ -1,0 +1,565 @@
+{
+    "navbar": {
+        "home": "Inicio",
+        "products": "Productos",
+        "solutions": "Soluciones",
+        "company": "Empresa",
+        "cta": "Solicitar presupuesto"
+    },
+    "hero": {
+        "label": "Premium Sport Infrastructure",
+        "headline": "Construimos espacios deportivos que",
+        "headlineAccent": "valorizan el juego.",
+        "subheadline": "Donde la ingeniería, la arquitectura moderna y la visión toman forma. Realizamos instalaciones y cubiertas diseñadas para durar y maximizar el rendimiento.",
+        "ctaPrimary": "Solicitar presupuesto",
+        "ctaSecondary": "Descubrir productos",
+        "metrics": {
+            "expertise": {
+                "label": "Expertise",
+                "value": "Pistas de Pádel y Tenis"
+            },
+            "structures": {
+                "label": "Estructuras",
+                "value": "Cubiertas Deportivas"
+            },
+            "service": {
+                "label": "Servicio",
+                "value": "Realización llave en mano"
+            },
+            "facilities": {
+                "label": "Instalaciones",
+                "value": "Soluciones a medida"
+            }
+        }
+    },
+    "padelModels": {
+        "title": "Nuestras Pistas de Pádel",
+        "subtitle": "Soluciones construidas para sobresalir. Explora nuestros modelos diseñados para cada necesidad.",
+        "compare": "Comparar Modelos",
+        "compareTitle": "Comparar Modelos",
+        "compareSubtitle": "Descubre las diferencias técnicas y elige la pista perfecta para ti.",
+        "requestQuote": "Solicitar presupuesto para este modelo",
+        "choose": "Elegir",
+        "specs": "ESPECIFICACIONES",
+        "specLabels": {
+            "structure": "ESTRUCTURA",
+            "bolts": "TORNILLERÍA",
+            "lighting": "ILUMINACIÓN",
+            "priceRange": "RANGO DE PRECIO",
+            "glass": "CRISTALES"
+        },
+        "models": [
+            {
+                "name": "EXTRA SOLID",
+                "subtitle": "¡DONDE EL JUEGO SE CONVIERTE EN LEYENDA: LA PISTA DE PÁDEL DEFINITIVA!",
+                "paragraphs": [
+                    "Nuestra pista combina un diseño de entrada con características de alta gama.",
+                    "La estructura está realizada con una valla de malla electrosoldada, enriquecida con pilares autoportantes con tubos reforzados (80x40 mm) y refuerzos adicionales del mismo espesor.",
+                    "Todos los componentes metálicos están galvanizados en caliente o pintados al horno en el color elegido por el cliente, mientras que la tornillería de acero inoxidable garantiza resistencia y durabilidad.",
+                    "Los paneles de cristal templado, disponibles en espesores de 10 o 12 mm, presentan bordes cuidadosamente acabados y biselados para una estética elegante y mayor seguridad."
+                ],
+                "specs": {
+                    "structure": "Acero al carbono galvanizado en caliente, pintado al horno.",
+                    "bolts": "Tornillos, tirantes y tuercas de acero inoxidable 304 (A2).",
+                    "lighting": "4 focos LED 200W/240W.",
+                    "priceRange": "Entry",
+                    "glass": "Cristal templado homologado 10 mm."
+                }
+            },
+            {
+                "name": "PANORÁMICO",
+                "subtitle": "AMPLIOS CRISTALES Y MATERIALES DE CALIDAD, PON A TUS CLIENTES EN PRIMER PLANO",
+                "paragraphs": [
+                    "La pista de pádel que redefine el juego.",
+                    "Elegancia, innovación y solidez se encuentran en una pista de pádel sin precedentes. Gracias a una estructura con pocos montantes de hierro, ofrece una visibilidad sin obstáculos y un diseño minimalista que realza la experiencia de juego.",
+                    "Los amplios cristales transforman la pista en un verdadero espectáculo, creando una sensación de apertura y libertad nunca vista antes.",
+                    "🔥 ¡Más que una pista, un icono! ¿Estás listo para jugar al pádel como nunca?"
+                ],
+                "specs": {
+                    "structure": "Estructura autoportante de acero estructural.",
+                    "bolts": "Acero inoxidable 304 de alta resistencia.",
+                    "lighting": "8 focos LED asimétricos 200W.",
+                    "priceRange": "Media / Alta",
+                    "glass": "Cristal templado laminado homologado 12 mm."
+                }
+            },
+            {
+                "name": "SUPER PANORÁMICO",
+                "subtitle": "LO MEJOR DE LA GAMA EN ELEGANCIA Y RENDIMIENTO",
+                "paragraphs": [
+                    "Descubre lo máximo en innovación y diseño con nuestro modelo de gama alta.",
+                    "Diseñado para ofrecer una experiencia de juego sin precedentes. Gracias a los amplios cristales sin obstáculos, esta pista ofrece una visión cristalina del juego.",
+                    "Ningún montante obstruye la vista.",
+                    "Máxima resistencia, elegancia y rendimiento: una arquitectura moderna que realza tanto el juego como la estética.",
+                    "Perfecto para clubes, torneos y ubicaciones exclusivas."
+                ],
+                "specs": {
+                    "structure": "Cristales portantes con refuerzos mínimos de acero.",
+                    "bolts": "Acero inoxidable A4 de alta resistencia.",
+                    "lighting": "8 focos LED de alta eficiencia 200W.",
+                    "priceRange": "Top",
+                    "glass": "Cristal templado estructural de alto espesor."
+                }
+            },
+            {
+                "name": "NATUR HÍBRIDO",
+                "subtitle": "SÓLIDO COMO EL ACERO, NATURAL COMO LA MADERA",
+                "paragraphs": [
+                    "La base está realizada en acero pre-galvanizado, pintado al horno en el color elegido por el cliente, combinado con madera laminada tratada.",
+                    "Una mezcla única de materiales para una experiencia de juego auténtica.",
+                    "Refinamiento y solidez en una única estructura con diseño elegante e innovador.",
+                    "La fusión perfecta entre robustez y estilo: la fuerza del acero y la nobleza de la madera."
+                ],
+                "specs": {
+                    "structure": "Acero galvanizado y madera laminada estructural.",
+                    "bolts": "Inox 304 oculto.",
+                    "lighting": "4/8 focos LED asimétricos integrados.",
+                    "priceRange": "Premium",
+                    "glass": "Cristal templado homologado 10/12 mm."
+                }
+            }
+        ]
+    },
+    "products": {
+        "label": "Product Universe",
+        "title": "Soluciones de ingeniería para el deporte.",
+        "subtitle": "No construimos simples pistas, sino ecosistemas deportivos avanzados. Cada una de nuestras realizaciones es el resultado de la investigación en materiales y la experiencia en el campo.",
+        "cta": "Solicitar información",
+        "items": [
+            {
+                "title": "Pistas de Pádel",
+                "desc": "Estructuras panorámicas y super panorámicas diseñadas para maximizar la visibilidad y garantizar un rendimiento excelente con cristales templados y césped de última generación.",
+                "features": [
+                    "Cristal templado 12mm",
+                    "Césped sintético texturizado",
+                    "Iluminación LED asimétrica"
+                ]
+            },
+            {
+                "title": "Pistas de Tenis",
+                "desc": "Construcción de pistas de tierra batida, resina sintética o césped sintético, ideales para torneos internacionales o clubes deportivos premium.",
+                "features": [
+                    "Certificación ITF",
+                    "Drenaje avanzado",
+                    "Superficies personalizables"
+                ]
+            },
+            {
+                "title": "Pistas de Pickleball",
+                "desc": "El formato deportivo con el crecimiento más rápido del mundo. Diseñamos espacios indoor y outdoor dedicados con superficies de alta resistencia.",
+                "features": [
+                    "Dimensiones reglamentarias",
+                    "Acabado acrílico",
+                    "Bajo mantenimiento"
+                ]
+            },
+            {
+                "title": "Pistas Multideporte",
+                "desc": "Infraestructuras versátiles capaces de albergar fútbol sala, baloncesto, voleibol y tenis. La solución perfecta para escuelas y municipios.",
+                "features": [
+                    "Pavimentos de poliuretano",
+                    "Vallado integrado",
+                    "Máxima absorción de impactos"
+                ]
+            },
+            {
+                "title": "Cubiertas Deportivas",
+                "desc": "Desde estructuras presurizadas hasta tensoestructuras de madera laminada o acero para cualquier tipo de pista de Pádel o Tenis. Garantizamos jugabilidad los 365 días del año con la máxima eficiencia energética.",
+                "features": [
+                    "Madera laminada o acero",
+                    "Membranas de doble capa",
+                    "Aislamiento térmico"
+                ]
+            }
+        ]
+    },
+    "why": {
+        "label": "Por qué PlayInnovation",
+        "title": "La ingeniería detrás del deporte.",
+        "subtitle": "Elegir PlayInnovation Group significa confiar en un socio técnico y estratégico capaz de transformar una visión en una instalación de excelencia.",
+        "features": [
+            {
+                "title": "Calidad Constructiva",
+                "desc": "Materiales certificados y estructuras diseñadas para perdurar, garantizando los más altos estándares de seguridad."
+            },
+            {
+                "title": "Diseño a Medida",
+                "desc": "Adaptamos cada instalación al contexto específico, desde las dimensiones hasta el estudio de iluminación personalizado."
+            },
+            {
+                "title": "Fiabilidad Operativa",
+                "desc": "Equipos especializados, montajes rápidos y gestión de obra llave en mano con un único interlocutor."
+            },
+            {
+                "title": "Visión y Soporte",
+                "desc": "No solo constructores: acompañamos a inversores y clubes para optimizar el retorno comercial de la instalación."
+            }
+        ]
+    },
+    "gallery": {
+        "label": "Showcase Inmersivo",
+        "title": "Explora los Detalles.",
+        "subtitle": "Desplázate para ver la calidad constructiva."
+    },
+    "categorizedGallery": {
+        "label": "Portfolio",
+        "title": "Nuestros Proyectos.",
+        "subtitle": "Descubre nuestros proyectos realizados: cada instalación es un proyecto único, cuidado en cada detalle.",
+        "categories": [
+            "Todos",
+            "Pádel",
+            "Tennis",
+            "Pickleball",
+            "Cubiertas",
+            "Multisport"
+        ],
+        "photosLabel": "fotos",
+        "projects": [
+            {
+                "title": "Pádel Indoor",
+                "description": "Cubierta en estructura tensil para pistas de pádel con iluminación integrada y máxima eficiencia energética."
+            },
+            {
+                "title": "Tenis Indoor",
+                "description": "Estructura de madera laminada para pistas de tenis con sistema de iluminación de alta eficiencia y aislamiento térmico."
+            },
+            {
+                "title": "Modelos Pádel",
+                "description": "Nuestros 4 modelos de pistas de pádel en renderizado 3D de alta definición: Extra Solid, Panorámico, Super Panorámico y Natur Híbrido."
+            },
+            {
+                "title": "Multisport",
+                "description": "Infraestructuras versátiles para escuelas y municipios, con pavimentaciones certificadas y máxima resistencia a los impactos."
+            },
+            {
+                "title": "Cubiertas",
+                "description": "Estructuras de vanguardia para la protección de instalaciones deportivas, garantizando la jugabilidad los 365 días del año."
+            },
+            {
+                "title": "Super Panorámico",
+                "description": "El ápice del diseño y la visibilidad: una struttura sin postes esquineros para una experiencia de juego y visión sin precedentes."
+            },
+            {
+                "title": "Tenis Outdoor",
+                "description": "Pistas de tenis profesionales al aire libre, realizadas con superficies drenantes certificadas por la ITF y sistemas de iluminación LED para el juego nocturno."
+            },
+            {
+                "title": "Pickleball Pro",
+                "description": "Pista de pickleball reglamentaria con superficie acrílica multicapa e iluminación dedicada."
+            }
+        ]
+    },
+    "process": {
+        "label": "Nuestro Método",
+        "title": "De la visión a la pista.",
+        "subtitle": "Un proceso de ingeniería en 4 fases para transformar tu idea en una instalación deportiva de excelencia.",
+        "steps": [
+            {
+                "num": "01",
+                "title": "Análisis y Consultoría",
+                "desc": "Estudio de viabilidad, análisis del sitio o de la estructura existente y definición de los objetivos técnico-comerciales junto con el cliente."
+            },
+            {
+                "num": "02",
+                "title": "Propuesta Técnica",
+                "desc": "Elaboración del proyecto de ingeniería, desde el diseño hasta el modelo estructural, incluyendo materiales, cubiertas y presupuesto."
+            },
+            {
+                "num": "03",
+                "title": "Instalación",
+                "desc": "Operamos con equipos especializados garantizando precisión milimétrica. Plazos rápidos y gestión de obra llave en mano."
+            },
+            {
+                "num": "04",
+                "title": "Pruebas y Soporte",
+                "desc": "Verificación de los estándares de jugabilidad y seguridad. Entrega de la instalación terminada con soporte postventa y mantenimiento."
+            }
+        ]
+    },
+    "applications": {
+        "label": "Destinos de uso",
+        "title": "Construido para tu realidad.",
+        "subtitle": "Cada proyecto tiene necesidades específicas. Adaptamos nuestros estándares constructivos de excelencia a tu modelo de negocio y a tu contexto.",
+        "items": [
+            {
+                "title": "Clubes Deportivos",
+                "desc": "Sistemas llave en mano para maximizar la rentabilidad y ofrecer experiencias premium a los socios."
+            },
+            {
+                "title": "Resorts y Hostelería",
+                "desc": "Pistas panorámicas e integración arquitectónica para elevar el valor de la estructura hotelera."
+            },
+            {
+                "title": "Administraciones Públicas",
+                "desc": "Diseño y rehabilitación de centros deportivos municipales, escuelas y parques públicos."
+            },
+            {
+                "title": "Inversores Privados",
+                "desc": "Consultoría global desde el estudio del plan de negocio hasta la entrega final de la instalación."
+            }
+        ]
+    },
+    "quote": {
+        "label": "Solicitud de Presupuesto",
+        "title": "Del proyecto",
+        "titleAccent": "a la realidad.",
+        "subtitle": "Cuéntanos tu idea. Nuestro equipo de ingenieros y diseñadores está listo para proporcionarte un análisis detallado y un presupuesto personalizado para tu nueva instalación deportiva.",
+        "benefits": [
+            "Asesoría técnica personalizada en 48h",
+            "Análisis de viabilidad para estructuras y cubiertas",
+            "Propuestas calibradas según presupuesto y tipo de club"
+        ],
+        "form": {
+            "name": "Nombre y Apellido",
+            "namePlaceholder": "Tu nombre",
+            "company": "Empresa / Club",
+            "companyPlaceholder": "Nombre del negocio",
+            "email": "Email",
+            "emailPlaceholder": "email@empresa.com",
+            "phone": "Teléfono",
+            "phonePlaceholder": "+34 ...",
+            "interest": "Interés Principal",
+            "interests": [
+                "Pistas de Pádel",
+                "Pistas de Tenis",
+                "Pistas de Pickleball",
+                "Pistas Multideporte",
+                "Cubiertas Deportivas",
+                "Diseño Global / Otro"
+            ],
+            "details": "Detalles del Proyecto",
+            "detailsPlaceholder": "Cuéntanos tus necesidades...",
+            "submit": "Solicitar presupuesto",
+            "privacy": "Al enviar este formulario, aceptas nuestra Política de Privacidad para el tratamiento de datos.",
+            "successTitle": "¡Solicitud enviada!",
+            "successMessage": "Nuestro equipo se pondrá en contacto contigo en breve."
+        }
+    },
+    "faq": {
+        "label": "Preguntas Frecuentes",
+        "title": "Todo lo que necesitas saber.",
+        "subtitle": "Información clara sobre costos, permisos y estándares constructivos para la apertura de tu centro deportivo.",
+        "items": [
+            {
+                "q": "¿Cuánto cuesta construir una pista de pádel?",
+                "a": "El costo varía según el modelo elegido (Extra Solid, Panorámico, Super Panorámico), tipo de terreno y opciones (iluminación LED avanzada, espesor de cristales). Ofrecemos presupuestos personalizados tras un cuidadoso análisis preliminar para optimizar tu inversión."
+            },
+            {
+                "q": "¿Qué permisos se necesitan?",
+                "a": "La instalación de instalaciones deportivas y cubiertas suele requerir permisos municipales. Nuestro equipo, a petición del cliente, proporciona el soporte técnico necesario para agilizar el proceso burocrático de tu licencia."
+            },
+            {
+                "q": "¿Qué tipo de cubiertas tienen?",
+                "a": "Diseñamos e instalamos diversas soluciones para garantizarte la máxima flexibilidad: desde cúpulas de aire de alta eficiencia hasta estructuras tensadas premium en madera laminada o acero, todas diseñadas para asegurar la jugabilidad los 365 días del año reduciendo al mínimo los costos de mantenimiento."
+            },
+            {
+                "q": "¿Las pistas están certificadas?",
+                "a": "Absolutamente. Trabajamos cumpliendo con las normativas estructurales vigentes. Todos nuestros materiales e instalaciones cumplen con los más estrictos estándares europeos de rendimiento y seguridad deportiva."
+            },
+            {
+                "q": "¿Qué tamaño tiene una pista de tenis?",
+                "a": "Una pista de tenis reglamentaria para individuales mide 23,77 m de largo por 8,23 m de ancho (10,97 m para dobles). A estas medidas mínimas es fundamental añadir los márgenes laterales y de fondo, que definiremos juntos analizando los espacios de tu instalación."
+            }
+        ]
+    },
+    "finalCta": {
+        "headline": "Construyamos una instalación deportiva a la altura de tu visión.",
+        "subheadline": "Demos forma a tu próxima instalación premium. Hablemos del proyecto adecuado para tu espacio.",
+        "cta": "Solicitar presupuesto hoy"
+    },
+    "footer": {
+        "tagline": "Play Innovation Group, un marchio di Edilpadel S.R.L, Via Michele Amari 39, cap 00179, Roma (RM), REA(RM-1635979)",
+        "systemReady": "System Ready",
+        "consultingAvailable": "Consultoría Disponible",
+        "productsTitle": "Productos",
+        "productLinks": [
+            "Pistas Pádel",
+            "Pistas Tenis",
+            "Pistas Pickleball",
+            "Instalaciones Multideporte",
+            "Cubiertas Deportivas"
+        ],
+        "companyTitle": "Empresa",
+        "companyLinks": [
+            "Quiénes Somos",
+            "Nuestro Método",
+            "Proyectos",
+            "Contáctanos"
+        ],
+        "contactsTitle": "Contacto",
+        "requestQuote": "Solicitar un Presupuesto",
+        "rights": "Todos los derechos reservados.",
+        "privacy": "Política de Privacidad",
+        "cookie": "Política de Cookies"
+    },
+    "padelPage": {
+        "title": "Pistas de Pádel",
+        "subtitle": "Espectáculo visual e ingeniería extrema. El pádel premium de PlayInnovation.",
+        "description": "Nuestras pistas de pádel no son simples cerramientos, sino ecosistemas deportivos avanzados. Desde el diseño del esquema estructural hasta los microdetalles (como la inclinación de los focos y el grosor de los cristales), cada componente está pensado para lograr la máxima jugabilidad y resistencia frente a los climas más agresivos.\n\nYa sea el modelo Extra Solid diseñado para la máxima carga de trabajo, o el Super Panorámico enfocado en el puro espectáculo visual, garantizamos una instalación milimétrica que elevará el prestigio de tu club deportivo.",
+        "features": [
+            "Estructuras de acero galvanizado en caliente o pintado al horno.",
+            "Cristales templados laminados de 10 o 12 mm con cantos pulidos.",
+            "Sistemas de iluminación LED asimétrica para cero deslumbramiento.",
+            "Césped sintético texturizado de última generación, aprobado por el WPT.",
+            "Tornillería inoxidable oculta para la máxima seguridad de los jugadores."
+        ],
+        "materials": {
+            "title": "Materiales",
+            "subtitle": "Ingeniería de precisión en cada componente.",
+            "items": [
+                { "name": "Estructura", "desc": "Acero Fe360B con espesores de hasta 3mm, galvanizado en caliente.", "icon": "hard-hat" },
+                { "name": "Cristales", "desc": "Paneles de cristal templado de seguridad de 12mm, certificados y probados.", "icon": "shield" },
+                { "name": "Iluminación", "desc": "8 focos LED asimétricos de 200W, diseñados para una luz uniforme.", "icon": "zap" }
+            ]
+        },
+        "surfaces": {
+            "title": "Nuestros Mantos",
+            "subtitle": "Superficies diseñadas para el máximo agarre y rendimiento.",
+            "items": [
+                { "name": "Césped Texturizado", "desc": "El top para el juego profesional: reduce el estrés articular y garantiza botes constantes.", "color": "Azul / Verde / Rojo" },
+                { "name": "Césped Fibrado", "desc": "Excelente durabilidad y facilidad de mantenimiento, ideal para clubes de alto tráfico.", "color": "Azul / Verde" }
+            ]
+        }
+    },
+    "tennisPage": {
+        "title": "Pistas de Tenis",
+        "subtitle": "Desde el club amateur hasta los torneos ATP. Superficies de ingeniería para la perfección del rebote.",
+        "description": "Sabemos que en el tenis el milímetro marca la diferencia. Por eso construimos pistas cuidando de forma obsesiva las pendientes para el drenaje del agua y la homogeneidad de las superficies.\n\nYa sea el encanto atemporal de la tierra batida roja (realizada con las mejores subbases porosas y volcánicas) o de las resinas sintéticas de alta tecnología (con shock pads integrados para reducir el trauma articular), instalamos meticulosamente cerramientos, sistemas de iluminación y componentes accesorios para proporcionar una instalación premium sin igual.",
+        "features": [
+            "Construcción desde cero inclusive de excavaciones, soleras y sistemas de drenaje certificados.",
+            "Superficies de Tierra Batida, Resina Sintética o Césped Sintético homologadas por la ITF.",
+            "Pruebas de rebote realizadas durante la fase de control según normativa internacional.",
+            "Instalaciones de iluminación LED con especificaciones luminotécnicas para transmisiones por TV.",
+            "Cerramientos perimetrales y sistemas contraviento de alta estanqueidad estructural."
+        ],
+        "materials": {
+            "title": "Materiales",
+            "subtitle": "Solidez y precisión constructiva.",
+            "items": [
+                { "name": "Vallado", "desc": "Mallas de alta tensión con revestimiento polimérico, resistentes a la corrosión.", "icon": "box" },
+                { "name": "Iluminación", "desc": "Torres de luz con proyectores LED de 400W para estándares de juego internacional.", "icon": "sun" },
+                { "name": "Drenaje", "desc": "Sistemas de nido de abeja y tuberías de drenaje para jugabilidad inmediata tras la lluvia.", "icon": "droplets" }
+            ]
+        },
+        "surfaces": {
+            "title": "Nuestros Mantos",
+            "subtitle": "La superficie perfecta para tu estilo de juego.",
+            "items": [
+                { "name": "Tierra Batida", "desc": "Encanto tradicional con sub-base de material volcánico para un confort extremo.", "color": "Rojo Clásico" },
+                { "name": "Resina Acrílica", "desc": "Superficie rápida y de alto rendimiento con 7 capas de amortiguación integrada.", "color": "Azul / Celeste / Verde" },
+                { "name": "Césped Sintético", "desc": "Bajo mantenimiento y jugabilidad todo el año, con relleno de arena de sílice.", "color": "Verde / Azul" }
+            ]
+        }
+    },
+    "pickleballPage": {
+        "title": "Pistas de Pickleball",
+        "subtitle": "El formato deportivo de más rápido crecimiento en el mundo. Diseñadas para pura acción.",
+        "description": "El Pickleball requiere una superficie que ofrezca el equilibrio adecuado entre deslizamiento y agarre, con una perfecta visibilidad del trazado. Instalamos pistas tanto de interior como de exterior optimizando el espacio disponible.\n\nNuestras superficies sintéticas multicapa están diseñadas para amortiguar impactos, reducir la fatiga de los jugadores y garantizar un rebote preciso y constante de la pelota en cada zona de la pista. El tamaño compacto de la pista nos permite transformar fácilmente áreas en desuso en centros de beneficios altamente rentables para tu club.",
+        "features": [
+            "Dimensiones de juego estrictamente reglamentarias (13,41m x 6,10m) con las zonas de seguridad correspondientes.",
+            "Sistemas de pavimentación de resina acrílica multicapa con alta absorción acústica.",
+            "Trazado de líneas de alta visibilidad, resistente al desgaste y a los rayos UV.",
+            "Suministro e instalación de redes profesionales con sistemas de tensado integrados.",
+            "Convertibilidad de espacios: sistemas para superponer el trazado en pistas existentes."
+        ],
+        "materials": {
+            "title": "Materiales",
+            "subtitle": "Nuevos estándares para la nueva disciplina.",
+            "items": [
+                { "name": "Sistema de Red", "desc": "Postes de acero pintado con sistema de tensado profesional por trinquete.", "icon": "anchor" },
+                { "name": "Acabado", "desc": "Pinturas poliuretánicas de alta resistencia a la abrasión y el golpeo de bola.", "icon": "palette" }
+            ]
+        },
+        "surfaces": {
+            "title": "Nuestros Mantos",
+            "subtitle": "Grip y precisión del rebote.",
+            "items": [
+                { "name": "Pro Cushion", "desc": "Resina multicapa con 3 capas de goma para amortiguar cada paso.", "color": "Azul / Azul Oscuro" },
+                { "name": "Hard Court", "desc": "Acabado acrílico rígido para un rebote más veloz y sensible.", "color": "Personalizable" }
+            ]
+        }
+    },
+    "multisportPage": {
+        "title": "Pistas Multideporte y Fútbol",
+        "subtitle": "Un solo espacio, infinitas posibilidades. Ingeniería para la versatilidad deportiva.",
+        "description": "La optimización del espacio es fundamental para escuelas, municipios y centros deportivos polivalentes. Diseñamos y construimos áreas multideporte que permiten jugar fútbol 5, baloncesto, voleibol y tenis en la misma superficie, reduciendo los costos de gestión sin comprometer el rendimiento.\n\nSeleccionamos superficies polivalentes de alta durabilidad (resinas o césped sintético de bajo mantenimiento) resistentes al tráfico peatonal intensivo y al uso con diferentes tipos de calzado. Integrando equipamiento convertible y vallados antiescalada, creamos pistas seguras, resistentes al vandalismo y listas para usar los 365 días del año.",
+        "features": [
+            "Superficies polivalentes certificadas para baloncesto, voleibol, fútbol sala y tenis.",
+            "Césped sintético de altísima durabilidad con relleno de rendimiento para campos de Fútbol 5/7/11.",
+            "Sistemas de trazado multicolor para una clara identificación de cada deporte.",
+            "Estructuras accesorias: porterías integradas con canastas, redes ajustables y banquillos.",
+            "Cerramientos de paneles rígidos de altísima resistencia perimetral y redes parabalones."
+        ],
+        "materials": {
+            "title": "Materiales",
+            "subtitle": "Versatilidad y máxima resistencia.",
+            "items": [
+                { "name": "Vallado", "desc": "Módulos rígidos antivandálicos de 4.00m h con tratamiento anticorrosión.", "icon": "layout" },
+                { "name": "Equipamiento", "desc": "Sistemas de portería/canasta integrados en acero galvanizado con tableros de plexiglás.", "icon": "target" }
+            ]
+        },
+        "surfaces": {
+            "title": "Nuestros Mantos",
+            "subtitle": "Diseñados para un uso intensivo.",
+            "items": [
+                { "name": "Multi-Turf", "desc": "Césped sintético de 22mm específico para fútbol sala y tenis amateur.", "color": "Verde / Rojo" },
+                { "name": "Poliuretano", "desc": "Superficie elástica sin juntas para baloncesto y actividades escolares.", "color": "Naranja / Azul" }
+            ]
+        }
+    },
+    "coperturePage": {
+        "title": "Cubiertas Deportivas",
+        "subtitle": "Aislamiento total, luz perfecta. Maximiza el rendimiento de tu instalación.",
+        "description": "Una cubierta deportiva profesional transforma una pista estacional en una estructura de ingresos continuos los 365 días del año, independientemente de las condiciones meteorológicas. Diseñamos e instalamos cubiertas fijas y presostáticas con un diseño contemporáneo y alta eficiencia energética.\n\nNuestras tensoestructuras premium están fabricadas con membranas de PVC de doble revestimiento, tratadas específicamente para el aislamiento térmico y para mitigar el efecto condensación. Gracias al diseño a medida, garantizamos alturas de juego óptimas para los estándares WPT, ITF y FITP, combinando funcionalidad extrema y estética arquitectónica.",
+        "features": [
+            "Cubiertas presostáticas de membrana simple o doble para un máximo aislamiento.",
+            "Tensoestructuras de arco en acero o madera laminada de alto valor estético.",
+            "Lonas translúcidas que permiten la iluminación natural diurna reduciendo los costos de energía.",
+            "Sistemas de apertura corredera lateral para ventilación durante la temporada de verano.",
+            "Integración enrasada de la iluminación LED para eliminar las zonas de sombra."
+        ],
+        "materials": {
+            "title": "Materiales",
+            "subtitle": "Tecnología de las cubiertas.",
+            "items": [
+                { "name": "Madera Laminada", "desc": "Arcos certificados de Abete GL24, belleza natural y estabilidad estructural.", "icon": "tree" },
+                { "name": "Membrana PVC", "desc": "Tejido de poliéster 900g/mq con doble recubrimiento, ignífugo y anti-UV.", "icon": "layers" },
+                { "name": "Acero", "desc": "Vigas calandradas de acero galvanizado en caliente para luces libres de hasta 40 metros.", "icon": "component" }
+            ]
+        },
+        "surfaces": {
+            "title": "Pavimentación",
+            "subtitle": "Las bases para una cubierta perfecta.",
+            "items": [
+                { "name": "Solera", "desc": "Hormigón armado con acabado de cuarzo o asfalto drenante.", "color": "Gris / Negro" }
+            ]
+        }
+    },
+    "companyPage": {
+        "hero": {
+            "title": "Construyendo Espacios de Excelencia Deportiva",
+            "subtitle": "Innovación, ingeniería y diseño para instalaciones deportivas premium."
+        },
+        "about": {
+            "title": "Quiénes Somos",
+            "content": "PlayInnovation Group es una empresa líder en el diseño y construcción de instalaciones deportivas de alta gama. Con años de experiencia en el sector, fusionamos las técnicas de ingeniería más avanzadas con una estética moderna y funcional. Nuestro objetivo es elevar la experiencia de juego a través de infraestructuras duraderas, seguras y visualmente impactantes. Trabajamos en estrecha colaboración con clubes, inversores y administraciones públicas para hacer realidad cada visión."
+        },
+        "values": {
+            "title": "Nuestros Valores",
+            "items": [
+                {
+                    "title": "Calidad Premium",
+                    "desc": "Seleccionamos solo los mejores materiales para garantizar durabilidad y un rendimiento de alto nivel a lo largo del tiempo."
+                },
+                {
+                    "title": "Innovación",
+                    "desc": "Buscamos constantemente nuevas soluciones tecnológicas y constructivas para superar los estándares actuales."
+                },
+                {
+                    "title": "Fiabilidad",
+                    "desc": "Un equipo de profesionales dedicados sigue cada proyecto desde la fase inicial de consultoría hasta la entrega llave en mano."
+                }
+            ]
+        }
+    }
+}

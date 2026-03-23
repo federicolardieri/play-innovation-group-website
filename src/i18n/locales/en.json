@@ -1,0 +1,570 @@
+{
+    "navbar": {
+        "home": "Home",
+        "products": "Products",
+        "solutions": "Solutions",
+        "company": "Company",
+        "cta": "Request a quote"
+    },
+    "hero": {
+        "label": "Premium Sport Infrastructure",
+        "headline": "We build sports spaces that",
+        "headlineAccent": "valorize the game.",
+        "subheadline": "Where engineering, modern architecture and vision take shape. We create facilities and covers designed to last and to maximize performance.",
+        "ctaPrimary": "Request a quote",
+        "ctaSecondary": "Discover products",
+        "metrics": {
+            "expertise": {
+                "label": "Expertise",
+                "value": "Padel & Tennis Courts"
+            },
+            "structures": {
+                "label": "Structures",
+                "value": "Sport Covers"
+            },
+            "service": {
+                "label": "Service",
+                "value": "Turnkey construction"
+            },
+            "facilities": {
+                "label": "Facilities",
+                "value": "Custom Solutions"
+            }
+        }
+    },
+    "padelModels": {
+        "title": "Our Padel Courts",
+        "subtitle": "Solutions built to excel. Explore our models designed for every need.",
+        "compare": "Compare Models",
+        "compareTitle": "Compare Models",
+        "compareSubtitle": "Discover the technical differences and choose the perfect court for you.",
+        "requestQuote": "Request a quote for this model",
+        "gallery": "Photo Gallery",
+        "choose": "Choose",
+        "specs": "SPECIFICATIONS",
+        "specLabels": {
+            "structure": "STRUCTURE",
+            "bolts": "HARDWARE",
+            "lighting": "LIGHTING",
+            "priceRange": "PRICE RANGE",
+            "glass": "GLASS"
+        },
+        "models": [
+            {
+                "name": "EXTRA SOLID",
+                "subtitle": "WHERE THE GAME BECOMES LEGEND: THE ULTIMATE PADEL COURT!",
+                "paragraphs": [
+                    "Our court combines an entry-level design with high-end features.",
+                    "The structure is built with an electro-welded mesh fence, enhanced with self-supporting pillars with reinforced tubes (80x40 mm) and additional reinforcements of the same thickness.",
+                    "All metal components are hot-dip galvanized or oven-painted in the client's chosen color, while stainless steel hardware ensures resistance and durability.",
+                    "Tempered glass panels, available in 10 or 12 mm thickness, feature carefully finished and beveled edges for an elegant look and enhanced safety."
+                ],
+                "specs": {
+                    "structure": "Hot-dip galvanized carbon steel, oven-painted.",
+                    "bolts": "Bolts, ties and nuts in 304 stainless steel (A2).",
+                    "lighting": "4 LED floodlights 200W/240W.",
+                    "priceRange": "Entry",
+                    "glass": "Certified tempered glass 10 mm."
+                }
+            },
+            {
+                "name": "PANORAMIC",
+                "subtitle": "WIDE GLASS PANELS AND QUALITY MATERIALS, PUT YOUR CLIENTS IN THE SPOTLIGHT",
+                "paragraphs": [
+                    "The padel court that redefines the game.",
+                    "Elegance, innovation and solidity meet in an unprecedented padel court. With a structure featuring few iron pillars, it offers unobstructed visibility and a minimalist design that enhances the playing experience.",
+                    "The wide glass panels transform the court into a true spectacle, creating a sensation of openness and freedom never seen before.",
+                    "🔥 More than a court, an icon! Are you ready to play padel like never before?"
+                ],
+                "specs": {
+                    "structure": "Self-supporting structural steel frame.",
+                    "bolts": "High-resistance 304 stainless steel.",
+                    "lighting": "8 asymmetric LED floodlights 200W.",
+                    "priceRange": "Medium / High",
+                    "glass": "Certified laminated tempered glass 12 mm."
+                }
+            },
+            {
+                "name": "SUPER PANORAMIC",
+                "subtitle": "THE TOP OF THE RANGE FOR ELEGANCE AND PERFORMANCE",
+                "paragraphs": [
+                    "Discover the pinnacle of innovation and design with our top-of-the-range model.",
+                    "Designed to offer an unprecedented playing experience. With unobstructed wide glass panels, this court delivers crystal-clear game viewing.",
+                    "No pillars obstructing the view.",
+                    "Maximum resistance, elegance and performance: modern architecture that enhances both play and aesthetics.",
+                    "Perfect for clubs, tournaments and exclusive venues."
+                ],
+                "specs": {
+                    "structure": "Load-bearing glass with minimal steel reinforcements.",
+                    "bolts": "High-resistance A4 stainless steel.",
+                    "lighting": "8 high-efficiency LED floodlights 200W.",
+                    "priceRange": "Top",
+                    "glass": "High-thickness structural tempered glass."
+                }
+            },
+            {
+                "name": "NATUR HYBRID",
+                "subtitle": "SOLID AS STEEL, NATURAL AS WOOD",
+                "paragraphs": [
+                    "The base is made of pre-galvanized steel, oven-painted in the client's chosen color, combined with treated laminated wood.",
+                    "A unique mix of materials for an authentic playing experience.",
+                    "Refinement and solidity in a single structure with elegant and innovative design.",
+                    "The perfect fusion of robustness and style: the strength of steel and the nobility of wood."
+                ],
+                "specs": {
+                    "structure": "Galvanized steel and structural laminated wood.",
+                    "bolts": "Concealed 304 stainless steel.",
+                    "lighting": "4/8 integrated asymmetric LED floodlights.",
+                    "priceRange": "Premium",
+                    "glass": "Certified tempered glass 10/12 mm."
+                }
+            }
+        ]
+    },
+    "products": {
+        "label": "Product Universe",
+        "title": "Engineered solutions for sport.",
+        "subtitle": "We don't build simple courts, but advanced sports ecosystems. Each of our projects is the result of material research and field experience.",
+        "cta": "Request information",
+        "items": [
+            {
+                "title": "Padel Courts",
+                "desc": "Panoramic and super panoramic structures designed to maximize visibility and ensure excellent performance with tempered glass and latest-generation turf.",
+                "features": [
+                    "12mm tempered glass",
+                    "Textured synthetic turf",
+                    "Asymmetric LED lighting"
+                ]
+            },
+            {
+                "title": "Tennis Courts",
+                "desc": "Construction of clay, synthetic resin or synthetic grass courts, ideal for international tournaments or premium sports clubs.",
+                "features": [
+                    "ITF Certification",
+                    "Advanced drainage",
+                    "Customizable surfaces"
+                ]
+            },
+            {
+                "title": "Pickleball Courts",
+                "desc": "The fastest-growing sport format in the world. We design dedicated indoor and outdoor spaces with ultra-resistant surfaces.",
+                "features": [
+                    "Regulation dimensions",
+                    "Acrylic finish",
+                    "Low maintenance"
+                ]
+            },
+            {
+                "title": "Multisport Courts",
+                "desc": "Versatile infrastructure capable of hosting five-a-side football, basketball, volleyball and tennis. The perfect solution for schools and municipalities.",
+                "features": [
+                    "Polyurethane flooring",
+                    "Integrated fencing",
+                    "Maximum shock absorption"
+                ]
+            },
+            {
+                "title": "Sport Covers",
+                "desc": "From pressurized domes to laminated wood or steel tensile structures for every type of Padel or Tennis court. We guarantee playability 365 days a year with maximum energy efficiency and aesthetic appeal.",
+                "features": [
+                    "Laminated wood or steel",
+                    "Double-layer membranes",
+                    "Thermal insulation"
+                ]
+            }
+        ]
+    },
+    "why": {
+        "label": "Why PlayInnovation",
+        "title": "The engineering behind sport.",
+        "subtitle": "Choosing PlayInnovation Group means relying on a technical and strategic partner capable of transforming a vision into a facility of excellence.",
+        "features": [
+            {
+                "title": "Build Quality",
+                "desc": "Certified materials and engineered structures built to last, ensuring the highest safety standards."
+            },
+            {
+                "title": "Custom Design",
+                "desc": "We adapt every facility to the specific context, from dimensions to customized lighting studies."
+            },
+            {
+                "title": "Operational Reliability",
+                "desc": "Specialized teams, fast installation and turnkey site management with a single point of contact."
+            },
+            {
+                "title": "Vision & Support",
+                "desc": "Not just builders: we support investors and clubs to optimize the commercial return of the facility."
+            }
+        ]
+    },
+    "gallery": {
+        "label": "Immersive Showcase",
+        "title": "Explore the Details.",
+        "subtitle": "Scroll to see the build quality."
+    },
+    "categorizedGallery": {
+        "label": "Portfolio",
+        "title": "Our Projects.",
+        "subtitle": "Discover our completed projects: each installation is a unique project, crafted with attention to every detail.",
+        "categories": [
+            "All",
+            "Padel",
+            "Tennis",
+            "Pickleball",
+            "Roofing",
+            "Multisport"
+        ],
+        "photosLabel": "photos",
+        "projects": [
+            {
+                "title": "Indoor Padel",
+                "description": "Tensile structure cover for padel courts with integrated lighting and maximum energy efficiency."
+            },
+            {
+                "title": "Indoor Tennis",
+                "description": "Laminated wood structure for tennis courts with high-efficiency lighting system and thermal insulation."
+            },
+            {
+                "title": "Padel Models",
+                "description": "Our 4 padel court models in high-definition 3D rendering: Extra Solid, Panoramic, Super Panoramic and Natur Hybrid."
+            },
+            {
+                "title": "Multisport",
+                "description": "Versatile infrastructures for schools and municipalities, with certified flooring and maximum impact resistance."
+            },
+            {
+                "title": "Covers",
+                "description": "State-of-the-art structures for the protection of sports facilities, guaranteeing playability 365 days a year."
+            },
+            {
+                "title": "Super Panoramic",
+                "description": "The pinnacle of design and visibility: a structure without corner posts for an unprecedented playing and viewing experience."
+            },
+            {
+                "title": "Tennis Outdoor",
+                "description": "Professional outdoor tennis courts, made with ITF-certified draining surfaces and LED lighting systems for night play."
+            },
+            {
+                "title": "Panoramic",
+                "description": "A modern classic from PlayInnovation: total visibility on three sides for perfect integration in every sporting context."
+            },
+            {
+                "title": "Pickleball Pro",
+                "description": "Regulation pickleball court with multi-layer acrylic surface and dedicated lighting."
+            }
+        ]
+    },
+    "process": {
+        "label": "Our Method",
+        "title": "From vision to court.",
+        "subtitle": "An engineered 4-phase process to turn your idea into a sports facility of excellence.",
+        "steps": [
+            {
+                "num": "01",
+                "title": "Analysis & Consultation",
+                "desc": "Feasibility study, site or existing structure analysis, and definition of technical-commercial objectives together with the client."
+            },
+            {
+                "num": "02",
+                "title": "Technical Proposal",
+                "desc": "Development of the engineering project, from layout to structural model, including materials, covers, and budgeting."
+            },
+            {
+                "num": "03",
+                "title": "Installation",
+                "desc": "We operate with specialized teams ensuring millimetric precision. Fast timelines and turnkey site management."
+            },
+            {
+                "num": "04",
+                "title": "Testing & Support",
+                "desc": "Verification of playability and safety standards. Delivery of the finished facility with after-sales support and maintenance."
+            }
+        ]
+    },
+    "applications": {
+        "label": "Use Cases",
+        "title": "Built for your reality.",
+        "subtitle": "Every project has specific needs. We adapt our construction standards of excellence to your business model and context.",
+        "items": [
+            {
+                "title": "Sports Clubs",
+                "desc": "Turnkey systems to maximize profitability and offer premium experiences to members."
+            },
+            {
+                "title": "Resorts & Hospitality",
+                "desc": "Panoramic courts and architectural integration to elevate the value of the hospitality property."
+            },
+            {
+                "title": "Public Institutions",
+                "desc": "Design and renovation of municipal sports centres, schools and public parks."
+            },
+            {
+                "title": "Private Investors",
+                "desc": "Comprehensive consulting from business plan analysis to final facility delivery."
+            }
+        ]
+    },
+    "quote": {
+        "label": "Quote Request",
+        "title": "From project",
+        "titleAccent": "to reality.",
+        "subtitle": "Tell us about your idea. Our team of engineers and designers is ready to provide you with a detailed analysis and a custom quote for your new sports facility.",
+        "benefits": [
+            "Personalized technical consultation within 48h",
+            "Feasibility analysis for structures and covers",
+            "Proposals calibrated to budget and club type"
+        ],
+        "form": {
+            "name": "Full Name",
+            "namePlaceholder": "Your name",
+            "company": "Company / Club",
+            "companyPlaceholder": "Business name",
+            "email": "Email",
+            "emailPlaceholder": "email@company.com",
+            "phone": "Phone",
+            "phonePlaceholder": "+1 ...",
+            "interest": "Main Interest",
+            "interests": [
+                "Padel Courts",
+                "Tennis Courts",
+                "Pickleball Courts",
+                "Multisport Courts",
+                "Sport Covers",
+                "Global Design / Other"
+            ],
+            "details": "Project Details",
+            "detailsPlaceholder": "Tell us about your needs...",
+            "submit": "Request a quote",
+            "privacy": "By submitting this form, you accept our Privacy Policy for data processing.",
+            "successTitle": "Request sent!",
+            "successMessage": "Our team will contact you shortly."
+        }
+    },
+    "faq": {
+        "label": "Frequently Asked Questions",
+        "title": "Everything you need to know.",
+        "subtitle": "Clear information on costs, permits, and construction standards for opening your sports centre.",
+        "items": [
+            {
+                "q": "How much does it cost to build a padel court?",
+                "a": "The cost varies depending on the chosen model (Extra Solid, Panoramic, Super Panoramic), terrain type, and options (advanced LED lighting, glass thickness). We offer custom quotes after a careful preliminary analysis in order to optimize your investment."
+            },
+            {
+                "q": "What permits are required?",
+                "a": "Installing sports facilities and covers usually requires municipal permits depending on local regulations and zoning. Upon request, our team provides the technical support necessary to facilitate the bureaucratic process."
+            },
+            {
+                "q": "What type of covers do you offer?",
+                "a": "We design and install various solutions to ensure maximum flexibility: from high-efficiency air domes to premium tensile structures in laminated wood or steel, all designed to guarantee playability 365 days a year while minimizing maintenance costs."
+            },
+            {
+                "q": "Are the courts certified?",
+                "a": "Absolutely. We work in compliance with current structural regulations. All our materials and installations meet the strictest European standards for sports performance and safety."
+            },
+            {
+                "q": "How big is a tennis court?",
+                "a": "A regulation singles tennis court measures 23.77 m in length by 8.23 m in width (10.97 m for doubles). These are minimum dimensions, and it's essential to add side and back run-off areas, which we will define together by analyzing the spaces of your facility."
+            }
+        ]
+    },
+    "finalCta": {
+        "headline": "Let's build a sports facility worthy of your vision.",
+        "subheadline": "Let's shape your next premium facility. Let's talk about the right project for your space.",
+        "cta": "Request a quote today"
+    },
+    "footer": {
+        "tagline": "Play Innovation Group, un marchio di Edilpadel S.R.L, Via Michele Amari 39, cap 00179, Roma (RM), REA(RM-1635979)",
+        "systemReady": "System Ready",
+        "consultingAvailable": "Consulting Available",
+        "productsTitle": "Products",
+        "productLinks": [
+            "Padel Courts",
+            "Tennis Courts",
+            "Pickleball Courts",
+            "Multisport Facilities",
+            "Sport Covers"
+        ],
+        "companyTitle": "Company",
+        "companyLinks": [
+            "About Us",
+            "Our Method",
+            "Projects",
+            "Contact Us"
+        ],
+        "contactsTitle": "Contact",
+        "requestQuote": "Request a Quote",
+        "rights": "All rights reserved.",
+        "privacy": "Privacy Policy",
+        "cookie": "Cookie Policy"
+    },
+    "padelPage": {
+        "title": "Padel Courts",
+        "subtitle": "Visual spectacle and extreme engineering. Premium padel by PlayInnovation.",
+        "description": "Our padel courts are not simple fences, but advanced sports ecosystems. From structural layout design up to micro-details (such as the angle of the floodlights and the thickness of the glass), every component is designed for maximum playability and resistance to the most aggressive weather conditions.\n\nWhether it's the Extra Solid model designed for maximum workload, or the Super Panoramic dedicated to pure visual spectacle, we guarantee a millimeter-perfect installation that will elevate the prestige of your sports club.",
+        "features": [
+            "Hot-dip galvanized steel structures or oven-painted.",
+            "Laminated tempered glass of 10 or 12 mm with polished edges.",
+            "Asymmetric LED lighting systems for zero glare.",
+            "Latest generation textured synthetic turf, WPT approved.",
+            "Concealed stainless steel hardware for maximum player safety."
+        ],
+        "materials": {
+            "title": "Materials",
+            "subtitle": "Precision engineering for every component.",
+            "items": [
+                { "name": "Structure", "desc": "Fe360B steel with thickness up to 3mm, hot-dip galvanized.", "icon": "hard-hat" },
+                { "name": "Glass", "desc": "12mm safety tempered glass panels, certified and tested.", "icon": "shield" },
+                { "name": "Lighting", "desc": "8 asymmetric 200W LED floodlights, designed for uniform lighting.", "icon": "zap" }
+            ]
+        },
+        "surfaces": {
+            "title": "Our Surfaces",
+            "subtitle": "Surfaces designed for maximum grip and performance.",
+            "items": [
+                { "name": "Textured Turf", "desc": "The top for professional play: reduces joint stress and ensures consistent bounces.", "color": "Blue / Green / Red" },
+                { "name": "Fibrated Turf", "desc": "Excellent durability and ease of maintenance, ideal for high-traffic clubs.", "color": "Blue / Green" }
+            ]
+        }
+    },
+    "tennisPage": {
+        "title": "Tennis Courts",
+        "subtitle": "From amateur clubs to ATP tournaments. Engineered surfaces for bounce perfection.",
+        "description": "We know that in tennis, the millimeter makes the difference. This is why we build courts taking obsessive care of the slopes for water drainage and the homogeneity of the surfaces.\n\nWhether it's the timeless charm of red clay (made with the best porous and volcanic subbases) or the high-tech synthetic resins (with integrated shock pads to reduce joint trauma), we meticulously install fencing, lighting systems, and accessory components to provide an unparalleled premium facility.",
+        "features": [
+            "Construction from scratch inclusive of excavations, screeds, and certified drainage systems.",
+            "Red Clay, Synthetic Resin, or Synthetic Grass surfaces ITF approved.",
+            "Bounce tests performed during testing in accordance with international regulations.",
+            "LED lighting systems with technical lighting specifications for TV broadcasts.",
+            "Perimeter fencing and high structural tightness windbreaker systems."
+        ],
+        "materials": {
+            "title": "Materials",
+            "subtitle": "Strength and construction precision.",
+            "items": [
+                { "name": "Fencing", "desc": "High-tension nets with polymer coating, corrosion resistant.", "icon": "box" },
+                { "name": "Lighting", "desc": "Light towers with 400W LED projectors for international match standards.", "icon": "sun" },
+                { "name": "Drainage", "desc": "Honeycomb systems and drainage pipes for immediate playability after rain.", "icon": "droplets" }
+            ]
+        },
+        "surfaces": {
+            "title": "Our Surfaces",
+            "subtitle": "The perfect surface for your playing style.",
+            "items": [
+                { "name": "Red Clay", "desc": "Traditional charm with volcanic material sub-base for extreme comfort.", "color": "Classic Red" },
+                { "name": "Acrylic Resin", "desc": "Fast and performing surface with 7 layers of integrated cushioning.", "color": "Blue / Light Blue / Green" },
+                { "name": "Synthetic Grass", "desc": "Low maintenance and playability all year round, with silica sand infill.", "color": "Green / Blue" }
+            ]
+        }
+    },
+    "pickleballPage": {
+        "title": "Pickleball Courts",
+        "subtitle": "The fastest-growing sport format in the world. Designed for pure action.",
+        "description": "Pickleball requires a surface that offers the right compromise between slide and grip, with perfect visibility of the layout. We install both indoor and outdoor courts optimally utilizing available spaces.\n\nOur multi-layer synthetic surfaces are designed to cushion impacts, reduce player fatigue, and ensure an accurate and constant ball bounce in every area of the court. The compact size of the court allows us to easily transform disused areas into highly profitable revenue centers for your club.",
+        "features": [
+            "Strictly regulation playing dimensions (13.41m x 6.10m) with corresponding run-off areas.",
+            "Multi-layer acrylic resin flooring systems with high acoustic absorption.",
+            "High-visibility line marking resistant to wear and UV rays.",
+            "Supply and installation of professional nets with integrated tensioning systems.",
+            "Space convertibility: systems to overlay the layout on existing courts."
+        ],
+        "materials": {
+            "title": "Materials",
+            "subtitle": "New standards for the new discipline.",
+            "items": [
+                { "name": "Net System", "desc": "Painted steel posts with professional ratchet tensioning system.", "icon": "anchor" },
+                { "name": "Finish", "desc": "High-resistance polyurethane paints against abrasion and ball strikes.", "icon": "palette" }
+            ]
+        },
+        "surfaces": {
+            "title": "Our Surfaces",
+            "subtitle": "Grip and bounce precision.",
+            "items": [
+                { "name": "Pro Cushion", "desc": "Multi-layer resin with 3 rubber layers to cushion every step.", "color": "Blue / Dark Blue" },
+                { "name": "Hard Court", "desc": "Rigid acrylic finish for a faster and more sensitive bounce.", "color": "Customizable" }
+            ]
+        }
+    },
+    "multisportPage": {
+        "title": "Multisport & Football Courts",
+        "subtitle": "One space, endless possibilities. Engineering for sports versatility.",
+        "description": "Optimizing space is crucial for schools, municipalities, and multi-purpose sports centers. We design and build multisport areas that allow playing 5-a-side football, basketball, volleyball, and tennis on the same surface, reducing management costs without compromising performance.\n\nWe select highly durable multi-purpose surfaces (resins or low-maintenance synthetic grass) resistant to intensive foot traffic and use with different footwear. By integrating convertible equipment and anti-climb fencing, we create safe arenas, vandal-resistant and ready for use 365 days a year.",
+        "features": [
+            "Multi-purpose surfaces certified for basketball, volleyball, 5-a-side football, and tennis.",
+            "Extremely durable synthetic grass with performance infill for 5/7/11-a-side Football courts.",
+            "Multi-color line marking systems for clear identification of each sport.",
+            "Accessory structures: integrated goals with hoops, adjustable nets, and benches.",
+            "Rigid panel fencing with very high perimeter resistance and ball stop nets."
+        ],
+        "materials": {
+            "title": "Materials",
+            "subtitle": "Versatility and top resistance.",
+            "items": [
+                { "name": "Fencing", "desc": "4.00m h anti-vandalism rigid modules with anti-corrosion treatment.", "icon": "layout" },
+                { "name": "Equipment", "desc": "Integrated goal/hoop systems in galvanized steel with plexiglass backboards.", "icon": "target" }
+            ]
+        },
+        "surfaces": {
+            "title": "Our Surfaces",
+            "subtitle": "Designed for intensive use.",
+            "items": [
+                { "name": "Multi-Turf", "desc": "22mm synthetic grass specific for 5-a-side football and amateur tennis.", "color": "Green / Red" },
+                { "name": "Polyurethane", "desc": "Seamless elastic surface for basketball and school activities.", "color": "Orange / Blue" }
+            ]
+        }
+    },
+    "coperturePage": {
+        "title": "Sports Covers",
+        "subtitle": "Total shielding, perfect light. Maximize your facility's yield.",
+        "description": "A professional sports cover transforms a seasonal court into a continuous income structure 365 days a year, regardless of weather conditions. We design and install fixed and air-dome covers with a contemporary design and high energy efficiency.\n\nOur premium tensile structures are made with double-coated PVC membranes, specifically treated for thermal insulation and to mitigate the condensation effect. Thanks to custom design, we guarantee optimal playing heights for WPT, ITF, and FITP standards, combining extreme functionality and architectural aesthetics.",
+        "features": [
+            "Single or double membrane air-dome covers for maximum insulation.",
+            "Arch tensile structures in steel or glulam with high aesthetic value.",
+            "Translucent fabrics that allow natural daylighting reducing energy costs.",
+            "Lateral sliding opening systems for ventilation during the summer season.",
+            "Flush integration of LED lighting to eliminate shadow zones."
+        ],
+        "materials": {
+            "title": "Materials",
+            "subtitle": "Covers technology.",
+            "items": [
+                { "name": "Laminated Wood", "desc": "Certified Abete GL24 arches, natural beauty and structural stability.", "icon": "tree" },
+                { "name": "PVC Membrane", "desc": "900g/sqm double-coated polyester fabric, flame retardant and anti-UV.", "icon": "layers" },
+                { "name": "Steel", "desc": "Hot-dip galvanized calendered beams for free spans up to 40 meters.", "icon": "component" }
+            ]
+        },
+        "surfaces": {
+            "title": "Flooring",
+            "subtitle": "The foundations for a perfect cover.",
+            "items": [
+                { "name": "Screed", "desc": "Reinforced concrete with quartz finish or draining asphalt.", "color": "Gray / Black" }
+            ]
+        }
+    },
+    "companyPage": {
+        "hero": {
+            "title": "Building Spaces of Sporting Excellence",
+            "subtitle": "Innovation, engineering, and design for premium sports facilities."
+        },
+        "about": {
+            "title": "About Us",
+            "content": "PlayInnovation Group is a leading company in the design and construction of high-end sports facilities. With years of experience in the sector, we fuse the most advanced engineering techniques with a modern and functional aesthetic. Our goal is to elevate the playing experience through durable, safe, and visually striking infrastructures. We work closely with clubs, investors, and public administrations to turn every vision into reality."
+        },
+        "values": {
+            "title": "Our Values",
+            "items": [
+                {
+                    "title": "Premium Quality",
+                    "desc": "We select only the best materials to ensure durability and top-level performance over time."
+                },
+                {
+                    "title": "Innovation",
+                    "desc": "We are constantly looking for new technological and construction solutions to exceed current standards."
+                },
+                {
+                    "title": "Reliability",
+                    "desc": "A team of dedicated professionals follows every project from the initial consultation phase to the turnkey delivery."
+                }
+            ]
+        }
+    }
+}

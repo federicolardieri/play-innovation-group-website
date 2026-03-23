@@ -1,0 +1,447 @@
+{
+    "navbar": {
+        "home": "Startseite",
+        "products": "Produkte",
+        "solutions": "Lösungen",
+        "company": "Unternehmen",
+        "cta": "Angebot anfordern"
+    },
+    "hero": {
+        "label": "Premium Sport Infrastructure",
+        "headline": "Wir bauen Sporträume, die",
+        "headlineAccent": "das Spiel aufwerten.",
+        "subheadline": "Wo Ingenieurwesen, moderne Architektur und Vision Gestalt annehmen. Wir realisieren Anlagen und Abdeckungen, die auf Langlebigkeit und maximale Leistung ausgelegt sind.",
+        "ctaPrimary": "Angebot anfordern",
+        "ctaSecondary": "Produkte entdecken",
+        "metrics": {
+            "expertise": {
+                "label": "Expertise",
+                "value": "Padel- & Tennisplätze"
+            },
+            "structures": {
+                "label": "Strukturen",
+                "value": "Sportabdeckungen"
+            },
+            "service": {
+                "label": "Service",
+                "value": "Schlüsselfertige Realisierung"
+            },
+            "facilities": {
+                "label": "Anlagen",
+                "value": "Individuelle Lösungen"
+            }
+        }
+    },
+    "padelModels": {
+        "title": "Unsere Padelplätze",
+        "subtitle": "Lösungen, die überzeugen. Entdecken Sie unsere Modelle für jeden Bedarf.",
+        "compare": "Modelle vergleichen",
+        "compareTitle": "Modelle vergleichen",
+        "compareSubtitle": "Entdecken Sie die technischen Unterschiede und wählen Sie den perfekten Platz für Sie.",
+        "requestQuote": "Angebot für dieses Modell anfordern",
+        "choose": "Wählen",
+        "specs": "SPEZIFIKATIONEN",
+        "specLabels": {
+            "structure": "STRUKTUR",
+            "bolts": "VERSCHRAUBUNG",
+            "lighting": "BELEUCHTUNG",
+            "priceRange": "PREISKLASSE",
+            "glass": "GLAS"
+        },
+        "models": [
+            {
+                "name": "EXTRA SOLID",
+                "subtitle": "WO DAS SPIEL ZUR LEGENDE WIRD: DER ULTIMATIVE PADELPLATZ!",
+                "paragraphs": [
+                    "Unser Platz kombiniert ein Einstiegsdesign mit High-End-Eigenschaften.",
+                    "Die Struktur besteht aus einem elektrogeschweißten Maschenzaun, verstärkt durch selbsttragende Pfeiler mit verstärkten Rohren (80x40 mm) und zusätzlichen Verstärkungen gleicher Stärke.",
+                    "Alle Metallkomponenten sind feuerverzinkt oder ofenlackiert in der vom Kunden gewählten Farbe, während Edelstahl-Befestigungsmaterial Widerstandsfähigkeit und Langlebigkeit garantiert.",
+                    "Gehärtete Glasplatten, erhältlich in 10 oder 12 mm Stärke, verfügen über sorgfältig bearbeitete und abgeschrägte Kanten für eine elegante Optik und erhöhte Sicherheit."
+                ],
+                "specs": {
+                    "structure": "Feuerverzinkter Kohlenstoffstahl, ofenlackiert.",
+                    "bolts": "Schrauben, Zuganker und Muttern aus Edelstahl 304 (A2).",
+                    "lighting": "4 LED-Fluter 200W/240W.",
+                    "priceRange": "Entry",
+                    "glass": "Zertifiziertes gehärtetes Glas 10 mm."
+                }
+            },
+            {
+                "name": "PANORAMISCH",
+                "subtitle": "BREITE GLASFLÄCHEN UND HOCHWERTIGE MATERIALIEN, SETZEN SIE IHRE KUNDEN INS RAMPENLICHT",
+                "paragraphs": [
+                    "Der Padelplatz, der das Spiel neu definiert.",
+                    "Eleganz, Innovation und Solidität treffen in einem beispiellosen Padelplatz aufeinander. Dank einer Struktur mit wenigen Eisenpfeilern bietet er ungehinderte Sicht und ein minimalistisches Design, das das Spielerlebnis verbessert.",
+                    "Die breiten Glasflächen verwandeln den Platz in ein wahres Spektakel und schaffen ein Gefühl von Offenheit und Freiheit, wie man es nie zuvor erlebt hat.",
+                    "🔥 Mehr als ein Platz, eine Ikone! Sind Sie bereit, Padel wie nie zuvor zu spielen?"
+                ],
+                "specs": {
+                    "structure": "Selbsttragende Struktur aus Baustahl.",
+                    "bolts": "Hochfester Edelstahl 304.",
+                    "lighting": "8 asymmetrische LED-Fluter 200W.",
+                    "priceRange": "Mittel / Hoch",
+                    "glass": "Zertifiziertes laminiertes gehärtetes Glas 12 mm."
+                }
+            },
+            {
+                "name": "SUPER PANORAMISCH",
+                "subtitle": "DAS SPITZENMODELL FÜR ELEGANZ UND LEISTUNG",
+                "paragraphs": [
+                    "Entdecken Sie den Gipfel der Innovation und des Designs mit unserem Spitzenmodell.",
+                    "Konzipiert für ein beispielloses Spielerlebnis. Dank ungehinderter breiter Glasflächen bietet dieser Platz kristallklare Spielsicht.",
+                    "Keine Pfeiler versperren die Sicht.",
+                    "Maximale Widerstandsfähigkeit, Eleganz und Leistung: moderne Architektur, die sowohl Spiel als auch Ästhetik verbessert.",
+                    "Perfekt für Clubs, Turniere und exklusive Locations."
+                ],
+                "specs": {
+                    "structure": "Tragendes Glas mit minimalen Stahlverstärkungen.",
+                    "bolts": "Hochfester Edelstahl A4.",
+                    "lighting": "8 hocheffiziente LED-Fluter 200W.",
+                    "priceRange": "Top",
+                    "glass": "Strukturelles gehärtetes Glas hoher Stärke."
+                }
+            },
+            {
+                "name": "NATUR HYBRID",
+                "subtitle": "SOLIDE WIE STAHL, NATÜRLICH WIE HOLZ",
+                "paragraphs": [
+                    "Die Basis besteht aus vorverzinktem Stahl, ofenlackiert in der vom Kunden gewählten Farbe, kombiniert mit behandeltem Schichtholz.",
+                    "Ein einzigartiger Materialmix für ein authentisches Spielerlebnis.",
+                    "Raffinesse und Solidität in einer einzigen Struktur mit elegantem und innovativem Design.",
+                    "Die perfekte Verschmelzung von Robustheit und Stil: die Stärke des Stahls und die Noblesse des Holzes."
+                ],
+                "specs": {
+                    "structure": "Verzinkter Stahl und strukturelles Schichtholz.",
+                    "bolts": "Verdeckter Edelstahl 304.",
+                    "lighting": "4/8 integrierte asymmetrische LED-Fluter.",
+                    "priceRange": "Premium",
+                    "glass": "Zertifiziertes gehärtetes Glas 10/12 mm."
+                }
+            }
+        ]
+    },
+    "products": {
+        "label": "Product Universe",
+        "title": "Technische Lösungen für den Sport.",
+        "subtitle": "Wir bauen keine einfachen Plätze, sondern fortschrittliche Sport-Ökosysteme. Jede unserer Realisierungen ist das Ergebnis von Materialforschung und Felderfahrung.",
+        "cta": "Informationen anfordern",
+        "items": [
+            {
+                "title": "Padelplätze",
+                "desc": "Panorama- und Super-Panorama-Strukturen für maximale Sichtbarkeit und hervorragende Leistung mit gehärtetem Glas und Rasen der neuesten Generation.",
+                "features": [
+                    "Feuerverzinkte Stahlkonstruktionen oder ofenlackiert.",
+                    "Verbund-Sicherheitsglas von 10 oder 12 mm mit polierten Kanten.",
+                    "Asymmetrische LED-Beleuchtungssysteme für Blendfreiheit.",
+                    "Texturierter Kunstrasen der neuesten Generation, WPT-zugelassen.",
+                    "Verdeckte Edelstahl-Beschläge für maximale Sicherheit der Spieler."
+                ],
+                "materials": {
+                    "title": "Materialien",
+                    "subtitle": "Präzisionsarbeit für jede Komponente.",
+                    "items": [
+                        { "name": "Struktur", "desc": "Fe360B-Stahl mit Stärken bis zu 3 mm, feuerverzinkt.", "icon": "hard-hat" },
+                        { "name": "Glas", "desc": "12 mm Sicherheits-Einscheibenglas, zertifiziert und geprüft.", "icon": "shield" },
+                        { "name": "Beleuchtung", "desc": "8 asymmetrische 200W LED-Fluter, optimiert für gleichmäßiges Licht.", "icon": "zap" }
+                    ]
+                },
+                "surfaces": {
+                    "title": "Unsere Beläge",
+                    "subtitle": "Oberflächen für maximalen Grip und Leistung.",
+                    "items": [
+                        { "name": "Texturierter Rasen", "desc": "Das Beste für das professionelle Spiel: schont die Gelenke und sorgt für konstante Sprünge.", "color": "Blau / Grün / Rot" },
+                        { "name": "Faserrasen", "desc": "Hervorragende Haltbarkeit und einfache Wartung, ideal für hochfrequentierte Clubs.", "color": "Blau / Grün" }
+                    ]
+                }
+            },
+            {
+                "title": "Tennisplätze",
+                "desc": "Bau von Sandplätzen, Kunstharz- oder Kunstrasenplätzen, ideal für internationale Turniere oder Premium-Sportclubs.",
+                "features": [
+                    "Neubau inklusive Erdarbeiten, Estrichens e zertifizierten Entwässerungssystemen.",
+                    "Rote Sand-, Kunstharz- oder Kunstrasen-Oberflächen mit ITF-Zulassung.",
+                    "Absprungtests während der Abnahme nach internationalen Vorschriften.",
+                    "LED-Beleuchtungsanlagen mit lichttechnischen Spezifikationen für TV-Übertragungen.",
+                    "Perimeterumzäunungen und hochfeste Windschutzsysteme."
+                ],
+                "materials": {
+                    "title": "Materialien",
+                    "subtitle": "Solidität und Baupräzision.",
+                    "items": [
+                        { "name": "Umzäunung", "desc": "Hochspannungsgitter mit Polymerbeschichtung, korrosionsbeständig.", "icon": "box" },
+                        { "name": "Beleuchtung", "desc": "Lichtmasten mit 400W LED-Projektoren für internationale Spielstandards.", "icon": "sun" },
+                        { "name": "Entwässerung", "desc": "Wabensysteme und Drainagerohre für sofortige Bespielbarkeit nach Regen.", "icon": "droplets" }
+                    ]
+                },
+                "surfaces": {
+                    "title": "Unsere Beläge",
+                    "subtitle": "Die perfekte Oberfläche für Ihren Spielstil.",
+                    "items": [
+                        { "name": "Roter Sand", "desc": "Traditioneller Charme mit Unterbau aus vulkanischem Material für extremen Komfort.", "color": "Klassisch Rot" },
+                        { "name": "Acrylharz", "desc": "Schnelle Hochleistungsoberfläche mit 7 Lagen integrierter Dämpfung.", "color": "Blau / Hellblau / Grün" },
+                        { "name": "Kunstrasen", "desc": "Wartungsarm und ganzjährig bespielbar, mit Quarzsandverfüllung.", "color": "Grün / Blau" }
+                    ]
+                }
+            },
+            {
+                "title": "Pickleballplätze",
+                "desc": "Das am schnellsten wachsende Sportformat der Welt. Wir gestalten spezielle Indoor- und Outdoor-Bereiche mit hochbeständigen Oberflächen.",
+                "features": [
+                    "Strikt reglementierte Spielabmessungen (13,41 m x 6,10 m) with the corresponding zones of run-off areas.",
+                    "Mehrschichtige Acrylharz-Bodensysteme mit hoher Schallabsorption.",
+                    "Hochsichtbare Linienmarkierung, verschleißfest und UV-beständig.",
+                    "Lieferung und Montage von Profi-Netzen mit integrierten Spannsystemen.",
+                    "Flächenumwandlung: Systeme zur Überlagerung des Layouts auf bestehende Plätze."
+                ],
+                "materials": {
+                    "title": "Materialien",
+                    "subtitle": "Neue Standards für die neue Disziplin.",
+                    "items": [
+                        { "name": "Netzsystem", "desc": "Lackierte Stahlpfosten mit professionellem Ratschenspannsystem.", "icon": "anchor" },
+                        { "name": "Finish", "desc": "Hochbeständige Polyurethan-Lacke gegen Abrieb und Ballschläge.", "icon": "palette" }
+                    ]
+                },
+                "surfaces": {
+                    "title": "Unsere Beläge",
+                    "subtitle": "Grip und Absprungpräzision.",
+                    "items": [
+                        { "name": "Pro Cushion", "desc": "Mehrschichtharz mit 3 Gummischichten zur Dämpfung jedes Schritts.", "color": "Blau / Dunkelblau" },
+                        { "name": "Hard Court", "desc": "Rigides Acryl-Finish für einen schnelleren und sensibleren Absprung.", "color": "Individuell" }
+                    ]
+                }
+            },
+            {
+                "title": "Multisportplätze",
+                "desc": "Vielseitige Infrastrukturen für Hallenfußball, Basketball, Volleyball und Tennis. Die perfekte Lösung für Schulen und Gemeinden.",
+                "features": [
+                    "Polyurethan-Böden",
+                    "Integrierte Umzäunung",
+                    "Maximale Stoßdämpfung"
+                ]
+            },
+            {
+                "title": "Sportabdeckungen",
+                "desc": "Von Traglufthallen bis zu Spannkonstruktionen aus Brettschichtholz oder Stahl für jeden Padel- oder Tennisplatz. Wir garantieren 365 Tage Bespielbarkeit mit maximaler Energieeffizienz.",
+                "features": [
+                    "Einzel- oder Doppelmembran-Traglufthallen für maximale Isolierung.",
+                    "Bogenspannkonstruktionen aus Stahl oder Brettschichtholz mit hohem ästhetischem Wert.",
+                    "Lichtdurchlässige Gewebe, die natürliches Tageslicht ermöglichen und Energiekosten senken.",
+                    "Seitliche Schiebeöffnungssysteme zur Belüftung während der Sommersaison.",
+                    "Bündige Integration der LED-Beleuchtung zur Vermeidung von Schattenzonen."
+                ],
+                "materials": {
+                    "title": "Materialien",
+                    "subtitle": "Technologie der Abdeckungen.",
+                    "items": [
+                        { "name": "Leimholz", "desc": "Zertifizierte Bögen aus Fichte GL24, natürliche Schönheit und strukturelle Stabilität.", "icon": "tree" },
+                        { "name": "PVC-Membran", "desc": "900g/m² polyestergewebe mit Doppelbeschichtung, flammhemmend und UV-beständig.", "icon": "layers" },
+                        { "name": "Stahl", "desc": "Warmgewalzte, feuerverzinkte Stahlträger für freie Spannweiten bis zu 40 Metern.", "icon": "component" }
+                    ]
+                },
+                "surfaces": {
+                    "title": "Bodenbelag",
+                    "subtitle": "Die Grundlagen für eine perfekte Abdeckung.",
+                    "items": [
+                        { "name": "Estrich", "desc": "Stahlbeton mit Quarzfinish oder Drainageasphalt.", "color": "Grau / Schwarz" }
+                    ]
+                }
+            }
+        ]
+    },
+    "why": {
+        "label": "Warum PlayInnovation",
+        "title": "Die Technik hinter dem Sport.",
+        "subtitle": "Sich für PlayInnovation Group zu entscheiden bedeutet, auf einen technischen und strategischen Partner zu setzen, der eine Vision in eine erstklassige Anlage verwandelt.",
+        "features": [
+            {
+                "title": "Bauqualität",
+                "desc": "Zertifizierte Materialien und ingenieurtechnisch konzipierte Strukturen für Langlebigkeit und höchste Sicherheitsstandards."
+            },
+            {
+                "title": "Maßgeschneidertes Design",
+                "desc": "Wir passen jede Anlage an den spezifischen Kontext an, von den Abmessungen bis zur individuellen Beleuchtungsplanung."
+            },
+            {
+                "title": "Betriebliche Zuverlässigkeit",
+                "desc": "Spezialisierte Teams, schnelle Montage und schlüsselfertige Baustellenverwaltung mit einem einzigen Ansprechpartner."
+            },
+            {
+                "title": "Vision & Support",
+                "desc": "Nicht nur Bauunternehmer: Wir unterstützen Investoren und Clubs bei der Optimierung der kommerziellen Rendite der Anlage."
+            }
+        ]
+    },
+    "gallery": {
+        "label": "Immersive Showcase",
+        "title": "Entdecken Sie die Details.",
+        "subtitle": "Scrollen Sie, um die Bauqualität zu sehen."
+    },
+    "categorizedGallery": {
+        "label": "Portfolio",
+        "title": "Unsere Projekte.",
+        "subtitle": "Entdecken Sie unsere realisierten Projekte: jede Installation ist ein einzigartiges Projekt, bis ins Detail gepflegt.",
+        "categories": [
+            "Alle",
+            "Padel",
+            "Tennis",
+            "Pickleball",
+            "Überdachungen",
+            "Multisport"
+        ],
+        "photosLabel": "Fotos",
+        "projects": [
+            {
+                "title": "Padel Indoor",
+                "description": "Spannabdeckung für Padelplätze mit integrierter Beleuchtung und maximaler Energieeffizienz."
+            },
+            {
+                "title": "Tennis Indoor",
+                "description": "Brettschichtholz-Struktur für Tennisplätze mit hocheffizienter Beleuchtung und Wärmedämmung."
+            },
+            {
+                "title": "Padel-Modelle",
+                "description": "Unsere 4 Padelplatz-Modelle in hochauflösendem 3D-Rendering: Extra Solid, Panoramisch, Super Panoramisch und Natur Hybrid."
+            },
+            {
+                "title": "Multisport",
+                "description": "Vielseitige Infrastrukturen für Schulen und Gemeinden, mit zertifizierten Bodenbelägen und maximaler Stoßfestigkeit."
+            },
+            {
+                "title": "Abdeckungen",
+                "description": "Zukunftsweisende Strukturen für den Schutz von Sportanlagen, die eine Bespielbarkeit an 365 Tagen im Jahr garantieren."
+            },
+            {
+                "title": "Super Panoramisch",
+                "description": "Die Spitze von Design und Sichtbarkeit: eine Konstruktion ohne Eckpfosten für ein beispielloses Spiel- und Seherlebnis."
+            },
+            {
+                "title": "Tennis Outdoor",
+                "description": "Professionelle Tennisplätze im Freien, hergestellt mit ITF-zertifizierten Entwässerungsflächen und LED-Beleuchtungssystemen für das Nachtspiel."
+            },
+            {
+                "title": "Panoramisch",
+                "description": "Ein moderner Klassiker von PlayInnovation: totale Sicht auf drei Seiten für die perfekte Integration in jeden sportlichen Kontext."
+            },
+            {
+                "title": "Pickleball Pro",
+                "description": "Regelkonformer Pickleballplatz mit mehrlagiger Acryloberfläche und spezieller Beleuchtung."
+            }
+        ]
+    },
+    "process": {
+        "label": "Unsere Methode",
+        "title": "Von der Vision zum Platz.",
+        "subtitle": "Ein technisch durchdachter 4-Phasen-Prozess, um Ihre Idee in eine erstklassige Sportanlage zu verwandeln.",
+        "steps": [
+            {
+                "num": "01",
+                "title": "Analyse & Beratung",
+                "desc": "Machbarkeitsstudie, Standort- oder Bestandsanalyse und Definition der technisch-kommerziellen Ziele gemeinsam mit dem Kunden."
+            },
+            {
+                "num": "02",
+                "title": "Technischer Vorschlag",
+                "desc": "Ausarbeitung des Ingenieurprojekts, vom Layout bis zum Strukturmodell, einschließlich Materialien, Abdeckungen und Budgetierung."
+            },
+            {
+                "num": "03",
+                "title": "Installation",
+                "desc": "Wir arbeiten mit spezialisierten Teams und garantieren millimetergenaue Präzision. Schnelle Zeitpläne und schlüsselfertige Baustellenverwaltung."
+            },
+            {
+                "num": "04",
+                "title": "Abnahme & Support",
+                "desc": "Überprüfung der Bespielbarkeits- und Sicherheitsstandards. Übergabe der fertigen Anlage mit After-Sales-Support und Wartung."
+            }
+        ]
+    },
+    "applications": {
+        "label": "Einsatzgebiete",
+        "title": "Gebaut für Ihre Realität.",
+        "subtitle": "Jedes Projekt hat spezifische Anforderungen. Wir passen unsere erstklassigen Baustandards an Ihr Geschäftsmodell und Ihren Kontext an.",
+        "items": [
+            {
+                "title": "Sportclubs",
+                "desc": "Schlüsselfertige Systeme zur Maximierung der Rentabilität und für Premium-Erlebnisse für Mitglieder."
+            },
+            {
+                "title": "Resorts & Hospitality",
+                "desc": "Panoramaplätze und architektonische Integration zur Wertsteigerung der Hotelanlage."
+            },
+            {
+                "title": "Öffentliche Einrichtungen",
+                "desc": "Planung und Sanierung kommunaler Sportzentren, Schulen und öffentlicher Parks."
+            },
+            {
+                "title": "Private Investoren",
+                "desc": "Umfassende Beratung von der Businessplan-Analyse bis zur endgültigen Anlagenübergabe."
+            }
+        ]
+    },
+    "quote": {
+        "label": "Angebotsanfrage",
+        "title": "Vom Projekt",
+        "titleAccent": "zur Realität.",
+        "subtitle": "Erzählen Sie uns von Ihrer Idee. Unser Team aus Ingenieuren und Planern ist bereit, Ihnen eine detaillierte Analyse und ein maßgeschneidertes Angebot für Ihre neue Sportanlage zu erstellen.",
+        "benefits": [
+            "Persönliche technische Beratung innerhalb von 48 Stunden",
+            "Machbarkeitsanalyse für Strukturen und Abdeckungen",
+            "Auf Budget und Clubtyp abgestimmte Vorschläge"
+        ],
+        "form": {
+            "name": "Vollständiger Name",
+            "namePlaceholder": "Ihr Name",
+            "company": "Unternehmen / Club",
+            "companyPlaceholder": "Firmenname",
+            "email": "E-Mail",
+            "emailPlaceholder": "email@firma.com",
+            "phone": "Telefon",
+            "phonePlaceholder": "+49 ...",
+            "interest": "Hauptinteresse",
+            "interests": [
+                "Padelplätze",
+                "Tennisplätze",
+                "Pickleballplätze",
+                "Multisportplätze",
+                "Sportabdeckungen",
+                "Gesamtplanung / Sonstiges"
+            ],
+            "details": "Projektdetails",
+            "detailsPlaceholder": "Erzählen Sie uns von Ihren Bedürfnissen...",
+            "submit": "Angebot anfordern",
+            "privacy": "Durch das Absenden des Formulars akzeptieren Sie unsere Datenschutzrichtlinie.",
+            "successTitle": "Anfrage gesendet!",
+            "successMessage": "Unser Team wird Sie in Kürze kontaktieren."
+        }
+    },
+    "finalCta": {
+        "headline": "Lassen Sie uns eine Sportanlage bauen, die Ihrer Vision gerecht wird.",
+        "subheadline": "Geben wir Ihrer nächsten Premium-Anlage Form. Sprechen wir über das richtige Projekt für Ihren Raum.",
+        "cta": "Jetzt Angebot anfordern"
+    },
+    "footer": {
+        "tagline": "Play Innovation Group, un marchio di Edilpadel S.R.L, Via Michele Amari 39, cap 00179, Roma (RM), REA(RM-1635979)",
+        "systemReady": "System Ready",
+        "consultingAvailable": "Beratung verfügbar",
+        "productsTitle": "Produkte",
+        "productLinks": [
+            "Padelplätze",
+            "Tennisplätze",
+            "Pickleballplätze",
+            "Multisportanlagen",
+            "Sportabdeckungen"
+        ],
+        "companyTitle": "Unternehmen",
+        "companyLinks": [
+            "Über uns",
+            "Unsere Methode",
+            "Projekte",
+            "Kontaktieren Sie uns"
+        ],
+        "contactsTitle": "Kontakt",
+        "requestQuote": "Angebot anfordern",
+        "rights": "Alle Rechte vorbehalten.",
+        "privacy": "Datenschutz",
+        "cookie": "Cookie-Richtlinie"
+    }
+}

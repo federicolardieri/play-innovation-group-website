@@ -1,0 +1,428 @@
+{
+    "navbar": {
+        "home": "Accueil",
+        "products": "Produits",
+        "solutions": "Solutions",
+        "company": "Entreprise",
+        "cta": "Demander un devis"
+    },
+    "hero": {
+        "label": "Premium Sport Infrastructure",
+        "headline": "Nous construisons des espaces sportifs qui",
+        "headlineAccent": "valorisent le jeu.",
+        "subheadline": "Là où l'ingénierie, l'architecture moderne et la vision prennent forme. Nous réalisons des installations et des couvertures conçues pour durer et maximiser les performances.",
+        "ctaPrimary": "Demander un devis",
+        "ctaSecondary": "Découvrir les produits",
+        "metrics": {
+            "expertise": {
+                "label": "Expertise",
+                "value": "Terrains de Padel & Tennis"
+            },
+            "structures": {
+                "label": "Structures",
+                "value": "Couvertures sportives"
+            },
+            "service": {
+                "label": "Service",
+                "value": "Réalisation clé en main"
+            },
+            "facilities": {
+                "label": "Installations",
+                "value": "Solutions sur mesure"
+            }
+        }
+    },
+    "padelModels": {
+        "title": "Nos Terrains de Padel",
+        "subtitle": "Des solutions conçues pour exceller. Explorez nos modèles conçus pour chaque besoin.",
+        "compare": "Comparer les modèles",
+        "compareTitle": "Comparer les modèles",
+        "compareSubtitle": "Découvrez les différences techniques et choisissez le terrain parfait pour vous.",
+        "requestQuote": "Demander un devis pour ce modèle",
+        "gallery": "Galerie Photos",
+        "choose": "Choisir",
+        "specs": "SPÉCIFICATIONS",
+        "specLabels": {
+            "structure": "STRUCTURE",
+            "bolts": "BOULONNERIE",
+            "lighting": "ÉCLAIRAGE",
+            "priceRange": "GAMME DE PRIX",
+            "glass": "VITRAGE"
+        },
+        "models": [
+            {
+                "name": "EXTRA SOLID",
+                "subtitle": "LÀ OÙ LE JEU DEVIENT LÉGENDE : LE TERRAIN DE PADEL ULTIME !",
+                "paragraphs": [
+                    "Notre terrain combine un design d'entrée de gamme avec des caractéristiques haut de gamme.",
+                    "La structure est réalisée avec une clôture en mailles électrosoudées, enrichie de piliers autoportants avec des tubes renforcés (80x40 mm) et des renforts supplémentaires de même épaisseur.",
+                    "Tous les composants métalliques sont galvanisés à chaud ou peints au four dans la couleur choisie par le client, tandis que la visserie en acier inoxydable garantit résistance et durabilité.",
+                    "Les panneaux en verre trempé, disponibles en épaisseurs de 10 ou 12 mm, présentent des bords soigneusement finis et chanfreinés pour un aspect élégant et une sécurité accrue."
+                ],
+                "specs": {
+                    "structure": "Acier au carbone galvanisé à chaud, peinture au four.",
+                    "bolts": "Boulons, tirants et écrous en acier inoxydable 304 (A2).",
+                    "lighting": "4 projecteurs LED 200W/240W.",
+                    "priceRange": "Entry",
+                    "glass": "Verre trempé certifié 10 mm."
+                }
+            },
+            {
+                "name": "PANORAMIQUE",
+                "subtitle": "LARGES VITRAGES ET MATÉRIAUX DE QUALITÉ, METTEZ VOS CLIENTS EN VALEUR",
+                "paragraphs": [
+                    "Le terrain de padel qui redéfinit le jeu.",
+                    "Élégance, innovation et solidité se rencontrent dans un terrain de padel sans précédent. Grâce à une structure avec peu de montants en fer, il offre une visibilité sans obstacle et un design minimaliste qui sublimé l'expérience de jeu.",
+                    "Les larges vitrages transforment le terrain en un véritable spectacle, créant une sensation d'ouverture et de liberté jamais vue auparavant.",
+                    "🔥 Plus qu'un terrain, une icône ! Êtes-vous prêt à jouer au padel comme jamais ?"
+                ],
+                "specs": {
+                    "structure": "Structure autoportante en acier structurel.",
+                    "bolts": "Acier inoxydable 304 haute résistance.",
+                    "lighting": "8 projecteurs LED asymétriques 200W.",
+                    "priceRange": "Moyen / Haut",
+                    "glass": "Verre trempé feuilleté certifié 12 mm."
+                }
+            },
+            {
+                "name": "SUPER PANORAMIQUE",
+                "subtitle": "LE HAUT DE GAMME POUR L'ÉLÉGANCE ET LA PERFORMANCE",
+                "paragraphs": [
+                    "Découvrez le summum de l'innovation et du design avec notre modèle haut de gamme.",
+                    "Conçu pour offrir une expérience de jeu sans précédent. Grâce aux larges vitrages sans obstacle, ce terrain offre une vision cristalline du jeu.",
+                    "Aucun montant n'obstrue la vue.",
+                    "Résistance maximale, élégance et performance : une architecture moderne qui sublimé le jeu et l'esthétique.",
+                    "Parfait pour les clubs, les tournois et les lieux exclusifs."
+                ],
+                "specs": {
+                    "structure": "Vitrages porteurs avec renforts minimaux en acier.",
+                    "bolts": "Acier inoxydable A4 haute résistance.",
+                    "lighting": "8 projecteurs LED haute efficacité 200W.",
+                    "priceRange": "Top",
+                    "glass": "Verre trempé structurel haute épaisseur."
+                }
+            },
+            {
+                "name": "NATUR HYBRIDE",
+                "subtitle": "SOLIDE COMME L'ACIER, NATUREL COMME LE BOIS",
+                "paragraphs": [
+                    "La base est réalisée en acier pré-galvanisé, peint au four dans la couleur choisie par le client, combiné avec du bois lamellé traité.",
+                    "Un mélange unique de matériaux pour une expérience de jeu authentique.",
+                    "Raffinement et solidité dans une structure unique au design élégant et innovant.",
+                    "La fusion parfaite entre robustesse et style : la force de l'acier et la noblesse du bois."
+                ],
+                "specs": {
+                    "structure": "Acier galvanisé et bois lamellé structurel.",
+                    "bolts": "Inox 304 encastré.",
+                    "lighting": "4/8 projecteurs LED asymétriques intégrés.",
+                    "priceRange": "Premium",
+                    "glass": "Verre trempé certifié 10/12 mm."
+                }
+            }
+        ]
+    },
+    "products": {
+        "label": "Product Universe",
+        "title": "Solutions d'ingénierie pour le sport.",
+        "subtitle": "Nous ne construisons pas de simples terrains, mais des écosystèmes sportifs avancés. Chacune de nos réalisations est le fruit de la recherche sur les matériaux et de l'expérience terrain.",
+        "cta": "Demander des informations",
+        "items": [
+            {
+                "title": "Terrains de Padel",
+                "desc": "Structures panoramiques et super panoramiques conçues pour maximiser la visibilité et garantir des performances excellentes avec du verre trempé et du gazon de dernière génération.",
+                "features": [
+                    "Structures en acier galvanisé à chaud ou peint au four.",
+                    "Verre trempé feuilleté de 10 ou 12 mm with bords polis.",
+                    "Systèmes d'éclairage LED asymétrique pour zéro éblouissement.",
+                    "Gazon synthétique texturé de dernière génération, homologué WPT.",
+                    "Visseries inox cachées pour une sécurité maximale des joueurs."
+                ],
+                "materials": {
+                    "title": "Matériaux",
+                    "subtitle": "Ingénierie de précision pour chaque composant.",
+                    "items": [
+                        { "name": "Structure", "desc": "Acier Fe360B avec épaisseurs jusqu'à 3mm, galvanisé à chaud.", "icon": "hard-hat" },
+                        { "name": "Verre", "desc": "Panneaux de verre trempé de sécurité de 12mm, certifiés et testés.", "icon": "shield" },
+                        { "name": "Éclairage", "desc": "8 projecteurs LED asymétriques de 200W, conçus pour une lumière uniforme.", "icon": "zap" }
+                    ]
+                },
+                "surfaces": {
+                    "title": "Nos Surfaces",
+                    "subtitle": "Surfaces conçues pour une adhérence et des performances maximales.",
+                    "items": [
+                        { "name": "Gazon Texturé", "desc": "Le top pour le jeu professionnel : réduit le stress articulaire et garantit des rebonds constants.", "color": "Bleu / Vert / Rouge" },
+                        { "name": "Gazon Fibré", "desc": "Excellente durabilité et facilité d'entretien, idéal pour les clubs à fort trafic.", "color": "Bleu / Vert" }
+                    ]
+                }
+            },
+            {
+                "title": "Terrains de Tennis",
+                "desc": "Réalisation de terrains en terre battue, résine synthétique ou gazon synthétique, idéaux pour les tournois internationaux ou les clubs sportifs premium.",
+                "features": [
+                    "Certification ITF",
+                    "Drainage avancé",
+                    "Surfaces personnalisables"
+                ]
+            },
+            {
+                "title": "Terrains de Pickleball",
+                "desc": "Le format sportif à la croissance la plus rapide au monde. Nous concevons des espaces indoor et outdoor dédiés avec des surfaces ultra-résistantes.",
+                "features": [
+                    "Dimensions de jeu strictement réglementaires (13,41m x 6,10m) with corresponding run-off areas.",
+                    "Systèmes de revêtement en résine acrylique multicouche à haute absorption acoustique.",
+                    "Tracé des lignes haute visibilité, résistant à l'usure et aux rayons UV.",
+                    "Fourniture et installation de filets professionnels avec systèmes de tension intégrés.",
+                    "Convertibilité des espaces : systèmes pour superposer le tracé sur des terrains existants."
+                ],
+                "materials": {
+                    "title": "Matériaux",
+                    "subtitle": "Nouveaux standards pour la nouvelle discipline.",
+                    "items": [
+                        { "name": "Système de Filet", "desc": "Poteaux en acier peint avec système de tension professionnel à cliquet.", "icon": "anchor" },
+                        { "name": "Finition", "desc": "Peintures polyuréthanes haute résistance à l'abrasion et aux frappes de balles.", "icon": "palette" }
+                    ]
+                },
+                "surfaces": {
+                    "title": "Nos Surfaces",
+                    "subtitle": "Grip et précision du rebond.",
+                    "items": [
+                        { "name": "Pro Cushion", "desc": "Résine multicouche avec 3 couches de caoutchouc pour amortir chaque pas.", "color": "Bleu / Bleu Foncé" },
+                        { "name": "Hard Court", "desc": "Finition acrylique rigide pour un rebond plus rapide et sensible.", "color": "Personnalisable" }
+                    ]
+                }
+            },
+            {
+                "title": "Terrains Multisports",
+                "desc": "Infrastructures polyvalentes pouvant accueillir le football à cinq, le basketball, le volleyball et le tennis. La solution parfaite pour les écoles et les municipalités.",
+                "features": [
+                    "Surfaces polyvalentes certifiées pour le basketball, le volleyball, le football à 5 et le tennis.",
+                    "Gazon synthétique à très haute durabilité avec remplissage haute performance pour terrains de Foot 5/7/11.",
+                    "Systèmes de tracé multicouleurs pour une identification claire de chaque sport.",
+                    "Structures accessoires : buts intégrés avec paniers, filets réglables et bancs.",
+                    "Clôtures en panneaux rigides à très haute résistance périmétrale et filets pare-ballons."
+                ],
+                "materials": {
+                    "title": "Matériaux",
+                    "subtitle": "Polyvalence et résistance maximale.",
+                    "items": [
+                        { "name": "Clôture", "desc": "Modules rigides anti-vandalisme de 4.00m h avec traitement anti-corrosion.", "icon": "layout" },
+                        { "name": "Équipement", "desc": "Systèmes but/panier intégrés en acier galvanisé avec panneaux en plexiglas.", "icon": "target" }
+                    ]
+                },
+                "surfaces": {
+                    "title": "Nos Surfaces",
+                    "subtitle": "Conçues pour un usage intensif.",
+                    "items": [
+                        { "name": "Multi-Turf", "desc": "Gazon synthétique de 22mm spécifique pour le foot à 5 et le tennis amateur.", "color": "Vert / Rouge" },
+                        { "name": "Polyuréthane", "desc": "Surface élastique sans joints pour le basket et les activités scolaires.", "color": "Orange / Bleu" }
+                    ]
+                }
+            },
+            {
+                "title": "Couvertures Sportives",
+                "desc": "Des structures pressurisées aux structures tensiles en bois lamellé ou en acier pour tout type de terrain de Padel ou de Tennis. Nous garantissons la jouabilité 365 jours par an avec une efficacité énergétique maximale.",
+                "features": [
+                    "Bois lamellé ou acier",
+                    "Membranes double couche",
+                    "Isolation thermique"
+                ]
+            }
+        ]
+    },
+    "why": {
+        "label": "Pourquoi PlayInnovation",
+        "title": "L'ingénierie derrière le sport.",
+        "subtitle": "Choisir PlayInnovation Group, c'est s'appuyer sur un partenaire technique et stratégique capable de transformer une vision en une installation d'excellence.",
+        "features": [
+            {
+                "title": "Qualité de Construction",
+                "desc": "Matériaux certifiés et structures conçues pour durer, garantissant les plus hauts standards de sécurité."
+            },
+            {
+                "title": "Conception sur Mesure",
+                "desc": "Nous adaptons chaque installation au contexte spécifique, des dimensions à l'étude d'éclairage personnalisée."
+            },
+            {
+                "title": "Fiabilité Opérationnelle",
+                "desc": "Équipes spécialisées, montages rapides et gestion de chantier clé en main avec un interlocuteur unique."
+            },
+            {
+                "title": "Vision & Support",
+                "desc": "Pas seulement constructeurs : nous accompagnons investisseurs et clubs pour optimiser le retour commercial de l'installation."
+            }
+        ]
+    },
+    "gallery": {
+        "label": "Showcase Immersif",
+        "title": "Explorez les Détails.",
+        "subtitle": "Faites défiler pour voir la qualité de construction."
+    },
+    "categorizedGallery": {
+        "label": "Portfolio",
+        "title": "Nos Projets.",
+        "subtitle": "Découvrez nos projets réalisés : chaque installation est un projet unique, soigné dans les moindres détails.",
+        "categories": [
+            "Tous",
+            "Padel",
+            "Tennis",
+            "Pickleball",
+            "Couvertures",
+            "Multisport"
+        ],
+        "photosLabel": "photos",
+        "projects": [
+            {
+                "title": "Padel Indoor",
+                "description": "Couverture en structure tensile pour terrains de padel avec éclairage intégré et efficacité énergétique maximale."
+            },
+            {
+                "title": "Tennis Indoor",
+                "description": "Structure en bois lamellé pour terrains de tennis avec système d'éclairage haute efficacité et isolation thermique."
+            },
+            {
+                "title": "Modèles Padel",
+                "description": "Nos 4 modèles de terrains de padel en rendu 3D haute définition : Extra Solid, Panoramique, Super Panoramique et Natur Hybride."
+            },
+            {
+                "title": "Multisport",
+                "description": "Infrastructures polyvalentes pour les écoles et les municipalités, avec revêtements certifiés et résistance maximale aux impacts."
+            },
+            {
+                "title": "Couvertures",
+                "description": "Structures d'avant-garde pour la protection des installations sportives, garantissant la jouabilité 365 jours par an."
+            },
+            {
+                "title": "Super Panoramique",
+                "description": "Le summum du design et de la visibilité : une structure sans poteaux d'angle pour une expérience de jeu et de vision sans précédent."
+            },
+            {
+                "title": "Tennis Outdoor",
+                "description": "Terrains de tennis professionnels à l'extérieur, réalisés avec des surfaces drainantes certifiées ITF et des systèmes d'éclairage LED pour le jeu nocturne."
+            },
+            {
+                "title": "Panoramique",
+                "description": "Un classique moderne de PlayInnovation : visibilité totale sur trois côtés pour une intégration parfaite dans chaque contexte sportif."
+            },
+            {
+                "title": "Pickleball Pro",
+                "description": "Terrain de pickleball réglementaire avec surface acrylique multicouche et éclairage dédié."
+            }
+        ]
+    },
+    "process": {
+        "label": "Notre Méthode",
+        "title": "De la vision au terrain.",
+        "subtitle": "Un processus d'ingénierie en 4 phases pour transformer votre idée en une installation sportive d'excellence.",
+        "steps": [
+            {
+                "num": "01",
+                "title": "Analyse & Conseil",
+                "desc": "Étude de faisabilité, analyse du site ou de la structure existante et définition des objectifs technico-commerciaux avec le client."
+            },
+            {
+                "num": "02",
+                "title": "Proposition Technique",
+                "desc": "Élaboration du projet d'ingénierie, du plan au modèle structurel, y compris les matériaux, les couvertures et le chiffrage."
+            },
+            {
+                "num": "03",
+                "title": "Installation",
+                "desc": "Nous opérons avec des équipes spécialisées garantissant une précision millimétrique. Délais rapides et gestion de chantier clé en main."
+            },
+            {
+                "num": "04",
+                "title": "Réception & Support",
+                "desc": "Vérification des standards de jouabilité et de sécurité. Livraison de l'installation finie avec support après-vente et maintenance."
+            }
+        ]
+    },
+    "applications": {
+        "label": "Domaines d'application",
+        "title": "Construit pour votre réalité.",
+        "subtitle": "Chaque projet a des besoins spécifiques. Nous adaptons nos standards de construction d'excellence à votre modèle économique et à votre contexte.",
+        "items": [
+            {
+                "title": "Clubs Sportifs",
+                "desc": "Systèmes clé en main pour maximiser la rentabilité et offrir des expériences premium aux adhérents."
+            },
+            {
+                "title": "Resorts & Hôtellerie",
+                "desc": "Terrains panoramiques et intégration architecturale pour valoriser l'établissement hôtelier."
+            },
+            {
+                "title": "Administrations",
+                "desc": "Conception et rénovation de centres sportifs municipaux, écoles et parcs publics."
+            },
+            {
+                "title": "Investisseurs Privés",
+                "desc": "Conseil global de l'étude du business plan à la livraison finale de l'installation."
+            }
+        ]
+    },
+    "quote": {
+        "label": "Demande de Devis",
+        "title": "Du projet",
+        "titleAccent": "à la réalité.",
+        "subtitle": "Parlez-nous de votre idée. Notre équipe d'ingénieurs et de concepteurs est prête à vous fournir une analyse détaillée et un devis sur mesure pour votre nouvelle installation sportive.",
+        "benefits": [
+            "Conseil technique personnalisé sous 48h",
+            "Analyse de faisabilité pour structures et couvertures",
+            "Propositions calibrées sur le budget et le type de club"
+        ],
+        "form": {
+            "name": "Nom et Prénom",
+            "namePlaceholder": "Votre nom",
+            "company": "Entreprise / Club",
+            "companyPlaceholder": "Nom de l'entreprise",
+            "email": "Email",
+            "emailPlaceholder": "email@entreprise.com",
+            "phone": "Téléphone",
+            "phonePlaceholder": "+33 ...",
+            "interest": "Intérêt Principal",
+            "interests": [
+                "Terrains de Padel",
+                "Terrains de Tennis",
+                "Terrains de Pickleball",
+                "Terrains Multisports",
+                "Couvertures Sportives",
+                "Conception Globale / Autre"
+            ],
+            "details": "Détails du Projet",
+            "detailsPlaceholder": "Parlez-nous de vos besoins...",
+            "submit": "Demander un devis",
+            "privacy": "En soumettant ce formulaire, vous acceptez notre Politique de Confidentialité pour le traitement des données.",
+            "successTitle": "Demande envoyée !",
+            "successMessage": "Notre équipe vous contactera dans les plus brefs délais."
+        }
+    },
+    "finalCta": {
+        "headline": "Construisons une installation sportive à la hauteur de votre vision.",
+        "subheadline": "Donnons forme à votre prochaine installation premium. Parlons du projet idéal pour votre espace.",
+        "cta": "Demander un devis aujourd'hui"
+    },
+    "footer": {
+        "tagline": "Play Innovation Group, un marchio di Edilpadel S.R.L, Via Michele Amari 39, cap 00179, Roma (RM), REA(RM-1635979)",
+        "systemReady": "System Ready",
+        "consultingAvailable": "Conseil Disponible",
+        "productsTitle": "Produits",
+        "productLinks": [
+            "Terrains Padel",
+            "Terrains Tennis",
+            "Terrains Pickleball",
+            "Installations Multisports",
+            "Couvertures Sportives"
+        ],
+        "companyTitle": "Entreprise",
+        "companyLinks": [
+            "Qui Sommes-Nous",
+            "Notre Méthode",
+            "Projets",
+            "Contactez-nous"
+        ],
+        "contactsTitle": "Contact",
+        "requestQuote": "Demander un Devis",
+        "rights": "Tous droits réservés.",
+        "privacy": "Politique de Confidentialité",
+        "cookie": "Politique de Cookies"
+    }
+}

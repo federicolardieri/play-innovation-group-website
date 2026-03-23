@@ -1,0 +1,570 @@
+{
+    "navbar": {
+        "home": "Home",
+        "products": "Prodotti",
+        "solutions": "Soluzioni",
+        "company": "Azienda",
+        "cta": "Richiedi preventivo"
+    },
+    "hero": {
+        "label": "Premium Sport Infrastructure",
+        "headline": "Costruiamo spazi sportivi che",
+        "headlineAccent": "valorizzano il gioco.",
+        "subheadline": "Dove ingegneria, architettura moderna e visione prendono forma. Realizziamo impianti e coperture progettati per durare e per massimizzare le performance.",
+        "ctaPrimary": "Richiedi preventivo",
+        "ctaSecondary": "Scopri i prodotti",
+        "metrics": {
+            "expertise": {
+                "label": "Expertise",
+                "value": "Padel & Tennis Courts"
+            },
+            "structures": {
+                "label": "Strutture",
+                "value": "Coperture Sportive"
+            },
+            "service": {
+                "label": "Servizio",
+                "value": "Realizzazione chiavi in mano"
+            },
+            "facilities": {
+                "label": "Impianti",
+                "value": "Soluzioni Custom"
+            }
+        }
+    },
+    "padelModels": {
+        "title": "I Nostri Campi da Padel",
+        "subtitle": "Soluzioni costruite per eccellere. Esplora i nostri modelli progettati per ogni esigenza.",
+        "compare": "Confronta i Modelli",
+        "compareTitle": "Confronta i Modelli",
+        "compareSubtitle": "Scopri le differenze tecniche e scegli il campo perfetto per te.",
+        "requestQuote": "Richiedi preventivo per questo modello",
+        "gallery": "Galleria Foto",
+        "choose": "Scegli",
+        "specs": "SPECIFICHE",
+        "specLabels": {
+            "structure": "STRUTTURA",
+            "bolts": "BULLONERIA",
+            "lighting": "ILLUMINAZIONE",
+            "priceRange": "FASCIA DI PREZZO",
+            "glass": "VETRI"
+        },
+        "models": [
+            {
+                "name": "EXTRA SOLID",
+                "subtitle": "DOVE IL GIOCO DIVENTA LEGGENDA: IL CAMPO DA PADEL DEFINITIVO!",
+                "paragraphs": [
+                    "Il nostro campo combina un design entry-level con caratteristiche di livello alta.",
+                    "La struttura è realizzata con una recinzione in maglia elettrosaldata, arricchita da pilastri autoportanti con tubolare rinforzati (80x40 mm) e ulteriori rinforzi sulla maglia dello stesso spessore.",
+                    "Tutti i componenti metallici sono zincati a caldo o verniciati a forno nel colore scelto dal cliente, mentre la viteria in acciaio inox garantisce resistenza e durabilità.",
+                    "I pannelli in cristallo temperato, disponibili negli spessori di 10 o 12 mm, presentano bordi accuratamente rifiniti e smussati per un'estetica elegante e una maggiore sicurezza."
+                ],
+                "specs": {
+                    "structure": "Acciaio al carbonio zincato a caldo, verniciato a forno e zincato a caldo.",
+                    "bolts": "Bulloni, tiranti e dadi in acciaio inossidabile 304 (A2).",
+                    "lighting": "4 fari led da 200W/240W.",
+                    "priceRange": "Entry",
+                    "glass": "Vetro temperato omologato 10 mm."
+                }
+            },
+            {
+                "name": "PANORAMICO",
+                "subtitle": "AMPIE VETRATE E MATERIALI DI QUALITÀ, METTI I TUOI CLIENTI IN BELLA VISTA",
+                "paragraphs": [
+                    "Il campo da padel che ridefinisce il gioco.",
+                    "Eleganza, innovazione e solidità si incontrano in un campo da padel senza precedenti. Grazie a una struttura con pochi montanti di ferro, offre una visibilità senza ostacoli e un design minimalista che esalta l'esperienza di gioco.",
+                    "Le ampie vetrate trasformano il campo in un vero e proprio spettacolo creando una sensazione di apertura e libertà mai vista prima.",
+                    "🔥 Più che un campo, un'icona! Sei pronto a giocare il padel come non l'hai mai vissuto?"
+                ],
+                "specs": {
+                    "structure": "Struttura autoportante in acciaio strutturale.",
+                    "bolts": "Acciaio inossidabile 304 ad alta resistenza.",
+                    "lighting": "8 fari led asimmetrici da 200W.",
+                    "priceRange": "Media / Alta",
+                    "glass": "Vetro temperato stratificato omologato 12 mm."
+                }
+            },
+            {
+                "name": "SUPER PANORAMICO",
+                "subtitle": "IL TOP DI GAMMA PER ELEGANZA E PERFORMANCE",
+                "paragraphs": [
+                    "Scopri il massimo dell'innovazione e del design con il nostro modello top di gamma.",
+                    "Progettato per offrire un'esperienza di gioco senza precedenti. Grazie alle ampie vetrate senza ostacoli, questo campo regala una visione cristallina del gioco.",
+                    "Nessun montante a intralciare la vista.",
+                    "Massima resistenza, eleganza e performance: un'architettura moderna che esalta il gioco e l'estetica.",
+                    "Perfetto per club, tornei e location esclusive."
+                ],
+                "specs": {
+                    "structure": "Vetri portanti con rinforzi minimi in acciaio.",
+                    "bolts": "Acciaio inossidabile A4 ad elevata resistenza.",
+                    "lighting": "8 fari LED da 200W ad alta efficienza.",
+                    "priceRange": "Top",
+                    "glass": "Vetro temperato strutturale alto spessore."
+                }
+            },
+            {
+                "name": "NATUR IBRIDO",
+                "subtitle": "SOLIDO COME IL FERRO, NATURALE COME IL LEGNO",
+                "paragraphs": [
+                    "Il fondo è realizzato con acciaio pre-zincato, verniciato a forno con il colore scelto dal cliente, con legno laminato trattato.",
+                    "Un mix unico di materiali per un'esperienza di gioco autentica.",
+                    "Raffinatezza e solidità in un'unica struttura dal design elegante e innovativo.",
+                    "La fusione perfetta tra robustezza e stile: la forza dell'acciaio e la nobiltà del legno."
+                ],
+                "specs": {
+                    "structure": "Acciaio zincato e legno laminato strutturale.",
+                    "bolts": "Inox 304 a scomparsa.",
+                    "lighting": "4/8 fari LED asimmetrici integrati.",
+                    "priceRange": "Premium",
+                    "glass": "Vetro temperato omologato 10/12 mm."
+                }
+            }
+        ]
+    },
+    "products": {
+        "label": "Product Universe",
+        "title": "Soluzioni ingegnerizzate per lo sport.",
+        "subtitle": "Non costruiamo semplici campi, ma ecosistemi sportivi avanzati. Ogni nostra realizzazione è il risultato di ricerca sui materiali ed esperienza sul campo.",
+        "cta": "Richiedi informazioni",
+        "items": [
+            {
+                "title": "Campi da Padel",
+                "desc": "Strutture panoramiche e super panoramiche progettate per massimizzare la visibilità e garantire performance eccellenti con vetri temperati e manti di ultima generazione.",
+                "features": [
+                    "Vetri temperati 12mm",
+                    "Erba sintetica testurizzata",
+                    "Illuminazione LED asimmetrica"
+                ]
+            },
+            {
+                "title": "Campi da Tennis",
+                "desc": "Realizzazione di campi in terra rossa, resina sintetica o erba sintetica, ideali per tornei internazionali o circoli sportivi premium.",
+                "features": [
+                    "Certificazione ITF",
+                    "Drenaggio avanzato",
+                    "Superfici personalizzabili"
+                ]
+            },
+            {
+                "title": "Campi da Pickleball",
+                "desc": "Il format sportivo con la crescita più rapida al mondo. Progettiamo spazi indoor e outdoor dedicati con superfici ad altissima resistenza.",
+                "features": [
+                    "Dimensioni regolamentari",
+                    "Finitura acrilica",
+                    "Bassa manutenzione"
+                ]
+            },
+            {
+                "title": "Campi Multisport",
+                "desc": "Infrastrutture versatili in grado di ospitare calcetto, basket, volley e tennis. La soluzione perfetta per scuole e municipalità.",
+                "features": [
+                    "Pavimentazioni poliuretaniche",
+                    "Recinzioni integrate",
+                    "Massimo assorbimento urti"
+                ]
+            },
+            {
+                "title": "Coperture Sportive",
+                "desc": "Dai palloni pressostatici alle tensostrutture in legno lamellare o acciaio per ogni tipo di campo da Padel o Tennis. Garantiamo giocabilità 365 giorni all'anno con il massimo dell'efficienza energetica e visibilità estetica.",
+                "features": [
+                    "Legno lamellare o acciaio",
+                    "Membrane a doppio telo",
+                    "Isolamento termico"
+                ]
+            }
+        ]
+    },
+    "why": {
+        "label": "Why PlayInnovation",
+        "title": "L'ingegneria dietro lo sport.",
+        "subtitle": "Scegliere PlayInnovation Group significa affidarsi a un partner tecnico e strategico capace di trasformare una visione in un impianto d'eccellenza.",
+        "features": [
+            {
+                "title": "Qualità Costruttiva",
+                "desc": "Materiali certificati e strutture ingegnerizzate per resistere nel tempo, garantendo i massimi standard di sicurezza."
+            },
+            {
+                "title": "Progettazione su Misura",
+                "desc": "Adattiamo ogni impianto alle specifiche del contesto, dalle dimensioni allo studio illuminotecnico personalizzato."
+            },
+            {
+                "title": "Affidabilità Operativa",
+                "desc": "Team specializzati, montaggi rapidi e cantiere chiavi in mano con un unico referente per tutto il progetto."
+            },
+            {
+                "title": "Visione e Supporto",
+                "desc": "Non solo costruttori: affianchiamo investitori e club per ottimizzare il ritorno commerciale della struttura."
+            }
+        ]
+    },
+    "gallery": {
+        "label": "Immersive Showcase",
+        "title": "Esplora i Dettagli.",
+        "subtitle": "Scorri per visualizzare la qualità costruttiva."
+    },
+    "categorizedGallery": {
+        "label": "Portfolio",
+        "title": "I Nostri Progetti.",
+        "subtitle": "Scopri i nostri progetti realizzati: ogni installazione è un progetto unico, curato nei minimi dettagli.",
+        "categories": [
+            "Tutti",
+            "Padel",
+            "Tennis",
+            "Pickleball",
+            "Coperture",
+            "Multisport"
+        ],
+        "photosLabel": "foto",
+        "projects": [
+            {
+                "title": "Padel Indoor",
+                "description": "Copertura in tensostruttura per campi da padel con illuminazione integrata e massima efficienza energetica."
+            },
+            {
+                "title": "Tennis Indoor",
+                "description": "Struttura in legno lamellare per campi da tennis con sistema di illuminazione ad alta efficienza e isolamento termico."
+            },
+            {
+                "title": "Modelli Padel",
+                "description": "I nostri 4 modelli di campo da padel in rendering 3D ad alta definizione: Extra Solid, Panoramico, Super Panoramico e Natur Ibrido."
+            },
+            {
+                "title": "Multisport",
+                "description": "Infrastrutture versatili per scuole e municipi, con pavimentazioni certificate e massima resistenza agli impatti."
+            },
+            {
+                "title": "Coperture",
+                "description": "Strutture all'avanguardia per la protezione degli impianti sportivi, garantendo giocabilità 365 giorni l'anno."
+            },
+            {
+                "title": "Super Panoramico",
+                "description": "L'apice del design e della visibilità: una struttura senza montanti angolari per un'esperienza di gioco e visione senza precedenti."
+            },
+            {
+                "title": "Tennis Outdoor",
+                "description": "Campi da tennis professionali all'aperto, realizzati con superfici drenanti certificate ITF e sistemi di illuminazione LED per il gioco notturno."
+            },
+            {
+                "title": "Panoramico",
+                "description": "Un classico moderno della PlayInnovation: visibilità totale su tre lati per un'integrazione perfetta in ogni contesto sportivo."
+            },
+            {
+                "title": "Pickleball Pro",
+                "description": "Campo da pickleball regolamentare con superficie acrilica multistrato e illuminazione dedicata."
+            }
+        ]
+    },
+    "process": {
+        "label": "Il Nostro Metodo",
+        "title": "Dalla visione al campo.",
+        "subtitle": "Un processo ingegnerizzato in 4 fasi per trasformare la tua idea in un impianto sportivo d'eccellenza.",
+        "steps": [
+            {
+                "num": "01",
+                "title": "Analisi & Consulenza",
+                "desc": "Studio di fattibilità, analisi del sito o della struttura esistente e definizione degli obiettivi tecnico-commerciali assieme al cliente."
+            },
+            {
+                "num": "02",
+                "title": "Proposta Tecnica",
+                "desc": "Elaborazione del progetto ingegneristico, dal layout al modello strutturale, inclusi materiali, coperture, e preventivazione."
+            },
+            {
+                "num": "03",
+                "title": "Installazione",
+                "desc": "Operiamo con team specializzati garantendo precisione millimetrica. Tempi rapidi e gestione del cantiere chiavi in mano."
+            },
+            {
+                "num": "04",
+                "title": "Collaudo & Supporto",
+                "desc": "Verifica degli standard di giocabilità e sicurezza. Consegna dell'impianto finito con supporto post-vendita e manutenzione."
+            }
+        ]
+    },
+    "applications": {
+        "label": "Destinazioni d'uso",
+        "title": "Costruito per la tua realtà.",
+        "subtitle": "Ogni progetto ha esigenze specifiche. Adattiamo i nostri standard costruttivi d'eccellenza al tuo modello di business e al tuo contesto.",
+        "items": [
+            {
+                "title": "Club Sportivi",
+                "desc": "Sistemi chiavi in mano per massimizzare la redditività e offrire esperienze premium ai tesserati."
+            },
+            {
+                "title": "Resort e Hospitality",
+                "desc": "Campi panoramici e inserimento architettonico per elevare il valore della struttura ricettiva."
+            },
+            {
+                "title": "Amministrazioni",
+                "desc": "Progettazione e riqualificazione di centri sportivi comunali, scuole e parchi pubblici."
+            },
+            {
+                "title": "Investitori Privati",
+                "desc": "Consulenza globale dallo studio del business plan fino alla consegna finale dell'impianto."
+            }
+        ]
+    },
+    "quote": {
+        "label": "Quote Request",
+        "title": "Dal progetto",
+        "titleAccent": "alla realtà.",
+        "subtitle": "Raccontaci la tua idea. Il nostro team di ingegneri e progettisti è pronto a fornirti un'analisi dettagliata e un preventivo su misura per il tuo nuovo impianto sportivo.",
+        "benefits": [
+            "Consulenza tecnica personalizzata in 48h",
+            "Analisi di fattibilità per strutture e coperture",
+            "Proposte calibrate su budget e tipologia di club"
+        ],
+        "form": {
+            "name": "Nome e Cognome",
+            "namePlaceholder": "Il tuo nome",
+            "company": "Azienda / Club",
+            "companyPlaceholder": "Nome attività",
+            "email": "Email",
+            "emailPlaceholder": "email@azienda.com",
+            "phone": "Telefono",
+            "phonePlaceholder": "+39 ...",
+            "interest": "Interesse Principale",
+            "interests": [
+                "Campi da Padel",
+                "Campi da Tennis",
+                "Campi da Pickleball",
+                "Campi Multisport",
+                "Coperture Sportive",
+                "Progettazione Globale / Altro"
+            ],
+            "details": "Dettagli Progetto",
+            "detailsPlaceholder": "Parlaci delle tue necessità...",
+            "submit": "Richiedi preventivo",
+            "privacy": "Inviando il form, accetti la nostra Privacy Policy per il trattamento dei dati.",
+            "successTitle": "Richiesta inviata!",
+            "successMessage": "Il nostro team ti contatterà al più presto."
+        }
+    },
+    "faq": {
+        "label": "Domande Frequenti",
+        "title": "Tutto quello che devi sapere.",
+        "subtitle": "Informazioni chiare su costi, permessi e standard costruttivi per l'apertura del tuo centro sportivo.",
+        "items": [
+            {
+                "q": "Quanto costa costruire un campo da padel?",
+                "a": "Il costo varia in base al modello scelto (Extra Solid, Panoramico, Super Panoramico), al tipo di terreno e agli optional (illuminazione LED avanzata, spessori vetri). Offriamo preventivi su misura dopo un'attenta analisi preliminare in modo da ottimizzare il tuo investimento."
+            },
+            {
+                "q": "Quali permessi ci vogliono?",
+                "a": "L'installazione di impianti sportivi e coperture richiede solitamente permessi comunali (come CILA, SCIA o Permesso di Costruire) a seconda dei vincoli locali. Il nostro team, su richiesta, fornisce il supporto tecnico necessario per agevolare l'iter burocratico della tua pratica."
+            },
+            {
+                "q": "Che tipo di coperture avete?",
+                "a": "Progettiamo e installiamo diverse soluzioni per garantirti massima flessibilità: dai palloni pressostatici ad alta efficienza energetica, alle tensostrutture premium in legno lamellare o acciaio, tutte studiate per assicurare la giocabilità 365 giorni all'anno riducendo al minimo i costi di manutenzione."
+            },
+            {
+                "q": "I campi sono certificati?",
+                "a": "Assolutamente sì. Lavoriamo nel rispetto delle regole strutturali vigenti (NTC 2018). Tutti i nostri materiali e installazioni rispondono alle più severe normative europee in materia di prestazioni e sicurezza sportiva."
+            },
+            {
+                "q": "Quanto è grande un campo da tennis?",
+                "a": "Un campo da tennis regolamentare per il singolare misura 23,77 m di lunghezza per 8,23 m di larghezza (10,97 m per il doppio). A queste dimensioni minime è fondamentale aggiungere le fasce di rispetto (run-off) laterali e di fondo campo che definiremo insieme analizzando gli spazi del tuo impianto."
+            }
+        ]
+    },
+    "finalCta": {
+        "headline": "Costruiamo una struttura sportiva all'altezza della tua visione.",
+        "subheadline": "Diamo forma al tuo prossimo impianto premium. Parliamo del progetto giusto per il tuo spazio.",
+        "cta": "Richiedi preventivo oggi"
+    },
+    "footer": {
+        "tagline": "Play Innovation Group, un marchio di Edilpadel S.R.L, Via Michele Amari 39, cap 00179, Roma (RM), REA(RM-1635979)",
+        "systemReady": "System Ready",
+        "consultingAvailable": "Consulting Available",
+        "productsTitle": "Prodotti",
+        "productLinks": [
+            "Campi Padel",
+            "Campi Tennis",
+            "Campi Pickleball",
+            "Impianti Multisport",
+            "Coperture Sportive"
+        ],
+        "companyTitle": "Azienda",
+        "companyLinks": [
+            "Chi Siamo",
+            "Il nostro Metodo",
+            "Progetti",
+            "Contattaci"
+        ],
+        "contactsTitle": "Contatti",
+        "requestQuote": "Richiedi un Preventivo",
+        "rights": "Tutti i diritti riservati.",
+        "privacy": "Privacy Policy",
+        "cookie": "Cookie Policy"
+    },
+    "padelPage": {
+        "title": "Campi da Padel",
+        "subtitle": "Spettacolo visivo e ingegneria estrema. Il padel premium firmato PlayInnovation.",
+        "description": "I nostri campi da padel non sono semplici recinzioni, ma ecosistemi sportivi avanzati. Dalla progettazione del layout strutturale fino alla scelta dei microdettagli (come l'inclinazione dei fari e lo spessore dei vetri), ogni componente è pensato per la massima giocabilità e per resistere agli agenti atmosferici più aggressivi.\n\nChe si tratti del modello Extra Solid, progettato per il massimo carico di lavoro, o del Super Panoramico dedicato al puro spettacolo visivo, garantiamo un'installazione millimetrica che eleverà il prestigio del tuo club sportivo.",
+        "features": [
+            "Strutture in acciaio zincato a caldo o verniciato a forno.",
+            "Cristalli temperati stratificati da 10 o 12 mm con bordi lucidi.",
+            "Sistemi di illuminazione LED asimmetrica per zero abbagliamento.",
+            "Erba sintetica testurizzata di ultima generazione approvata WPT.",
+            "Bulloneria inossidabile a scomparsa per la massima sicurezza dei giocatori."
+        ],
+        "materials": {
+            "title": "I Materiali",
+            "subtitle": "Ingegneria di precisione per ogni componente.",
+            "items": [
+                { "name": "Struttura", "desc": "Acciaio Fe360B con spessori fino a 3mm, trattato con zincatura a caldo.", "icon": "hard-hat" },
+                { "name": "Vetri", "desc": "Pannelli in vetro temperato di sicurezza da 12mm, omologati e testati.", "icon": "shield" },
+                { "name": "Illuminazione", "desc": "8 fari LED da 200W asimmetrici, progettati per un'illuminazione uniforme.", "icon": "zap" }
+            ]
+        },
+        "surfaces": {
+            "title": "I Nostri Manti",
+            "subtitle": "Superfici progettate per il massimo grip e performance.",
+            "items": [
+                { "name": "Manto Testurizzato", "desc": "Il top per il gioco professionale: riduce lo stress articolare e garantisce rimbalzi costanti.", "color": "Blu / Verde / Rosso" },
+                { "name": "Manto Fibrillato", "desc": "Ottima durabilità e facilità di manutenzione, ideale per club ad alto traffico.", "color": "Blu / Verde" }
+            ]
+        }
+    },
+    "tennisPage": {
+        "title": "Campi da Tennis",
+        "subtitle": "Dal circolo amatoriale ai tornei ATP. Superfici ingegnerizzate per la perfezione del rimbalzo.",
+        "description": "Sappiamo che nel tennis il millimetro fa la differenza. Per questo realizziamo campi curando in modo maniacale le pendenze per il deflusso dell'acqua e la omogeneità dei manti.\n\nSia che si tratti del fascino senza tempo della terra battuta rossa (realizzata con i migliori sottomanti porosi e vulcanici) o dell'high-tech delle resine sintetiche (con shock pad integrati per ridurre i traumi articolari), curiamo l'installazione di recinzioni, impianti d'illuminazione e componenti accessori per fornire un impianto premium senza pari.",
+        "features": [
+            "Costruzione da zero inclusiva di scavi, massetti, e sistemi di drenaggio certificati.",
+            "Superfici in Terra Battuta, Resina Sintetica, o Erba Sintetica omologate ITF.",
+            "Test del rimbalzo effettuati in fase di collaudo secondo normative internazionali.",
+            "Impiantistica d'illuminazione LED con specifiche illuminotecniche per riprese TV.",
+            "Recinzioni perimetrali e sistemi antivento ad alta tenuta strutturale."
+        ],
+        "materials": {
+            "title": "I Materiali",
+            "subtitle": "Solidità e precisione costruttiva.",
+            "items": [
+                { "name": "Recinzione", "desc": "Reti ad alta tensione con rivestimento in polimero, resistenti alla corrosione.", "icon": "box" },
+                { "name": "Illuminazione", "desc": "Torri faro con proiettori LED da 400W per standard di gara internazionali.", "icon": "sun" },
+                { "name": "Drenaggio", "desc": "Sistemi a nido d'ape e tubazioni drenanti per una giocabilità immediata dopo la pioggia.", "icon": "droplets" }
+            ]
+        },
+        "surfaces": {
+            "title": "I Nostri Manti",
+            "subtitle": "La superficie perfetta per il tuo stile di gioco.",
+            "items": [
+                { "name": "Terra Battuta", "desc": "Fascino tradizionale con sottomanto in materiali vulcanici per un comfort estremo.", "color": "Rosso Classico" },
+                { "name": "Resina Acrilica", "desc": "Superficie veloce e performante con 7 strati di ammortizzazione integrata.", "color": "Blu / Azzurro / Verde" },
+                { "name": "Erba Sintetica", "desc": "Bassa manutenzione e giocabilità tutto l'anno, con intaso in sabbia silicea.", "color": "Verde / Blu" }
+            ]
+        }
+    },
+    "pickleballPage": {
+        "title": "Campi da Pickleball",
+        "subtitle": "Il format sportivo con la crescita più rapida al mondo. Progettati per la pura azione.",
+        "description": "Il Pickleball richiede una superficie che offra il giusto compromesso tra scivolamento e grip, con una visibilità perfetta del tracciato. Installiamo campi sia indoor che outdoor ottimizzando gli spazi a disposizione.\n\nLe nostre superfici sintetiche multistrato sono studiate per attutire gli urti, ridurre la fatica dei giocatori e garantire un rimbalzo accurato e costante della pallina in ogni zona del campo. La dimensione compatta del campo ci permette di trasformare facilmente aree in disuso in centri di profitto altamente redditizi per il tuo club.",
+        "features": [
+            "Dimensioni di gioco rigorosamente regolamentari (13,41m x 6,10m) con relative fasce di rispetto.",
+            "Sistemi di pavimentazione in resina acrilica multistrato con elevato assorbimento acustico.",
+            "Tracciatura linee ad alta visibilità resistente all'usura e ai raggi UV.",
+            "Fornitura e installazione di reti professionali con sistemi di tensionamento integrati.",
+            "Convertibilità degli spazi: sistemi per sovrapporre il tracciato su campi esistenti."
+        ],
+        "materials": {
+            "title": "I Materiali",
+            "subtitle": "Nuovi standard per la nuova disciplina.",
+            "items": [
+                { "name": "Sistema Rete", "desc": "Pali in acciaio verniciato con sistema di tensionamento a cricchetto professionale.", "icon": "anchor" },
+                { "name": "Finitura", "desc": "Vernici poliuretaniche ad alta resistenza contro abrasioni e colpi della pallina.", "icon": "palette" }
+            ]
+        },
+        "surfaces": {
+            "title": "I Nostri Manti",
+            "subtitle": "Grip e precisione del rimbalzo.",
+            "items": [
+                { "name": "Pro Cushion", "desc": "Resina multistrato con 3 strati di gomma per ammortizzare ogni passo.", "color": "Blu / Dark Blue" },
+                { "name": "Hard Court", "desc": "Finitura acrilica rigida per un rimbalzo più veloce e sensibile.", "color": "Personalizzabile" }
+            ]
+        }
+    },
+    "multisportPage": {
+        "title": "Campi Multisport & Calcio",
+        "subtitle": "Unico spazio, infinite possibilità. Ingegneria per la versatilità sportiva.",
+        "description": "Ottimizzare lo spazio è fondamentale per scuole, comuni e centri sportivi polivalenti. Progettiamo e realizziamo aree multisport che permettono di praticare calcio a 5, basket, pallavolo e tennis sulla stessa superficie, abbattendo i costi di gestione senza compromessi sulle performance.\n\nScegliamo manti polivalenti ad alta durabilità (resine o erba sintetica a ridotta manutenzione) resistenti al calpestio intensivo e all’utilizzo con calzature diverse. Integrando attrezzature convertibili e recinzioni anti-scavalco, creiamo arene sicure, resistenti al vandalismo e pronte all’uso 365 giorni l’anno.",
+        "features": [
+            "Superfici polivalenti certificate per basket, volley, calcetto e tennis.",
+            "Erba sintetica di altissima durabilità con intaso prestazionale per campi da Calcio a 5/7/11.",
+            "Sistemi di tracciatura multicolore per una chiara identificazione di ogni sport.",
+            "Strutture accessorie: porte integrate con canestri, reti regolabili e panchine.",
+            "Recinzioni a pannelli rigidi ad altissima resistenza perimetrale e reti para-palloni."
+        ],
+        "materials": {
+            "title": "I Materiali",
+            "subtitle": "Versatilità e resistenza al top.",
+            "items": [
+                { "name": "Recinzioni", "desc": "Moduli rigidi anti-vandalismo h 4.00m con trattamento anticorrosione.", "icon": "layout" },
+                { "name": "Attrezzature", "desc": "Sistemi integrati porte/canestri in acciaio zincato con tabelloni in plexiglass.", "icon": "target" }
+            ]
+        },
+        "surfaces": {
+            "title": "I Nostri Manti",
+            "subtitle": "Progettati per l'uso intensivo.",
+            "items": [
+                { "name": "Multi-Turf", "desc": "Erba sintetica 22mm specifica per calcio a 5 e tennis amatoriale.", "color": "Verde / Rosso" },
+                { "name": "Poliuretanica", "desc": "Superficie elastica senza giunte per basket e attività scolastiche.", "color": "Arancio / Blu" }
+            ]
+        }
+    },
+    "coperturePage": {
+        "title": "Coperture Sportive",
+        "subtitle": "Schermatura totale, luce perfetta. Massimizza la rendita del tuo impianto.",
+        "description": "Una copertura sportiva professionale trasforma un campo stagionale in una struttura a reddito continuo 365 giorni all'anno, indipendentemente dalle condizioni meteorologiche. Progettiamo e installiamo coperture fisse e pressostatiche dal design contemporaneo e dall'elevata efficienza energetica.\n\nLe nostre tensostrutture premium sono realizzate con membrane in PVC a doppia spalmatura, specificamente trattate per l'isolamento termico e per mitigare l'effetto condensa. Grazie alla progettazione su misura, garantiamo altezze di giuoco ottimali per gli standard WPT, ITF e FITP, coniugando funzionalità estrema ed estetica architettonica.",
+        "features": [
+            "Coperture pressostatiche a singola o doppia membrana per il massimo isolamento.",
+            "Tensostrutture ad arco in acciaio o legno lamellare ad alto valore estetico.",
+            "Teli traslucidi che permettono l'illuminazione naturale diurna riducendo i costi energetici.",
+            "Sistemi di apertura laterale scorrevole per la ventilazione durante la stagione estiva.",
+            "Integrazione complanare dell'illuminazione LED per azzerare le zone d'ombra."
+        ],
+        "materials": {
+            "title": "I Materiali",
+            "subtitle": "Tecnologia delle coperture.",
+            "items": [
+                { "name": "Legno Lamellare", "desc": "Archi in Abete GL24 certificato, bellezza naturale e stabilità strutturale.", "icon": "tree" },
+                { "name": "Membrana PVC", "desc": "Tessuto poliestere bispalmato 900g/mq, autoestinguente e anti-UV.", "icon": "layers" },
+                { "name": "Acciaio", "desc": "Travi calandrate zincate a caldo per campate libere fino a 40 metri.", "icon": "component" }
+            ]
+        },
+        "surfaces": {
+            "title": "Pavimentazioni",
+            "subtitle": "Le basi per una copertura perfetta.",
+            "items": [
+                { "name": "Massetto", "desc": "Calcestruzzo armato con finitura al quarzo o asfalto drenante.", "color": "Grigio / Nero" }
+            ]
+        }
+    },
+    "companyPage": {
+        "hero": {
+            "title": "Costruiamo Spazi Sportivi di Eccellenza",
+            "subtitle": "Innovazione, ingegneria e design per strutture sportive premium."
+        },
+        "about": {
+            "title": "Chi Siamo",
+            "content": "PlayInnovation Group è un'azienda leader nella progettazione e realizzazione di impianti sportivi di fascia alta. Con anni di esperienza nel settore, fondiamo le più avanzate tecniche ingegneristiche con un'estetica moderna e funzionale. Il nostro obiettivo è elevare l'esperienza di gioco attraverso infrastrutture durevoli, sicure e visivamente sorprendenti. Lavoriamo a stretto contatto con club, investitori e pubbliche amministrazioni per trasformare ogni visione in realtà."
+        },
+        "values": {
+            "title": "I Nostri Valori",
+            "items": [
+                {
+                    "title": "Qualità Premium",
+                    "desc": "Selezioniamo solo i materiali migliori per garantire durabilità e performance di altissimo livello nel tempo."
+                },
+                {
+                    "title": "Innovazione",
+                    "desc": "Siamo costantemente alla ricerca di nuove soluzioni tecnologiche e costruttive per superare gli standard attuali."
+                },
+                {
+                    "title": "Affidabilità",
+                    "desc": "Un team di professionisti dedicati segue ogni progetto dalla prima fase di consulenza fino alla consegna chiavi in mano."
+                }
+            ]
+        }
+    }
+}
