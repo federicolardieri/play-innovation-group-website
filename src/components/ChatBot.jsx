@@ -56,7 +56,8 @@ const ChatBot = () => {
 
       if (!response.ok) {
         const errorData = await response.json();
-        throw new Error(errorData.error || 'Server error');
+        console.error('API Error details:', errorData);
+        throw new Error(errorData.message || `HTTP error! status: ${response.status}`);
       }
 
       const data = await response.json();
@@ -64,11 +65,11 @@ const ChatBot = () => {
 
       setMessages(prev => [...prev, { role: 'bot', text: botText }]);
     } catch (error) {
-      console.error("AI Error:", error);
+      console.error('ChatBot Error:', error);
       let errorMessage = 'Scusami, ho riscontrato un errore tecnico. Riprova più tardi.';
 
-      if (error.message?.includes('Server error')) {
-        errorMessage = "Il server ha riscontrato un problema. Verifica la configurazione su Vercel.";
+      if (error.message?.includes('HTTP error!')) {
+        errorMessage = `Errore del server: ${error.message}. Verifica la configurazione su Vercel.`;
       } else if (error.message?.includes('fetch')) {
         errorMessage = "Errore di connessione. Verifica la tua rete internet.";
       }

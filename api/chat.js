@@ -28,16 +28,31 @@ export default async function handler(req, res) {
 
   try {
     const genAI = new GoogleGenerativeAI(apiKey);
-    const model = genAI.getGenerativeModel({ 
+    const modelOptions = { 
       model: "gemini-1.5-flash",
-      systemInstruction: systemInstruction
-    });
+    };
+    
+    if (systemInstruction) {
+      modelOptions.systemInstruction = systemInstruction;
+    }
 
-    console.log("Sending request to Google Gemini API...");
+    const model = genAI.getGenerativeModel(modelOptions);
+
+    console.log("Sending request to Google Gemini API with instruction length:", systemInstruction?.length || 0);
+    
+    // Assicuriamoci che contents sia nel formato corretto
+    if (!Array.isArray(contents)) {
+      throw new Error("Invalid contents format: expected an array");
+    }
+
     const result = await model.generateContent({ contents });
     const response = await result.response;
     const text = response.text();
     
+    if (!text) {
+      throw new Error("Empty response from Gemini");
+    }
+
     console.log("Response received successfully from Gemini");
     return res.status(200).json({ text });
   } catch (error) {
@@ -45,7 +60,7 @@ export default async function handler(req, res) {
     return res.status(500).json({ 
       error: 'Failed to generate content', 
       message: error.message,
-      stack: process.env.NODE_ENV === 'development' ? error.stack : undefined
+      type: error.constructor.name
     });
   }
 }
