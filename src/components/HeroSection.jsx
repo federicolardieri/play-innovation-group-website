@@ -79,8 +79,7 @@ const HeroSection = () => {
                     playsInline
                     className="absolute inset-0 w-full h-full object-cover brightness-50 mix-blend-overlay"
                 >
-                    <source src="/hero-video.mov" type="video/quicktime" />
-                    <source src="/hero-video.mov" type="video/mp4" />
+                    <source src="/hero-video.mp4" type="video/mp4" />
                 </video>
                 <div className="absolute inset-0 bg-gradient-to-r from-brand-graphite/90 via-brand-graphite/60 to-transparent"></div>
                 <div className="absolute inset-0 opacity-[0.05] pointer-events-none"
