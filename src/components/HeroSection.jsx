@@ -13,6 +13,7 @@ const HeroSection = () => {
     const buttonsRef = useRef(null);
     const metricsRef = useRef(null);
     const overlayRef = useRef(null);
+    const videoRef = useRef(null);
 
     useEffect(() => {
         if (isProductsOpen) {
@@ -44,6 +45,12 @@ const HeroSection = () => {
                     { y: 15, opacity: 0 },
                     { y: 0, opacity: 1, duration: 0.6, stagger: 0.1, delay: -0.4 }
                 );
+
+            if (videoRef.current) {
+                videoRef.current.play().catch(error => {
+                    console.log("Video auto-play was prevented:", error);
+                });
+            }
         }, containerRef);
 
         return () => {
@@ -65,13 +72,15 @@ const HeroSection = () => {
             {/* Background Video & Overlay */}
             <div className="absolute inset-0 z-0 bg-brand-slate">
                 <video
+                    ref={videoRef}
                     autoPlay
                     loop
                     muted
                     playsInline
                     className="absolute inset-0 w-full h-full object-cover brightness-50 mix-blend-overlay"
                 >
-                    <source src="/S.Teresa%20Drone%202.MOV" type="video/mp4" />
+                    <source src="/hero-video.mov" type="video/quicktime" />
+                    <source src="/hero-video.mov" type="video/mp4" />
                 </video>
                 <div className="absolute inset-0 bg-gradient-to-r from-brand-graphite/90 via-brand-graphite/60 to-transparent"></div>
                 <div className="absolute inset-0 opacity-[0.05] pointer-events-none"
