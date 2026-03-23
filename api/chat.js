@@ -19,7 +19,7 @@ export default async function handler(req, res) {
   // LOG per debug su Vercel (visibili nei log di Vercel Dashboard)
   console.log("Receiving request for ChatBot API");
   
-  const apiKey = process.env.GEMINI_API_KEY;
+  const apiKey = (process.env.GEMINI_API_KEY || "").trim();
 
   if (!apiKey) {
     console.error("CRITICAL: GEMINI_API_KEY is missing in process.env");
@@ -28,38 +28,52 @@ export default async function handler(req, res) {
 
   try {
     const genAI = new GoogleGenerativeAI(apiKey);
+    
+    // Configurazione del modello con system instruction nel formato corretto
     const modelOptions = { 
       model: "gemini-1.5-flash",
     };
     
     if (systemInstruction) {
-      modelOptions.systemInstruction = systemInstruction;
+      modelOptions.systemInstruction = {
+        parts: [{ text: systemInstruction }]
+      };
     }
 
     const model = genAI.getGenerativeModel(modelOptions);
 
-    console.log("Sending request to Google Gemini API with instruction length:", systemInstruction?.length || 0);
+    console.log("Sending request to Google Gemini API...");
     
-    // Assicuriamoci che contents sia nel formato corretto
     if (!Array.isArray(contents)) {
       throw new Error("Invalid contents format: expected an array");
     }
 
+    // Effettua la generazione del contenuto
     const result = await model.generateContent({ contents });
     const response = await result.response;
     const text = response.text();
     
     if (!text) {
-      throw new Error("Empty response from Gemini");
+      throw new Error("Lo script ha ricevuto un contenuto vuoto da Gemini.");
     }
 
     console.log("Response received successfully from Gemini");
     return res.status(200).json({ text });
   } catch (error) {
     console.error("Gemini API Error details:", error);
-    return res.status(500).json({ 
+    
+    // Gestione errori specifica per 404 o altri problemi comuni
+    let status = 500;
+    let message = error.message;
+
+    if (error.message?.includes('404')) {
+      message = "Il modello Gemini non è stato trovato (404). Verifica la chiave API e la regione.";
+      status = 404;
+    }
+
+    return res.status(status).json({ 
       error: 'Failed to generate content', 
-      message: error.message,
+      message: message,
       type: error.constructor.name
     });
   }
