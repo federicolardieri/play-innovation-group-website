@@ -70,7 +70,7 @@ const HeroSection = () => {
     return (
         <section id="home" ref={containerRef} className="relative h-[100dvh] w-full flex items-start justify-start overflow-hidden pt-32 md:pt-0 md:items-center">
             {/* Background Video & Overlay */}
-            <div className="absolute inset-0 z-0 bg-brand-slate">
+            <div className="absolute inset-0 z-0 bg-brand-slate overflow-hidden">
                 <video
                     ref={videoRef}
                     autoPlay
@@ -79,14 +79,17 @@ const HeroSection = () => {
                     defaultMuted
                     playsInline
                     preload="auto"
-                    className="absolute inset-0 w-full h-full object-cover brightness-50 mix-blend-overlay pointer-events-none"
+                    className="absolute inset-0 w-full h-full object-cover brightness-[0.6] pointer-events-none"
                 >
-                    <source src="/hero-video.mp4" type="video/mp4" />
+                    <source src="/padel-loop.mp4" type="video/mp4" />
                 </video>
-                <div className="absolute inset-0 bg-gradient-to-r from-brand-graphite/90 via-brand-graphite/60 to-transparent"></div>
-                <div className="absolute inset-0 opacity-[0.05] pointer-events-none"
-                    style={{ backgroundImage: 'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)', backgroundSize: '100px 100px' }}>
-                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0E1116] via-[#0E1116]/40 to-transparent"></div>
+                <svg className="pointer-events-none absolute inset-0 h-full w-full opacity-[0.05] mix-blend-overlay" xmlns="http://www.w3.org/2000/svg">
+                    <filter id="noiseFilter">
+                        <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+                    </filter>
+                    <rect width="100%" height="100%" filter="url(#noiseFilter)"></rect>
+                </svg>
             </div>
 
             <div className="container relative z-10 mx-auto px-4 md:px-12 flex flex-col justify-center md:justify-end pb-12 md:pb-20 h-full">
