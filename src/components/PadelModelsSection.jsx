@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ArrowRight, ChevronLeft, ChevronRight, X } from 'lucide-react';
@@ -217,7 +218,7 @@ const PadelModelsSection = () => {
             </div>
 
             {/* Compare Modal */}
-            {isCompareOpen && (
+            {isCompareOpen && createPortal(
                 <div className="fixed inset-0 z-[9999] flex items-center justify-center p-2 md:p-4 bg-brand-graphite/98 backdrop-blur-xl">
                     <div className="bg-brand-slate border border-brand-cyan/30 rounded-2xl md:rounded-3xl w-full max-w-7xl h-full max-h-[100dvh] md:max-h-[90vh] shadow-2xl relative flex flex-col overflow-hidden">
                         <button
@@ -266,10 +267,11 @@ const PadelModelsSection = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>,
+                document.body
             )}
             {/* Gallery Modal */}
-            {isGalleryOpen && (
+            {isGalleryOpen && createPortal(
                 <div 
                     onClick={() => setIsGalleryOpen(false)}
                     className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/95 backdrop-blur-xl transition-all duration-500 cursor-zoom-out"
@@ -315,11 +317,12 @@ const PadelModelsSection = () => {
                             ))}
                         </div>
                     </div>
-                </div>
+                </div>,
+                document.body
             )}
 
             {/* Photo Lightbox */}
-            {selectedPhotoIndex !== null && (
+            {selectedPhotoIndex !== null && createPortal(
                 <div 
                     onClick={() => setSelectedPhotoIndex(null)}
                     className="fixed inset-0 z-[10000] flex items-center justify-center p-4 bg-black/98 backdrop-blur-2xl transition-all duration-300 cursor-zoom-out"
@@ -362,7 +365,8 @@ const PadelModelsSection = () => {
                             Photo {selectedPhotoIndex + 1} / {selectedGallery.length}
                         </p>
                     </div>
-                </div>
+                </div>,
+                document.body
             )}
         </section>
     );

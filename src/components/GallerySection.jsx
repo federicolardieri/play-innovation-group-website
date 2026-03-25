@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { useTranslation } from '../i18n/LanguageContext';
 
@@ -137,7 +138,7 @@ const GallerySection = () => {
             </div>
 
             {/* Gallery Lightbox */}
-            {lightboxOpen && (
+            {lightboxOpen && createPortal(
                 <div 
                     onClick={() => setLightboxOpen(false)}
                     className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/98 backdrop-blur-2xl transition-all duration-300 cursor-zoom-out"
@@ -184,7 +185,8 @@ const GallerySection = () => {
                             Photo {lightboxIndex + 1} / {images.length}
                         </p>
                     </div>
-                </div>
+                </div>,
+                document.body
             )}
 
             <style dangerouslySetInnerHTML={{
