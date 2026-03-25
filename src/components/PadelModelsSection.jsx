@@ -218,41 +218,41 @@ const PadelModelsSection = () => {
 
             {/* Compare Modal */}
             {isCompareOpen && (
-                <div className="fixed inset-0 z-[120] flex items-center justify-center p-2 md:p-4 bg-brand-graphite/95 backdrop-blur-xl">
-                    <div className="bg-brand-slate border border-brand-cyan/30 rounded-2xl md:rounded-3xl w-full max-w-7xl max-h-[95vh] md:max-h-[90vh] overflow-y-auto shadow-2xl relative flex flex-col">
+                <div className="fixed inset-0 z-[9999] flex items-center justify-center p-2 md:p-4 bg-brand-graphite/98 backdrop-blur-xl">
+                    <div className="bg-brand-slate border border-brand-cyan/30 rounded-2xl md:rounded-3xl w-full max-w-7xl h-full max-h-[100dvh] md:max-h-[90vh] shadow-2xl relative flex flex-col overflow-hidden">
                         <button
                             onClick={() => setIsCompareOpen(false)}
-                            className="absolute top-4 right-4 md:top-6 md:right-6 p-2 rounded-full bg-white/10 hover:bg-brand-orange text-white transition-colors z-[130]"
+                            className="absolute top-4 right-4 md:top-6 md:right-6 p-2 rounded-full bg-white/10 hover:bg-brand-orange text-white transition-colors z-[10000]"
                         >
                             <X size={24} />
                         </button>
 
-                        <div className="p-4 pt-12 md:p-12 flex-1 flex flex-col">
-                            <h2 className="text-3xl md:text-4xl font-bold text-white mb-2 text-center">{t('padelModels.compareTitle')}</h2>
-                            <p className="text-brand-steel text-center mb-12">{t('padelModels.compareSubtitle')}</p>
+                        <div className="p-4 pt-16 md:p-12 flex-1 flex flex-col h-full overflow-hidden">
+                            <h2 className="text-2xl md:text-4xl font-bold text-white mb-2 text-center shrink-0">{t('padelModels.compareTitle')}</h2>
+                            <p className="text-brand-steel text-sm md:text-base text-center mb-6 md:mb-12 shrink-0">{t('padelModels.compareSubtitle')}</p>
 
-                            <div className="flex overflow-x-auto pb-8 -mx-4 px-4 snap-x snap-mandatory gap-6 hide-scrollbar">
-                                {models.map(m => (
-                                    <div key={m.id} className="min-w-[85vw] md:min-w-[320px] flex-none snap-center bg-brand-graphite rounded-3xl border border-brand-cyan/20 overflow-hidden flex flex-col shadow-2xl relative group">
+                            <div className="flex overflow-x-auto overflow-y-hidden pb-4 md:pb-8 -mx-4 px-4 snap-x snap-mandatory gap-4 md:gap-6 hide-scrollbar flex-1">
+                                {models.map((m, idx) => (
+                                    <div key={m.id} className="w-[85vw] md:min-w-[320px] max-w-[320px] flex-none snap-center bg-brand-graphite rounded-3xl border border-brand-cyan/20 flex flex-col shadow-2xl relative group overflow-hidden">
                                         <div className="absolute inset-0 bg-gradient-to-b from-brand-cyan/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
-                                        <div className="p-6 flex flex-col items-center text-center bg-white/5 border-b border-white/10 relative z-10">
-                                            <div className="relative w-full h-32 md:h-48 mb-6 shrink-0">
+                                        <div className="p-4 md:p-6 flex flex-col items-center text-center bg-white/5 border-b border-white/10 relative z-10 shrink-0">
+                                            <div className="relative w-full h-28 md:h-48 mb-4 md:mb-6 shrink-0">
                                                 <div className="absolute inset-0 bg-brand-orange/20 rounded-xl blur-xl transform translate-y-2 opacity-50"></div>
-                                                <img src={m.image} alt={m.name} className="relative z-10 w-full h-full object-cover rounded-xl shadow-lg border border-white/10" />
+                                                <img src={m.image} alt={m.name} className={`relative z-10 w-full h-full rounded-xl shadow-lg border border-white/10 ${idx === 1 ? 'object-cover' : 'object-contain'}`} />
                                             </div>
-                                            <h3 className="text-brand-cyan font-bold text-2xl tracking-wider uppercase mb-1">{m.name}</h3>
-                                            <span className="text-xs text-brand-steel uppercase tracking-widest opacity-80 font-mono">Premium Series</span>
+                                            <h3 className="text-brand-cyan font-bold text-xl md:text-2xl tracking-wider uppercase mb-1">{m.name}</h3>
+                                            <span className="text-[10px] md:text-xs text-brand-steel uppercase tracking-widest opacity-80 font-mono">Premium Series</span>
                                         </div>
-                                        <div className="p-6 md:p-8 flex flex-col gap-6 flex-1 bg-gradient-to-b from-brand-graphite to-brand-slate/50 relative z-10">
+                                        <div className="p-4 md:p-8 flex flex-col gap-4 flex-1 overflow-y-auto bg-gradient-to-b from-brand-graphite to-brand-slate/50 relative z-10">
                                             {specKeys.map((key, i) => (
-                                                <div key={i} className="flex flex-col border-l-2 border-brand-orange/30 pl-4">
-                                                    <span className="text-brand-orange text-[10px] md:text-[11px] font-bold tracking-[0.2em] uppercase opacity-90 mb-1.5">{specLabels[key] || key}</span>
-                                                    <span className="text-brand-offwhite text-sm leading-relaxed">{m.specs?.[key]}</span>
+                                                <div key={i} className="flex flex-col border-l-2 border-brand-orange/30 pl-3 md:pl-4">
+                                                    <span className="text-brand-orange text-[9px] md:text-[11px] font-bold tracking-[0.2em] uppercase opacity-90 mb-1">{specLabels[key] || key}</span>
+                                                    <span className="text-brand-offwhite text-xs md:text-sm leading-relaxed">{m.specs?.[key]}</span>
                                                 </div>
                                             ))}
                                         </div>
-                                        <div className="p-6 md:p-8 mt-auto border-t border-white/10 bg-brand-slate relative z-10">
-                                            <a href="#quote" onClick={() => setIsCompareOpen(false)} className="w-full flex items-center justify-center px-6 py-4 bg-transparent border-2 border-brand-cyan text-brand-cyan hover:bg-brand-cyan hover:text-brand-graphite text-[13px] font-bold rounded-xl transition-all uppercase tracking-[0.15em]">
+                                        <div className="p-4 md:p-8 mt-auto border-t border-white/10 bg-brand-slate relative z-10 shrink-0">
+                                            <a href="#quote" onClick={() => setIsCompareOpen(false)} className="w-full flex items-center justify-center px-4 md:px-6 py-3 bg-transparent border-2 border-brand-cyan text-brand-cyan hover:bg-brand-cyan hover:text-brand-graphite text-xs md:text-[13px] font-bold rounded-xl transition-all uppercase tracking-[0.15em]">
                                                 {t('padelModels.choose')} {m.name}
                                             </a>
                                         </div>
@@ -261,7 +261,7 @@ const PadelModelsSection = () => {
                             </div>
                             
                             {/* Mobile Swipe Indicator */}
-                            <div className="flex md:hidden justify-center items-center mt-2 gap-3 text-brand-steel text-[10px] uppercase tracking-widest font-mono">
+                            <div className="flex md:hidden justify-center items-center mt-2 gap-3 text-brand-steel text-[10px] uppercase tracking-widest font-mono shrink-0">
                                 <span className="animate-pulse">←</span> Scorri per confrontare <span className="animate-pulse">→</span>
                             </div>
                         </div>
@@ -272,14 +272,14 @@ const PadelModelsSection = () => {
             {isGalleryOpen && (
                 <div 
                     onClick={() => setIsGalleryOpen(false)}
-                    className="fixed inset-0 z-[200] flex items-center justify-center p-4 bg-black/95 backdrop-blur-xl transition-all duration-500 cursor-zoom-out"
+                    className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/95 backdrop-blur-xl transition-all duration-500 cursor-zoom-out"
                 >
                     <button
                         onClick={(e) => {
                             e.stopPropagation();
                             setIsGalleryOpen(false);
                         }}
-                        className="fixed top-6 right-6 mt-[env(safe-area-inset-top)] p-4 rounded-full bg-white/10 hover:bg-brand-orange text-white transition-all z-[210] hover:scale-110 active:scale-90"
+                        className="fixed top-6 right-6 mt-[env(safe-area-inset-top)] p-4 rounded-full bg-white/10 hover:bg-brand-orange text-white transition-all z-[10000] hover:scale-110 active:scale-90"
                         title="Close Gallery"
                     >
                         <X size={32} />
@@ -287,16 +287,16 @@ const PadelModelsSection = () => {
 
                     <div 
                         onClick={(e) => e.stopPropagation()}
-                        className="w-full max-w-6xl max-h-[90vh] overflow-y-auto p-4 md:p-8 cursor-default"
+                        className="w-full max-w-6xl max-h-[100dvh] overflow-y-auto p-4 pt-16 md:p-8 cursor-default"
                     >
-                        <div className="mb-12 text-center">
-                            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
-                                {galleryTitle} <span className="text-brand-orange">Showcase</span>
+                        <div className="mb-8 md:mb-12 text-center mt-4">
+                            <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 tracking-tight">
+                                {galleryTitle} <span className="text-brand-orange block md:inline mt-1">Showcase</span>
                             </h2>
                             <div className="w-24 h-1 bg-brand-orange mx-auto"></div>
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-12">
                             {selectedGallery.map((img, idx) => (
                                 <div 
                                     key={idx} 
@@ -322,14 +322,14 @@ const PadelModelsSection = () => {
             {selectedPhotoIndex !== null && (
                 <div 
                     onClick={() => setSelectedPhotoIndex(null)}
-                    className="fixed inset-0 z-[250] flex items-center justify-center p-4 bg-black/98 backdrop-blur-2xl transition-all duration-300 cursor-zoom-out"
+                    className="fixed inset-0 z-[10000] flex items-center justify-center p-4 bg-black/98 backdrop-blur-2xl transition-all duration-300 cursor-zoom-out"
                 >
                     <button
                         onClick={(e) => {
                             e.stopPropagation();
                             setSelectedPhotoIndex(null);
                         }}
-                        className="fixed top-6 right-6 mt-[env(safe-area-inset-top)] p-4 rounded-full bg-white/10 hover:bg-brand-orange text-white transition-all z-[260] hover:scale-110 active:scale-90"
+                        className="fixed top-6 right-6 mt-[env(safe-area-inset-top)] p-4 rounded-full bg-white/10 hover:bg-brand-orange text-white transition-all z-[10010] hover:scale-110 active:scale-90"
                         title="Close Photo"
                     >
                         <X size={32} />
@@ -337,18 +337,18 @@ const PadelModelsSection = () => {
                     
                     <button
                         onClick={handlePrevPhoto}
-                        className="absolute left-6 top-1/2 -translate-y-1/2 p-4 rounded-full bg-white/5 hover:bg-brand-orange text-white transition-all z-[210] hover:scale-110 active:scale-90"
+                        className="absolute left-4 md:left-6 top-1/2 -translate-y-1/2 p-3 md:p-4 rounded-full bg-white/5 hover:bg-brand-orange text-white transition-all z-[10010] hover:scale-110 active:scale-90"
                         title="Previous Photo"
                     >
-                        <ChevronLeft size={40} />
+                        <ChevronLeft size={32} className="md:w-10 md:h-10" />
                     </button>
 
                     <button
                         onClick={handleNextPhoto}
-                        className="absolute right-6 top-1/2 -translate-y-1/2 p-4 rounded-full bg-white/5 hover:bg-brand-orange text-white transition-all z-[210] hover:scale-110 active:scale-90"
+                        className="absolute right-4 md:right-6 top-1/2 -translate-y-1/2 p-3 md:p-4 rounded-full bg-white/5 hover:bg-brand-orange text-white transition-all z-[10010] hover:scale-110 active:scale-90"
                         title="Next Photo"
                     >
-                        <ChevronRight size={40} />
+                        <ChevronRight size={32} className="md:w-10 md:h-10" />
                     </button>
                     
                     <div className="relative max-w-7xl max-h-[90vh] flex flex-col items-center justify-center">
