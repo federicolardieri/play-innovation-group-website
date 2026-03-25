@@ -117,11 +117,11 @@ const HeroSection = () => {
                     <source src="/padel-loop.mp4" type="video/mp4" />
                 </video>
 
-                {/* Gradient: stronger at bottom for text, very light at top to reach navbar */}
+                {/* Gradient: subtle at top, soft at bottom to show through metrics */}
                 <div
                     className="absolute inset-0"
                     style={{
-                        background: 'linear-gradient(to top, #0E1116 0%, rgba(14,17,22,0.72) 35%, rgba(14,17,22,0.10) 65%, rgba(14,17,22,0.05) 100%)',
+                        background: 'linear-gradient(to top, rgba(14,17,22,0.92) 0%, rgba(14,17,22,0.30) 30%, rgba(14,17,22,0.08) 70%, rgba(14,17,22,0.02) 100%)',
                     }}
                 />
 
