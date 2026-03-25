@@ -15,6 +15,30 @@ const HeroSection = () => {
     const overlayRef = useRef(null);
     const videoRef = useRef(null);
 
+    // Dedicated video autoplay effect — runs once on mount, handles iOS Safari
+    useEffect(() => {
+        const video = videoRef.current;
+        if (!video) return;
+        // iOS Safari requires setAttribute for webkit-playsinline
+        video.setAttribute('webkit-playsinline', '');
+        video.setAttribute('playsinline', '');
+        video.muted = true;
+        const playPromise = video.play();
+        if (playPromise !== undefined) {
+            playPromise.catch(() => {
+                // Autoplay blocked: try playing on first user interaction
+                const unlock = () => {
+                    video.play().catch(() => {});
+                    document.removeEventListener('touchstart', unlock);
+                    document.removeEventListener('click', unlock);
+                };
+                document.addEventListener('touchstart', unlock, { once: true });
+                document.addEventListener('click', unlock, { once: true });
+            });
+        }
+    }, []);
+
+    // GSAP animations + overlay management
     useEffect(() => {
         if (isProductsOpen) {
             document.body.style.overflow = 'hidden';
@@ -45,12 +69,6 @@ const HeroSection = () => {
                     { y: 15, opacity: 0 },
                     { y: 0, opacity: 1, duration: 0.6, stagger: 0.1, delay: -0.4 }
                 );
-
-            if (videoRef.current) {
-                videoRef.current.play().catch(error => {
-                    console.log("Video auto-play was prevented:", error);
-                });
-            }
         }, containerRef);
 
         return () => {
@@ -76,15 +94,19 @@ const HeroSection = () => {
                     autoPlay
                     loop
                     muted
-                    defaultMuted
                     playsInline
                     preload="auto"
-                    className="absolute inset-0 w-full h-full object-cover brightness-[0.6] pointer-events-none"
+                    x-webkit-airplay="deny"
+                    disablePictureInPicture
+                    className="absolute inset-0 w-full h-full object-cover brightness-[0.55] pointer-events-none"
+                    style={{ WebkitTransform: 'translateZ(0)' }}
                 >
                     <source src="/padel-loop.mp4" type="video/mp4" />
                 </video>
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0E1116] via-[#0E1116]/40 to-transparent"></div>
-                <svg className="pointer-events-none absolute inset-0 h-full w-full opacity-[0.05] mix-blend-overlay" xmlns="http://www.w3.org/2000/svg">
+                {/* Mobile: strong bottom-up dark gradient for text readability */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0E1116] via-[#0E1116]/60 to-[#0E1116]/20"></div>
+                {/* Noise overlay */}
+                <svg className="pointer-events-none absolute inset-0 h-full w-full opacity-[0.04] mix-blend-overlay" xmlns="http://www.w3.org/2000/svg">
                     <filter id="noiseFilter">
                         <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
                     </filter>
