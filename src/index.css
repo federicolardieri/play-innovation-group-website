@@ -87,9 +87,9 @@
     min-height: 100%;
     height: 100% !important;
     object-fit: cover;
-    object-position: center 35%;
-    transform: translateZ(0) scale(2.6) !important;
-    -webkit-transform: translateZ(0) scale(2.6) !important;
+    object-position: center 40%;
+    transform: translateZ(0) scale(2.8) !important;
+    -webkit-transform: translateZ(0) scale(2.8) !important;
   }
 }
 

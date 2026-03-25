@@ -121,7 +121,7 @@ const HeroSection = () => {
                 <div
                     className="absolute inset-0"
                     style={{
-                        background: 'linear-gradient(to top, rgba(14,17,22,0.92) 0%, rgba(14,17,22,0.30) 30%, rgba(14,17,22,0.08) 70%, rgba(14,17,22,0.02) 100%)',
+                        background: 'linear-gradient(to top, rgba(14,17,22,0) 0%, rgba(14,17,22,0.85) 25%, rgba(14,17,22,0.15) 75%, rgba(14,17,22,0.05) 100%)',
                     }}
                 />
 
@@ -139,7 +139,7 @@ const HeroSection = () => {
             </div>
 
             {/* ─── CONTENT ──────────────────────────────────────── */}
-            <div className="relative z-10 flex flex-col justify-end h-full pb-10 md:pb-20 px-5 md:px-12 container mx-auto">
+            <div className="relative z-10 flex flex-col justify-end h-full pb-0 md:pb-20 px-5 md:px-12 container mx-auto">
                 <div className="max-w-3xl">
                     {/* Label pill */}
                     <div className="inline-block px-3 py-1 mb-4 md:mb-6 border border-brand-steel/30 rounded-full bg-[#0E1116]/50 backdrop-blur-sm">
