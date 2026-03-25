@@ -231,44 +231,38 @@ const PadelModelsSection = () => {
                             <h2 className="text-3xl md:text-4xl font-bold text-white mb-2 text-center">{t('padelModels.compareTitle')}</h2>
                             <p className="text-brand-steel text-center mb-12">{t('padelModels.compareSubtitle')}</p>
 
-                            <div className="overflow-x-auto pb-4">
-                                <table className="w-full min-w-[800px] text-left border-collapse">
-                                    <thead>
-                                        <tr>
-                                            <th className="sticky left-0 z-20 bg-brand-slate p-4 border-b border-r border-white/10 text-brand-steel font-medium font-mono shadow-[4px_0_15px_-3px_rgba(0,0,0,0.3)]">{t('padelModels.specs')}</th>
-                                            {models.map(m => (
-                                                <th key={m.id} className="p-4 border-b border-white/10 w-1/4">
-                                                    <div className="flex flex-col items-center text-center">
-                                                        <img src={m.image} alt={m.name} className="w-full h-32 object-cover rounded-lg mb-4 opacity-80" />
-                                                        <span className="text-brand-cyan font-bold tracking-wider">{m.name}</span>
-                                                    </div>
-                                                </th>
+                            <div className="flex overflow-x-auto pb-8 -mx-4 px-4 snap-x snap-mandatory gap-6 hide-scrollbar">
+                                {models.map(m => (
+                                    <div key={m.id} className="min-w-[85vw] md:min-w-[320px] flex-none snap-center bg-brand-graphite rounded-3xl border border-brand-cyan/20 overflow-hidden flex flex-col shadow-2xl relative group">
+                                        <div className="absolute inset-0 bg-gradient-to-b from-brand-cyan/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                                        <div className="p-6 flex flex-col items-center text-center bg-white/5 border-b border-white/10 relative z-10">
+                                            <div className="relative w-full aspect-video md:h-48 mb-6">
+                                                <div className="absolute inset-0 bg-brand-orange/20 rounded-xl blur-xl transform translate-y-2 opacity-50"></div>
+                                                <img src={m.image} alt={m.name} className="relative z-10 w-full h-full object-cover rounded-xl shadow-lg border border-white/10" />
+                                            </div>
+                                            <h3 className="text-brand-cyan font-bold text-2xl tracking-wider uppercase mb-1">{m.name}</h3>
+                                            <span className="text-xs text-brand-steel uppercase tracking-widest opacity-80 font-mono">Premium Series</span>
+                                        </div>
+                                        <div className="p-6 md:p-8 flex flex-col gap-6 flex-1 bg-gradient-to-b from-brand-graphite to-brand-slate/50 relative z-10">
+                                            {specKeys.map((key, i) => (
+                                                <div key={i} className="flex flex-col border-l-2 border-brand-orange/30 pl-4">
+                                                    <span className="text-brand-orange text-[10px] md:text-[11px] font-bold tracking-[0.2em] uppercase opacity-90 mb-1.5">{specLabels[key] || key}</span>
+                                                    <span className="text-brand-offwhite text-sm leading-relaxed">{m.specs?.[key]}</span>
+                                                </div>
                                             ))}
-                                        </tr>
-                                    </thead>
-                                    <tbody className="divide-y divide-white/5">
-                                        {specKeys.map((key, i) => (
-                                            <tr key={i} className="hover:bg-white/5 transition-colors">
-                                                <td className="sticky left-0 z-20 bg-brand-slate p-4 border-r border-white/10 text-brand-orange text-sm font-bold tracking-wider uppercase max-w-[150px] shadow-[4px_0_15px_-3px_rgba(0,0,0,0.3)]">{specLabels[key] || key}</td>
-                                                {models.map(m => (
-                                                    <td key={m.id} className="p-4 text-brand-steel text-sm">
-                                                        {m.specs?.[key]}
-                                                    </td>
-                                                ))}
-                                            </tr>
-                                        ))}
-                                        <tr>
-                                            <td className="sticky left-0 z-20 bg-brand-slate p-4 border-r border-white/10 shadow-[4px_0_15px_-3px_rgba(0,0,0,0.3)]"></td>
-                                            {models.map(m => (
-                                                <td key={m.id} className="p-4 text-center">
-                                                    <a href="#quote" onClick={() => setIsCompareOpen(false)} className="inline-flex mt-4 items-center justify-center px-4 py-2 bg-brand-graphite border border-brand-cyan text-brand-cyan hover:bg-brand-cyan hover:text-brand-graphite text-xs font-bold rounded-full transition-colors uppercase">
-                                                        {t('padelModels.choose')} {m.name}
-                                                    </a>
-                                                </td>
-                                            ))}
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                        </div>
+                                        <div className="p-6 md:p-8 mt-auto border-t border-white/10 bg-brand-slate relative z-10">
+                                            <a href="#quote" onClick={() => setIsCompareOpen(false)} className="w-full flex items-center justify-center px-6 py-4 bg-transparent border-2 border-brand-cyan text-brand-cyan hover:bg-brand-cyan hover:text-brand-graphite text-[13px] font-bold rounded-xl transition-all uppercase tracking-[0.15em]">
+                                                {t('padelModels.choose')} {m.name}
+                                            </a>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                            
+                            {/* Mobile Swipe Indicator */}
+                            <div className="flex md:hidden justify-center items-center mt-2 gap-3 text-brand-steel text-[10px] uppercase tracking-widest font-mono">
+                                <span className="animate-pulse">←</span> Scorri per confrontare <span className="animate-pulse">→</span>
                             </div>
                         </div>
                     </div>

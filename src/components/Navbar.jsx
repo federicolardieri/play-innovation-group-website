@@ -79,7 +79,8 @@ const Navbar = () => {
     const currentLang = LANGUAGES.find(l => l.code === language);
 
     return (
-        <header
+        <>
+            <header
             className={`fixed top-0 w-full z-[100] transition-all duration-500 ease-in-out ${isScrolled ? 'glass-nav py-3' : 'bg-transparent py-3 md:py-6'
                 }`}
         >
@@ -191,6 +192,7 @@ const Navbar = () => {
                     </button>
                 </div>
             </div>
+            </header>
 
             {/* Mobile Menu Full Screen Overlay - Premium GSAP driven */}
             {isMobileMenuOpen && (
@@ -238,7 +240,7 @@ const Navbar = () => {
                     </div>
                 </div>
             )}
-        </header>
+        </>
     );
 };
 

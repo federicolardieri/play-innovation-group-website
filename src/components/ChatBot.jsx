@@ -162,7 +162,7 @@ const ChatBot = () => {
                 onChange={(e) => setInput(e.target.value)}
                 onKeyPress={(e) => e.key === 'Enter' && handleSend()}
                 placeholder="Fai una domanda..."
-                className="flex-1 bg-transparent border-none focus:outline-none text-white text-sm px-2"
+                className="flex-1 bg-transparent border-none focus:outline-none text-white text-[16px] px-2"
               />
               <button
                 onClick={handleSend}
