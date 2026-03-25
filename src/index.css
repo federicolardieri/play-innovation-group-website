@@ -79,7 +79,7 @@
   animation: fadeIn 0.2s ease-out forwards;
 }
 
-/* Hero video: on portrait mobile, zoom in so landscape video fills tall screen */
+/* Hero video: on portrait mobile, zoom in so landscape video fills tall screen well */
 @media (max-width: 768px) and (orientation: portrait) {
   #home video {
     width: auto !important;
@@ -87,20 +87,10 @@
     min-height: 100%;
     height: 100% !important;
     object-fit: cover;
-    object-position: center 30%;
-    transform: translateZ(0) scale(2.0) !important;
-    -webkit-transform: translateZ(0) scale(2.0) !important;
+    object-position: center 20%;
+    transform: translateZ(0) scale(2.4) !important;
+    -webkit-transform: translateZ(0) scale(2.4) !important;
   }
-}
-
-/* Fade in hero video so native play-button flash is never visible */
-#home video {
-  opacity: 0;
-  animation: heroVideoFadeIn 0.01s 0.4s forwards;
-}
-
-@keyframes heroVideoFadeIn {
-  to { opacity: 1; }
 }
 
 /* Hide ALL native video controls and play overlays */

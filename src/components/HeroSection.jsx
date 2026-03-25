@@ -21,12 +21,13 @@ const HeroSection = () => {
         const v = videoRef.current;
         if (!v) return;
         v.muted = true;
+        v.defaultMuted = true;
         v.setAttribute('muted', '');
         v.setAttribute('playsinline', '');
         v.setAttribute('webkit-playsinline', '');
-        v.load(); // Re-trigger load so browser sees updated attrs
+        v.load();
         v.play().catch(() => {
-            // If autoplay still blocked, unlock on first touch/click
+            // If autoplay is blocked, unlock on first touch
             const unlock = () => { v.play().catch(() => {}); };
             document.addEventListener('touchstart', unlock, { once: true });
             document.addEventListener('click', unlock, { once: true });
@@ -89,11 +90,10 @@ const HeroSection = () => {
             {/* ─── BACKGROUND VIDEO ─────────────────────────────── */}
             <div className="absolute inset-0 z-0 bg-[#0E1116]">
                 {/*
-                  Key for iOS Safari autoplay:
-                  - autoPlay, loop, muted all as boolean props (React lowercases them to HTML attrs)
-                  - playsInline is the React prop name (maps to playsinline HTML attr)
-                  - NO programmatic .play() call – iOS ignores it without a gesture
-                  - disablePictureInPicture prevents PiP UI on some devices
+                  KEY iOS TRICK:
+                  - Keep video opacity:0 until the 'play' event fires
+                  - onPlay fades it in → the native play button is NEVER visible
+                  - If autoplay blocked, video stays invisible until user touch unlocks it
                 */}
                 <video
                     ref={videoRef}
@@ -108,18 +108,20 @@ const HeroSection = () => {
                         WebkitTransform: 'translateZ(0)',
                         transform: 'translateZ(0)',
                         filter: 'brightness(0.55)',
-                        // On mobile: scale up so a landscape video fills portrait viewport nicely
+                        opacity: 0,
+                        transition: 'opacity 0.5s ease',
                         objectPosition: 'center center',
                     }}
+                    onPlay={(e) => { e.currentTarget.style.opacity = '1'; }}
                 >
                     <source src="/padel-loop.mp4" type="video/mp4" />
                 </video>
 
-                {/* Gradient: strong on bottom so text always readable, lighter on top */}
+                {/* Gradient: stronger at bottom for text, very light at top to reach navbar */}
                 <div
                     className="absolute inset-0"
                     style={{
-                        background: 'linear-gradient(to top, #0E1116 0%, rgba(14,17,22,0.70) 40%, rgba(14,17,22,0.25) 70%, rgba(14,17,22,0.15) 100%)',
+                        background: 'linear-gradient(to top, #0E1116 0%, rgba(14,17,22,0.72) 35%, rgba(14,17,22,0.10) 65%, rgba(14,17,22,0.05) 100%)',
                     }}
                 />
 
