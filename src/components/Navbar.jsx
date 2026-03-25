@@ -10,6 +10,7 @@ const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isLangOpen, setIsLangOpen] = useState(false);
     const langRef = useRef(null);
+    const mobileLangRef = useRef(null);
     const mobileMenuRef = useRef(null);
     const location = useLocation();
     const navigate = useNavigate();
@@ -68,12 +69,20 @@ const Navbar = () => {
 
     useEffect(() => {
         const handleClickOutside = (e) => {
-            if (langRef.current && !langRef.current.contains(e.target)) {
+            const isOutsideDesktop = langRef.current && !langRef.current.contains(e.target);
+            const isOutsideMobile = mobileLangRef.current && !mobileLangRef.current.contains(e.target);
+            
+            // se clicco fuori sia dal desktop che dal mobile, chiudo il menu della lingua
+            if (isOutsideDesktop && isOutsideMobile) {
                 setIsLangOpen(false);
             }
         };
         document.addEventListener('mousedown', handleClickOutside);
-        return () => document.removeEventListener('mousedown', handleClickOutside);
+        document.addEventListener('touchstart', handleClickOutside); // aggiunto per reattività mobile
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+            document.removeEventListener('touchstart', handleClickOutside);
+        };
     }, []);
 
     const currentLang = LANGUAGES.find(l => l.code === language);
@@ -158,7 +167,7 @@ const Navbar = () => {
                 {/* Mobile & Tablet Controls */}
                 <div className="flex items-center gap-1 lg:hidden">
                     {/* Compact Language Selector for Mobile Header */}
-                    <div className="relative mr-2">
+                    <div ref={mobileLangRef} className="relative mr-2">
                         <button 
                             onClick={() => setIsLangOpen(!isLangOpen)}
                             className="w-9 h-9 flex items-center justify-center rounded-xl bg-white/5 border border-white/10 text-brand-offwhite"
