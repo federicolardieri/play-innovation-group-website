@@ -84,8 +84,7 @@ const HeroSection = () => {
         <section
             id="home"
             ref={containerRef}
-            className="relative w-full overflow-hidden"
-            style={{ height: '100dvh' }}
+            className="relative w-full overflow-hidden min-h-[100dvh] md:h-[100dvh] h-auto"
         >
             {/* ─── BACKGROUND VIDEO ─────────────────────────────── */}
             <div className="absolute inset-0 z-0 bg-[#0E1116]">
@@ -139,7 +138,7 @@ const HeroSection = () => {
             </div>
 
             {/* ─── CONTENT ──────────────────────────────────────── */}
-            <div className="relative z-10 flex flex-col justify-end h-full pb-0 md:pb-20 px-5 md:px-12 container mx-auto">
+            <div className="relative z-10 flex flex-col justify-end h-full pt-32 pb-16 md:pb-20 px-5 md:px-12 container mx-auto md:min-h-0 min-h-[100dvh]">
                 <div className="max-w-3xl">
                     {/* Label pill */}
                     <div className="inline-block px-3 py-1 mb-4 md:mb-6 border border-brand-steel/30 rounded-full bg-[#0E1116]/50 backdrop-blur-sm">

@@ -139,7 +139,7 @@ const PadelModelsSection = () => {
 
     return (
         <section ref={containerRef} id="padel-models" className="bg-brand-graphite relative z-10 text-white pb-20 md:pb-32">
-            <div className="container mx-auto px-6 md:px-8 pt-12 md:pt-24 pb-12 text-center flex flex-col items-center">
+            <div className="container mx-auto px-6 md:px-8 pt-0 md:pt-24 pb-12 text-center flex flex-col items-center">
                 <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">{t('padelModels.title')}</h2>
                 <p className="text-brand-steel text-base md:text-lg max-w-2xl mx-auto mb-8">{t('padelModels.subtitle')}</p>
 
