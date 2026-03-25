@@ -218,16 +218,16 @@ const PadelModelsSection = () => {
 
             {/* Compare Modal */}
             {isCompareOpen && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-brand-graphite/90 backdrop-blur-md">
-                    <div className="bg-brand-slate border border-brand-cyan/30 rounded-3xl w-full max-w-7xl max-h-[90vh] overflow-y-auto shadow-2xl relative">
+                <div className="fixed inset-0 z-[120] flex items-center justify-center p-2 md:p-4 bg-brand-graphite/95 backdrop-blur-xl">
+                    <div className="bg-brand-slate border border-brand-cyan/30 rounded-2xl md:rounded-3xl w-full max-w-7xl max-h-[95vh] md:max-h-[90vh] overflow-y-auto shadow-2xl relative flex flex-col">
                         <button
                             onClick={() => setIsCompareOpen(false)}
-                            className="absolute top-6 right-6 p-2 rounded-full bg-white/10 hover:bg-brand-orange text-white transition-colors"
+                            className="absolute top-4 right-4 md:top-6 md:right-6 p-2 rounded-full bg-white/10 hover:bg-brand-orange text-white transition-colors z-[130]"
                         >
                             <X size={24} />
                         </button>
 
-                        <div className="p-8 md:p-12">
+                        <div className="p-4 pt-12 md:p-12 flex-1 flex flex-col">
                             <h2 className="text-3xl md:text-4xl font-bold text-white mb-2 text-center">{t('padelModels.compareTitle')}</h2>
                             <p className="text-brand-steel text-center mb-12">{t('padelModels.compareSubtitle')}</p>
 
@@ -236,7 +236,7 @@ const PadelModelsSection = () => {
                                     <div key={m.id} className="min-w-[85vw] md:min-w-[320px] flex-none snap-center bg-brand-graphite rounded-3xl border border-brand-cyan/20 overflow-hidden flex flex-col shadow-2xl relative group">
                                         <div className="absolute inset-0 bg-gradient-to-b from-brand-cyan/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
                                         <div className="p-6 flex flex-col items-center text-center bg-white/5 border-b border-white/10 relative z-10">
-                                            <div className="relative w-full aspect-video md:h-48 mb-6">
+                                            <div className="relative w-full h-32 md:h-48 mb-6 shrink-0">
                                                 <div className="absolute inset-0 bg-brand-orange/20 rounded-xl blur-xl transform translate-y-2 opacity-50"></div>
                                                 <img src={m.image} alt={m.name} className="relative z-10 w-full h-full object-cover rounded-xl shadow-lg border border-white/10" />
                                             </div>
@@ -272,14 +272,14 @@ const PadelModelsSection = () => {
             {isGalleryOpen && (
                 <div 
                     onClick={() => setIsGalleryOpen(false)}
-                    className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/95 backdrop-blur-xl transition-all duration-500 cursor-zoom-out"
+                    className="fixed inset-0 z-[200] flex items-center justify-center p-4 bg-black/95 backdrop-blur-xl transition-all duration-500 cursor-zoom-out"
                 >
                     <button
                         onClick={(e) => {
                             e.stopPropagation();
                             setIsGalleryOpen(false);
                         }}
-                        className="absolute top-6 right-6 p-4 rounded-full bg-white/10 hover:bg-brand-orange text-white transition-all z-[110] hover:scale-110 active:scale-90"
+                        className="fixed top-6 right-6 mt-[env(safe-area-inset-top)] p-4 rounded-full bg-white/10 hover:bg-brand-orange text-white transition-all z-[210] hover:scale-110 active:scale-90"
                         title="Close Gallery"
                     >
                         <X size={32} />
@@ -322,14 +322,14 @@ const PadelModelsSection = () => {
             {selectedPhotoIndex !== null && (
                 <div 
                     onClick={() => setSelectedPhotoIndex(null)}
-                    className="fixed inset-0 z-[200] flex items-center justify-center p-4 bg-black/98 backdrop-blur-2xl transition-all duration-300 cursor-zoom-out"
+                    className="fixed inset-0 z-[250] flex items-center justify-center p-4 bg-black/98 backdrop-blur-2xl transition-all duration-300 cursor-zoom-out"
                 >
                     <button
                         onClick={(e) => {
                             e.stopPropagation();
                             setSelectedPhotoIndex(null);
                         }}
-                        className="absolute top-6 right-6 p-4 rounded-full bg-white/10 hover:bg-brand-orange text-white transition-all z-[210] hover:scale-110 active:scale-90"
+                        className="fixed top-6 right-6 mt-[env(safe-area-inset-top)] p-4 rounded-full bg-white/10 hover:bg-brand-orange text-white transition-all z-[260] hover:scale-110 active:scale-90"
                         title="Close Photo"
                     >
                         <X size={32} />

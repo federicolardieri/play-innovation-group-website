@@ -1,5 +1,5 @@
-import React, { useRef, useState } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import React, { useRef, useState, useEffect } from 'react';
+import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { useTranslation } from '../i18n/LanguageContext';
 
 const images = [
@@ -18,6 +18,33 @@ const GallerySection = () => {
     const [isDragging, setIsDragging] = useState(false);
     const [startX, setStartX] = useState(0);
     const [scrollLeft, setScrollLeft] = useState(0);
+    const [lightboxOpen, setLightboxOpen] = useState(false);
+    const [lightboxIndex, setLightboxIndex] = useState(0);
+
+    useEffect(() => {
+        if (lightboxOpen) {
+            document.body.style.overflow = 'hidden';
+            const handleKeyDown = (e) => {
+                if (e.key === 'Escape') setLightboxOpen(false);
+                if (e.key === 'ArrowLeft') setLightboxIndex(prev => (prev - 1 + images.length) % images.length);
+                if (e.key === 'ArrowRight') setLightboxIndex(prev => (prev + 1) % images.length);
+            };
+            window.addEventListener('keydown', handleKeyDown);
+            return () => {
+                document.body.style.overflow = 'unset';
+                window.removeEventListener('keydown', handleKeyDown);
+            };
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+    }, [lightboxOpen]);
+
+    const handleImageClick = (index) => {
+        if (!isDragging) {
+            setLightboxIndex(index);
+            setLightboxOpen(true);
+        }
+    };
 
     const scroll = (direction) => {
         if (scrollContainerRef.current) {
@@ -51,16 +78,16 @@ const GallerySection = () => {
 
     return (
         <section className="py-20 md:py-24 bg-brand-graphite flex flex-col justify-center relative border-t border-white/5 overflow-hidden">
-            <div className="container mx-auto px-4 md:px-12 z-10 w-full mb-10 md:mb-12 flex flex-col md:flex-row justify-between items-end gap-6">
-                <div>
-                    <span className="text-brand-cyan font-mono text-xs uppercase tracking-wider mb-4 block">
+            <div className="container mx-auto px-4 md:px-12 z-10 w-full mb-10 md:mb-12 flex flex-col items-center text-center md:flex-row md:justify-between md:items-end md:text-left gap-6">
+                <div className="flex flex-col items-center md:items-start max-w-2xl px-2">
+                    <span className="text-brand-cyan font-mono text-xs uppercase tracking-wider mb-3 md:mb-4 block">
                         {t('gallery.label')}
                     </span>
                     <h2 className="text-3xl md:text-5xl font-bold text-white mb-2">{t('gallery.title')}</h2>
-                    <p className="text-brand-steel text-sm md:text-base">{t('gallery.subtitle')}</p>
+                    <p className="text-brand-steel text-sm md:text-base max-w-lg">{t('gallery.subtitle')}</p>
                 </div>
 
-                <div className="flex gap-4">
+                <div className="flex justify-center gap-4">
                     <button
                         onClick={() => scroll('left')}
                         className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-brand-cyan hover:text-brand-graphite hover:border-brand-cyan transition-colors"
@@ -94,12 +121,70 @@ const GallerySection = () => {
                             className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 pointer-events-none"
                             draggable="false"
                         />
+                        {/* Wrapper for click handling separate from drag */}
+                        <div 
+                            className="absolute inset-0 cursor-pointer z-20" 
+                            onClick={(e) => { e.stopPropagation(); handleImageClick(index); }}
+                            onMouseDown={(e) => e.stopPropagation()} 
+                            onMouseUp={(e) => { e.stopPropagation(); handleImageClick(index); }}
+                        ></div>
                         <div className="absolute bottom-6 left-6 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
                             <span className="bg-brand-graphite/80 backdrop-blur-md text-white text-xs px-4 py-2 rounded-full font-mono">DETAIL 0{index + 1}</span>
                         </div>
                     </div>
                 ))}
             </div>
+
+            {/* Gallery Lightbox */}
+            {lightboxOpen && (
+                <div 
+                    onClick={() => setLightboxOpen(false)}
+                    className="fixed inset-0 z-[250] flex items-center justify-center p-4 bg-black/98 backdrop-blur-2xl transition-all duration-300 cursor-zoom-out"
+                >
+                    <button
+                        onClick={(e) => {
+                            e.stopPropagation();
+                            setLightboxOpen(false);
+                        }}
+                        className="fixed top-6 right-6 mt-[env(safe-area-inset-top)] p-4 rounded-full bg-white/10 hover:bg-brand-orange text-white transition-all z-[260] hover:scale-110 active:scale-90"
+                        title="Close Photo"
+                    >
+                        <X size={32} />
+                    </button>
+                    
+                    <button
+                        onClick={(e) => {
+                            e.stopPropagation();
+                            setLightboxIndex(prev => (prev - 1 + images.length) % images.length);
+                        }}
+                        className="absolute left-6 top-1/2 -translate-y-1/2 p-4 rounded-full bg-white/5 hover:bg-brand-orange text-white transition-all z-[260] hover:scale-110 active:scale-90"
+                    >
+                        <ChevronLeft size={40} />
+                    </button>
+
+                    <button
+                        onClick={(e) => {
+                            e.stopPropagation();
+                            setLightboxIndex(prev => (prev + 1) % images.length);
+                        }}
+                        className="absolute right-6 top-1/2 -translate-y-1/2 p-4 rounded-full bg-white/5 hover:bg-brand-orange text-white transition-all z-[260] hover:scale-110 active:scale-90"
+                    >
+                        <ChevronRight size={40} />
+                    </button>
+                    
+                    <div className="relative max-w-7xl max-h-[90vh] flex flex-col items-center justify-center">
+                        <img 
+                            src={images[lightboxIndex]} 
+                            alt="Full size view" 
+                            className="max-w-full max-h-[85vh] object-contain shadow-2xl rounded-lg border border-white/10"
+                            onClick={(e) => e.stopPropagation()}
+                        />
+                        <p className="text-brand-steel mt-6 font-mono text-sm tracking-widest uppercase">
+                            Photo {lightboxIndex + 1} / {images.length}
+                        </p>
+                    </div>
+                </div>
+            )}
 
             <style dangerouslySetInnerHTML={{
                 __html: `
