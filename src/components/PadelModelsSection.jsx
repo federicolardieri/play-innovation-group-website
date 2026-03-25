@@ -235,7 +235,7 @@ const PadelModelsSection = () => {
                                 <table className="w-full min-w-[800px] text-left border-collapse">
                                     <thead>
                                         <tr>
-                                            <th className="p-4 border-b border-white/10 text-brand-steel font-medium font-mono">{t('padelModels.specs')}</th>
+                                            <th className="sticky left-0 z-20 bg-brand-slate p-4 border-b border-r border-white/10 text-brand-steel font-medium font-mono shadow-[4px_0_15px_-3px_rgba(0,0,0,0.3)]">{t('padelModels.specs')}</th>
                                             {models.map(m => (
                                                 <th key={m.id} className="p-4 border-b border-white/10 w-1/4">
                                                     <div className="flex flex-col items-center text-center">
@@ -249,7 +249,7 @@ const PadelModelsSection = () => {
                                     <tbody className="divide-y divide-white/5">
                                         {specKeys.map((key, i) => (
                                             <tr key={i} className="hover:bg-white/5 transition-colors">
-                                                <td className="p-4 text-brand-orange text-sm font-bold tracking-wider uppercase max-w-[150px]">{specLabels[key] || key}</td>
+                                                <td className="sticky left-0 z-20 bg-brand-slate p-4 border-r border-white/10 text-brand-orange text-sm font-bold tracking-wider uppercase max-w-[150px] shadow-[4px_0_15px_-3px_rgba(0,0,0,0.3)]">{specLabels[key] || key}</td>
                                                 {models.map(m => (
                                                     <td key={m.id} className="p-4 text-brand-steel text-sm">
                                                         {m.specs?.[key]}
@@ -258,7 +258,7 @@ const PadelModelsSection = () => {
                                             </tr>
                                         ))}
                                         <tr>
-                                            <td className="p-4"></td>
+                                            <td className="sticky left-0 z-20 bg-brand-slate p-4 border-r border-white/10 shadow-[4px_0_15px_-3px_rgba(0,0,0,0.3)]"></td>
                                             {models.map(m => (
                                                 <td key={m.id} className="p-4 text-center">
                                                     <a href="#quote" onClick={() => setIsCompareOpen(false)} className="inline-flex mt-4 items-center justify-center px-4 py-2 bg-brand-graphite border border-brand-cyan text-brand-cyan hover:bg-brand-cyan hover:text-brand-graphite text-xs font-bold rounded-full transition-colors uppercase">

@@ -93,9 +93,13 @@ const ChatBot = () => {
   }
 
   return (
-    <div className={`fixed bottom-0 right-0 sm:bottom-6 sm:right-6 w-full sm:w-[400px] ${isMinimized ? 'h-16' : 'h-[100dvh] sm:h-[600px]'} sm:max-h-[80vh] bg-brand-graphite/95 backdrop-blur-xl rounded-t-[2rem] sm:rounded-[2rem] border border-white/10 shadow-2xl flex flex-col z-[100] overflow-hidden transition-all duration-300`}>
+    <div className={`fixed z-[100] flex flex-col overflow-hidden transition-all duration-300 bg-brand-graphite/95 backdrop-blur-xl shadow-2xl sm:w-[400px] sm:right-6 border-white/10 ${
+      isMinimized 
+        ? 'bottom-0 right-0 w-full h-16 rounded-t-[2rem] sm:rounded-[2rem] border-t sm:border sm:bottom-6' 
+        : 'inset-0 w-full h-[100dvh] sm:inset-auto sm:bottom-6 sm:h-[600px] sm:max-h-[80vh] sm:rounded-[2rem] sm:border'
+    }`}>
       {/* Header */}
-      <div className="p-4 border-b border-white/10 flex justify-between items-center bg-white/5">
+      <div className="p-4 border-b border-white/10 flex justify-between items-center bg-white/5 pt-[max(1rem,env(safe-area-inset-top))] sm:pt-4">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-full bg-brand-cyan/20 flex items-center justify-center border border-brand-cyan/30">
             <Bot size={20} className="text-brand-cyan" />
@@ -150,7 +154,7 @@ const ChatBot = () => {
           </div>
 
           {/* Input */}
-          <div className="p-4 border-t border-white/10 bg-white/5">
+          <div className="p-4 border-t border-white/10 bg-white/5" style={{ paddingBottom: 'max(1rem, env(safe-area-inset-bottom))' }}>
             <div className="flex items-center gap-2 bg-brand-graphite/50 border border-white/10 rounded-xl p-2 focus-within:border-brand-cyan/50 transition-colors">
               <input
                 type="text"

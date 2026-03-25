@@ -80,7 +80,6 @@ const HeroSection = () => {
                     playsInline
                     preload="auto"
                     className="absolute inset-0 w-full h-full object-cover brightness-50 mix-blend-overlay pointer-events-none"
-                    style={{ minHeight: '100%', minWidth: '100%' }}
                 >
                     <source src="/hero-video.mp4" type="video/mp4" />
                 </video>
