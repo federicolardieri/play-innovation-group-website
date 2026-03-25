@@ -78,3 +78,23 @@
 .animate-fadeIn {
   animation: fadeIn 0.2s ease-out forwards;
 }
+
+/* Hero video: on portrait mobile, zoom in so landscape video fills tall screen */
+@media (max-width: 768px) and (orientation: portrait) {
+  #home video {
+    width: auto !important;
+    min-width: 100%;
+    min-height: 100%;
+    height: 100% !important;
+    object-fit: cover;
+    transform: translateZ(0) scale(1.6) !important;
+    -webkit-transform: translateZ(0) scale(1.6) !important;
+  }
+}
+
+/* Hide native controls / play button on mobile */
+video::-webkit-media-controls {
+  display: none !important;
+}
+video::-webkit-media-controls-play-button { display: none; }
+video::-webkit-media-controls-panel { display: none; }

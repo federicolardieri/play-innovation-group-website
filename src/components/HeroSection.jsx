@@ -15,6 +15,24 @@ const HeroSection = () => {
     const overlayRef = useRef(null);
     const videoRef = useRef(null);
 
+    // iOS Safari fix: React's `muted` prop doesn't always set the HTML attribute.
+    // Must set it imperatively on the DOM node.
+    useEffect(() => {
+        const v = videoRef.current;
+        if (!v) return;
+        v.muted = true;
+        v.setAttribute('muted', '');
+        v.setAttribute('playsinline', '');
+        v.setAttribute('webkit-playsinline', '');
+        v.load(); // Re-trigger load so browser sees updated attrs
+        v.play().catch(() => {
+            // If autoplay still blocked, unlock on first touch/click
+            const unlock = () => { v.play().catch(() => {}); };
+            document.addEventListener('touchstart', unlock, { once: true });
+            document.addEventListener('click', unlock, { once: true });
+        });
+    }, []);
+
     // GSAP animations + overlay management
     useEffect(() => {
         if (isProductsOpen) {
@@ -90,6 +108,8 @@ const HeroSection = () => {
                         WebkitTransform: 'translateZ(0)',
                         transform: 'translateZ(0)',
                         filter: 'brightness(0.55)',
+                        // On mobile: scale up so a landscape video fills portrait viewport nicely
+                        objectPosition: 'center center',
                     }}
                 >
                     <source src="/padel-loop.mp4" type="video/mp4" />
