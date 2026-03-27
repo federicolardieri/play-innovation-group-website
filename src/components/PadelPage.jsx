@@ -1,15 +1,26 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import ProductPageTemplate from './ProductPageTemplate';
 import QuoteSection from './QuoteSection';
-
-// You might consider moving the "models" part to the ProductPageTemplate eventually if you want it on all pages,
-// but for now, we'll keep the PadelModelsSection out to avoid duplication unless it fits here perfectly.
-// Since Padel has specific models, we can display them here:
 import PadelModelsSection from './PadelModelsSection';
 
 const PadelPage = () => {
     return (
         <div>
+            <Helmet>
+                <title>Campi da Padel | Play Innovation Group</title>
+                <meta name="description" content="Campi da padel panoramici, super panoramici e standard. Vetro temperato 12mm, illuminazione LED, strutture in acciaio zincato. Soluzioni chiavi in mano." />
+                <link rel="canonical" href="https://www.playinnovationgroup.com/prodotti/padel" />
+                <script type="application/ld+json">{JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "BreadcrumbList",
+                  "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.playinnovationgroup.com/" },
+                    { "@type": "ListItem", "position": 2, "name": "Prodotti", "item": "https://www.playinnovationgroup.com/" },
+                    { "@type": "ListItem", "position": 3, "name": "Campi da Padel", "item": "https://www.playinnovationgroup.com/prodotti/padel" }
+                  ]
+                })}</script>
+            </Helmet>
             <ProductPageTemplate
                 titleKey="padelPage.title"
                 subtitleKey="padelPage.subtitle"

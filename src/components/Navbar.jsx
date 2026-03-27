@@ -133,6 +133,9 @@ const Navbar = () => {
                         <button
                             onClick={() => setIsLangOpen(!isLangOpen)}
                             className="flex items-center gap-1.5 text-sm font-medium text-brand-offwhite hover:text-brand-cyan transition-colors px-2 py-1 rounded-lg hover:bg-white/5"
+                            aria-label="Seleziona lingua"
+                            aria-expanded={isLangOpen}
+                            aria-haspopup="listbox"
                         >
                             <span className="text-base">{currentLang?.flag}</span>
                             <span className="uppercase text-xs font-mono tracking-wider">{language}</span>
@@ -168,9 +171,12 @@ const Navbar = () => {
                 <div className="flex items-center gap-1 lg:hidden">
                     {/* Compact Language Selector for Mobile Header */}
                     <div ref={mobileLangRef} className="relative mr-2">
-                        <button 
+                        <button
                             onClick={() => setIsLangOpen(!isLangOpen)}
                             className="w-9 h-9 flex items-center justify-center rounded-xl bg-white/5 border border-white/10 text-brand-offwhite"
+                            aria-label="Seleziona lingua"
+                            aria-expanded={isLangOpen}
+                            aria-haspopup="listbox"
                         >
                             <span className="text-lg">{currentLang?.flag}</span>
                         </button>
@@ -196,6 +202,9 @@ const Navbar = () => {
                     <button
                         className="w-10 h-10 flex items-center justify-center rounded-xl bg-white/5 border border-white/10 text-white"
                         onClick={toggleMobileMenu}
+                        aria-label={isMobileMenuOpen ? 'Chiudi menu' : 'Apri menu'}
+                        aria-expanded={isMobileMenuOpen}
+                        aria-controls="mobile-menu"
                     >
                         {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
                     </button>
@@ -205,9 +214,13 @@ const Navbar = () => {
 
             {/* Mobile Menu Full Screen Overlay - Premium GSAP driven */}
             {isMobileMenuOpen && (
-                <div 
+                <div
+                    id="mobile-menu"
                     ref={mobileMenuRef}
                     className="fixed inset-0 top-[60px] md:top-[70px] bg-brand-graphite/98 backdrop-blur-2xl z-[90] flex flex-col p-6 lg:hidden border-t border-white/10 overflow-y-auto"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-label="Menu di navigazione"
                 >
                     <div className="flex flex-col space-y-6 md:space-y-8 mt-4">
                         <a href="#home" className="text-2xl md:text-3xl font-bold text-white tracking-tight flex items-center gap-4" onClick={(e) => handleNavClick(e, '#home')}>

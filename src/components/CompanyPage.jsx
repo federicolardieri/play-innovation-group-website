@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { useTranslation } from '../i18n/LanguageContext';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -82,6 +83,11 @@ const CompanyPage = () => {
 
     return (
         <div ref={pageRef} className="pt-24 md:pt-20 bg-brand-graphite min-h-screen">
+            <Helmet>
+                <title>L'Azienda | Play Innovation Group</title>
+                <meta name="description" content="Scopri Play Innovation Group: esperienza, innovazione e passione nella progettazione e costruzione di impianti sportivi di alta qualità in tutta Europa." />
+                <link rel="canonical" href="https://www.playinnovationgroup.com/azienda" />
+            </Helmet>
             {/* Hero Section */}
             <section className="hero-section relative h-[60dvh] md:h-[70vh] flex items-center justify-center overflow-hidden">
                 <div 

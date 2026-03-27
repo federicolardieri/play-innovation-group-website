@@ -66,9 +66,11 @@ const ProductGallery = ({ categoryKey }) => {
                                 onClick={() => openLightbox(project, 0)}
                             >
                                 <div className="h-[300px] overflow-hidden">
-                                    <img 
-                                        src={project.images[0]} 
-                                        alt={meta.title} 
+                                    <img
+                                        src={project.images[0]}
+                                        alt={meta.title}
+                                        loading="lazy"
+                                        decoding="async"
                                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-brand-graphite via-transparent to-transparent" />

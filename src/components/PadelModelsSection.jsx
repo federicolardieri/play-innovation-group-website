@@ -95,6 +95,7 @@ const PadelModelsSection = () => {
 
         window.addEventListener('keydown', handleKeyDown);
         return () => window.removeEventListener('keydown', handleKeyDown);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [selectedPhotoIndex, selectedGallery]);
 
     useEffect(() => {
@@ -104,7 +105,7 @@ const PadelModelsSection = () => {
             
             const isMobile = window.innerWidth < 768;
 
-            panelsRef.current.forEach((panel, i) => {
+            panelsRef.current.forEach((panel) => {
                 gsap.fromTo(panel,
                     { opacity: 0, y: isMobile ? 0 : 50 },
                     {
@@ -171,7 +172,7 @@ const PadelModelsSection = () => {
  
                                     <div className="relative w-full aspect-video md:aspect-[4/3] rounded-sm mt-4">
                                         <div className="absolute top-0 left-0 w-[90%] h-[90%] bg-brand-orange z-0 transform -translate-x-3 -translate-y-3 md:-translate-x-4 md:-translate-y-4 rounded-tl-[2rem] md:rounded-tl-[3rem] rounded-br-[2rem] md:rounded-br-[3rem]"></div>
-                                        <img src={model.image} alt={model.name} className="relative z-10 w-full h-full object-cover shadow-2xl" />
+                                        <img src={model.image} alt={model.name} loading="lazy" decoding="async" className="relative z-10 w-full h-full object-cover shadow-2xl" />
                                     </div>
                                 </div>
 
@@ -239,7 +240,7 @@ const PadelModelsSection = () => {
                                         <div className="p-4 md:p-6 flex flex-col items-center text-center bg-white/5 border-b border-white/10 relative z-10 shrink-0">
                                             <div className="relative w-full h-28 md:h-48 mb-4 md:mb-6 shrink-0">
                                                 <div className="absolute inset-0 bg-brand-orange/20 rounded-xl blur-xl transform translate-y-2 opacity-50"></div>
-                                                <img src={m.image} alt={m.name} className={`relative z-10 w-full h-full rounded-xl shadow-lg border border-white/10 ${idx === 1 ? 'object-cover' : 'object-contain'}`} />
+                                                <img src={m.image} alt={m.name} loading="lazy" decoding="async" className={`relative z-10 w-full h-full rounded-xl shadow-lg border border-white/10 ${idx === 1 ? 'object-cover' : 'object-contain'}`} />
                                             </div>
                                             <h3 className="text-brand-cyan font-bold text-xl md:text-2xl tracking-wider uppercase mb-1">{m.name}</h3>
                                             <span className="text-[10px] md:text-xs text-brand-steel uppercase tracking-widest opacity-80 font-mono">Premium Series</span>

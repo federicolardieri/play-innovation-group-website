@@ -8,6 +8,7 @@ import es from './locales/es.json';
 
 const translations = { it, en, de, fr, es };
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const LANGUAGES = [
     { code: 'it', label: 'Italiano', flag: '🇮🇹' },
     { code: 'en', label: 'English', flag: '🇬🇧' },
@@ -38,6 +39,7 @@ export const LanguageProvider = ({ children }) => {
     );
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const useTranslation = () => {
     const context = useContext(LanguageContext);
     if (!context) {

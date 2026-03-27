@@ -24,7 +24,7 @@ const ProductsSection = () => {
 
     useEffect(() => {
         let ctx = gsap.context(() => {
-            cardsRef.current.forEach((card, i) => {
+            cardsRef.current.forEach((card) => {
                 gsap.fromTo(card,
                     { y: 50, opacity: 0 },
                     {

@@ -21,6 +21,7 @@ const FAQItem = ({ faq, isOpen, onClick }) => {
             <button
                 onClick={onClick}
                 className="w-full flex justify-between items-center text-left focus:outline-none group"
+                aria-expanded={isOpen}
             >
                 <h3 className={`text-xl md:text-2xl font-medium transition-colors duration-300 pr-8 ${isOpen ? 'text-brand-cyan' : 'text-white group-hover:text-brand-cyan/80'}`}>
                     {faq.q}

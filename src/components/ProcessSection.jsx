@@ -36,7 +36,7 @@ const ProcessSection = () => {
             );
 
             // Animate each step card
-            stepsRef.current.forEach((step, i) => {
+            stepsRef.current.forEach((step) => {
                 gsap.fromTo(step,
                     { opacity: 0, y: 40 },
                     {

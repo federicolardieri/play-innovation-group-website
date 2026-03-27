@@ -123,6 +123,8 @@ const CategorizedGallery = () => {
                                     <img
                                         src={heroImage}
                                         alt={meta.title || project.id}
+                                        loading="lazy"
+                                        decoding="async"
                                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-brand-graphite via-brand-graphite/20 to-transparent" />
@@ -158,6 +160,8 @@ const CategorizedGallery = () => {
                                             <img
                                                 src={thumb}
                                                 alt={`${meta.title || project.id} ${tIdx + 2}`}
+                                                loading="lazy"
+                                                decoding="async"
                                                 className="w-full h-full object-cover transition-transform duration-500 group-hover/thumb:scale-110"
                                             />
                                             <div className="absolute inset-0 bg-brand-graphite/30 group-hover/thumb:bg-transparent transition-colors duration-300" />

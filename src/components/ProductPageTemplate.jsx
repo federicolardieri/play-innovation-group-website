@@ -46,7 +46,7 @@ const ProductPageTemplate = ({
             {/* Hero Section */}
             <div className="relative w-full h-[50dvh] md:h-[70vh] flex items-end pb-8 md:pb-12 overflow-hidden">
                 <div className="absolute inset-0">
-                    <img src={heroImage} alt={t(titleKey)} className="w-full h-full object-cover scale-105" />
+                    <img src={heroImage} alt={t(titleKey)} fetchpriority="high" decoding="async" className="w-full h-full object-cover scale-105" />
                     <div className="absolute inset-0 bg-gradient-to-t from-brand-graphite onto-brand-slate/40"></div>
                 </div>
 
