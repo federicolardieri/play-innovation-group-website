@@ -1,8 +1,7 @@
 /* global process */
-import { GoogleGenerativeAI } from "@google/generative-ai";
+import { GoogleGenAI } from "@google/genai";
 
 export default async function handler(req, res) {
-  // Configurazione CORS (opzionale ma utile per Vercel)
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
@@ -17,7 +16,6 @@ export default async function handler(req, res) {
 
   const { contents, systemInstruction } = req.body;
 
-  // LOG per debug su Vercel (visibili nei log di Vercel Dashboard)
   console.log("Receiving request for ChatBot API");
 
   const apiKey = (process.env.GEMINI_API_KEY || "").trim();
@@ -27,37 +25,24 @@ export default async function handler(req, res) {
     return res.status(500).json({ error: 'GEMINI_API_KEY not configured on server. Check Vercel Environment Variables.' });
   }
 
+  if (!Array.isArray(contents)) {
+    return res.status(400).json({ error: 'Invalid contents format: expected an array' });
+  }
+
   try {
-    // Forza la versione v1 dell'API se v1beta dà problemi 404
-    const genAI = new GoogleGenerativeAI(apiKey);
-    // Nota: L'SDK v0.24+ gestisce internamente la versione, ma possiamo assicurarci di usare gemini-1.5-flash 
-    // che è disponibile globalmente su v1.
+    const ai = new GoogleGenAI({ apiKey });
 
-    // Proviamo con il nome modello esatto della documentazione
-    const modelName = "gemini-3-flash-preview";
+    const config = systemInstruction ? { systemInstruction } : {};
 
-    const modelOptions = {
-      model: modelName,
-    };
+    console.log("Sending request to Google Gemini API (Model: gemini-3-flash-preview)...");
 
-    if (systemInstruction) {
-      modelOptions.systemInstruction = {
-        parts: [{ text: systemInstruction }]
-      };
-    }
+    const response = await ai.models.generateContent({
+      model: "gemini-3-flash-preview",
+      contents,
+      config,
+    });
 
-    const model = genAI.getGenerativeModel(modelOptions);
-
-    console.log(`Sending request to Google Gemini API (Model: ${modelName})...`);
-
-    if (!Array.isArray(contents)) {
-      throw new Error("Invalid contents format: expected an array");
-    }
-
-    // Effettua la generazione del contenuto
-    const result = await model.generateContent({ contents });
-    const response = await result.response;
-    const text = response.text();
+    const text = response.text;
 
     if (!text) {
       throw new Error("Empty response from AI");
@@ -73,7 +58,7 @@ export default async function handler(req, res) {
 
     if (error.message?.includes('404')) {
       status = 404;
-      message = `Modello non trovato (404). Ho provato 'gemini-1.5-flash'. Dettagli: ${error.message}`;
+      message = `Modello non trovato (404). Dettagli: ${error.message}`;
     } else if (error.message?.includes('403') || error.message?.includes('API_KEY_INVALID')) {
       status = 403;
       message = "Chiave API non valida o permessi insufficienti.";
@@ -81,7 +66,7 @@ export default async function handler(req, res) {
 
     return res.status(status).json({
       error: 'AI Initialization Error',
-      message: message,
+      message,
       type: error.constructor.name
     });
   }
