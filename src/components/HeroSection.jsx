@@ -156,7 +156,7 @@ const HeroSection = () => {
                         muted
                         playsInline
                         preload="auto"
-                        className="absolute inset-0 w-full h-full object-cover object-center"
+                        className="absolute left-0 w-full h-auto top-1/2 -translate-y-1/2 md:inset-0 md:h-full md:top-auto md:translate-y-0 md:object-cover md:object-center"
                         style={{ filter: 'brightness(0.72) contrast(1.08)' }}
                     >
                         <source src="/HERO-SECTION.mp4" type="video/mp4" />
@@ -177,7 +177,7 @@ const HeroSection = () => {
                 <div
                     className="absolute inset-0 z-[3] pointer-events-none"
                     style={{
-                        background: 'linear-gradient(to bottom, rgba(2,21,29,0.05) 0%, rgba(2,21,29,0.1) 35%, rgba(2,21,29,0.72) 100%)',
+                        background: 'linear-gradient(to bottom, rgba(2,21,29,0.6) 0%, rgba(2,21,29,0.05) 20%, rgba(2,21,29,0.1) 60%, rgba(2,21,29,0.8) 100%)',
                     }}
                 />
 
