@@ -194,21 +194,21 @@ const HeroSection = () => {
                 </svg>
 
                 {/* ─── CONTENT ─── */}
-                <div className="relative z-10 flex flex-col justify-end h-full pb-16 md:pb-20 px-5 md:px-12 pt-32 md:pt-40 container mx-auto">
+                <div className="relative z-10 flex flex-col justify-end h-full pb-8 md:pb-20 px-5 md:px-12 pt-28 md:pt-40 container mx-auto">
                     <div className="max-w-3xl">
 
                         {/* Label pill */}
                         <div
                             ref={labelRef}
-                            className="inline-block px-3 py-1 mb-4 md:mb-6 border border-brand-steel/30 rounded-full bg-brand-graphite/50 backdrop-blur-sm"
+                            className="inline-block px-3 py-1 mb-3 md:mb-6 border border-brand-steel/30 rounded-full bg-brand-graphite/50 backdrop-blur-sm"
                         >
                             <span className="text-[10px] md:text-xs font-mono font-medium tracking-widest text-brand-cyan uppercase">
                                 {t('hero.label')}
                             </span>
                         </div>
 
-                        {/* Linea decorativa */}
-                        <div ref={decorLineRef} className="mb-4 md:mb-6 flex items-center gap-3">
+                        {/* Linea decorativa — nascosta su mobile */}
+                        <div ref={decorLineRef} className="mb-3 md:mb-6 hidden md:flex items-center gap-3">
                             <div
                                 className="h-[1px] bg-gradient-to-r from-brand-cyan to-transparent"
                                 style={{ width: 0 }}
@@ -219,11 +219,11 @@ const HeroSection = () => {
                         </div>
 
                         {/* Headline split */}
-                        <h1 ref={headlineRef} className="mb-4 md:mb-6 leading-none tracking-tight">
-                            <span className="block text-5xl sm:text-6xl md:text-7xl xl:text-8xl font-bold text-white">
+                        <h1 ref={headlineRef} className="mb-3 md:mb-6 leading-none tracking-tight">
+                            <span className="block text-4xl sm:text-5xl md:text-7xl xl:text-8xl font-bold text-white">
                                 {t('hero.headline')}
                             </span>
-                            <span className="block text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-light text-brand-cyan mt-1 md:mt-2">
+                            <span className="block text-xl sm:text-2xl md:text-4xl xl:text-5xl font-light text-brand-cyan mt-1 md:mt-2">
                                 {t('hero.headlineAccent')}
                             </span>
                         </h1>
@@ -231,22 +231,22 @@ const HeroSection = () => {
                         {/* Subheadline */}
                         <p
                             ref={subheadlineRef}
-                            className="text-sm md:text-xl text-brand-steel mb-6 md:mb-10 max-w-2xl leading-relaxed"
+                            className="text-sm md:text-xl text-brand-steel mb-5 md:mb-10 max-w-2xl leading-relaxed"
                         >
                             {t('hero.subheadline')}
                         </p>
 
                         {/* CTAs */}
-                        <div ref={buttonsRef} className="flex flex-col sm:flex-row gap-3 md:gap-4">
+                        <div ref={buttonsRef} className="flex flex-col sm:flex-row gap-2.5 md:gap-4">
                             <a
                                 href="#quote"
-                                className="btn-primary text-sm md:text-base px-8 py-3.5 md:py-4 text-center"
+                                className="btn-primary text-sm md:text-base px-8 py-3 md:py-4 text-center"
                             >
                                 {t('hero.ctaPrimary')}
                             </a>
                             <button
                                 onClick={() => setIsProductsOpen(true)}
-                                className="btn-secondary text-sm md:text-base px-8 py-3.5 md:py-4"
+                                className="btn-secondary text-sm md:text-base px-8 py-3 md:py-4"
                             >
                                 {t('hero.ctaSecondary')}
                             </button>
@@ -256,7 +256,7 @@ const HeroSection = () => {
                     {/* Metrics bar */}
                     <div
                         ref={metricsRef}
-                        className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 pt-6 md:pt-10 mt-8 md:mt-12 border-t border-white/10 w-full max-w-4xl"
+                        className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6 pt-4 md:pt-10 mt-5 md:mt-12 border-t border-white/10 w-full max-w-4xl"
                     >
                         {['expertise', 'structures', 'service', 'facilities'].map((key) => (
                             <div key={key} className="flex flex-col">
