@@ -38,8 +38,7 @@ const HeroSection = () => {
         const isMobile = !window.matchMedia('(min-width: 768px)').matches;
 
         if (isMobile) {
-            v.loop = true;
-            v.play().catch(() => {});
+            // autoPlay + loop già impostati come attributi JSX, nessuna azione JS necessaria
             return;
         }
 
@@ -56,6 +55,7 @@ const HeroSection = () => {
 
         const setupScrub = () => {
             v.pause();
+            v.loop = false;
             v.currentTime = 0;
 
             st = ScrollTrigger.create({
@@ -180,6 +180,8 @@ const HeroSection = () => {
                         ref={videoRef}
                         muted
                         playsInline
+                        autoPlay
+                        loop
                         preload="auto"
                         className="absolute inset-0 w-full h-full object-cover object-[center_35%] md:object-center"
                         style={{ filter: 'brightness(0.72) contrast(1.08)' }}
