@@ -10,7 +10,15 @@ const QuoteSection = () => {
     const { t } = useTranslation();
     const sectionRef = useRef(null);
     const formRef = useRef(null);
+    const timerRef = useRef(null);
+    const innerFormRef = useRef(null);
     const [isSubmitted, setIsSubmitted] = useState(false);
+
+    useEffect(() => {
+        return () => {
+            if (timerRef.current) clearTimeout(timerRef.current);
+        };
+    }, []);
 
     useEffect(() => {
         let ctx = gsap.context(() => {
@@ -36,9 +44,9 @@ const QuoteSection = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         setIsSubmitted(true);
-        setTimeout(() => {
+        timerRef.current = setTimeout(() => {
             setIsSubmitted(false);
-            e.target.reset();
+            innerFormRef.current?.reset();
         }, 5000);
     };
 
@@ -87,7 +95,7 @@ const QuoteSection = () => {
                                 <p className="text-brand-steel">{t('quote.form.successMessage')}</p>
                             </div>
                         ) : (
-                            <form onSubmit={handleSubmit} className="flex flex-col gap-6 relative z-10">
+                            <form ref={innerFormRef} onSubmit={handleSubmit} className="flex flex-col gap-6 relative z-10">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div className="flex flex-col gap-2">
                                         <label className="text-sm font-mono text-brand-steel uppercase tracking-wider">{t('quote.form.name')} *</label>

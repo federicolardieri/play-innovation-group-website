@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { useTranslation } from '../i18n/LanguageContext';
@@ -11,6 +11,16 @@ const images = [
     '/Padel-indoor/Copertura-padel2.JPG',
     '/MULTISPORT/PHOTO-2026-03-18-16-07-47.jpeg',
     '/Coperture/5f8dfcea-b006-4d33-8f01-b2c2bc32b043.jpeg',
+];
+
+const altTexts = [
+    'Copertura tensostruttura per campo da tennis indoor',
+    'Struttura superpanoramica per campo sportivo esterno',
+    'Copertura panoramica per impianto sportivo',
+    'Vista interna copertura panoramica per struttura sportiva',
+    'Tensostruttura per campo da padel indoor',
+    'Copertura multisport per palestra o campo polifunzionale',
+    'Struttura di copertura per impianto sportivo all-around',
 ];
 
 const GallerySection = () => {
@@ -118,7 +128,7 @@ const GallerySection = () => {
                         <div className="absolute inset-0 bg-brand-graphite/20 group-hover:bg-transparent transition-colors duration-700 z-10 pointer-events-none"></div>
                         <img
                             src={src}
-                            alt={`Project Gallery ${index + 1}`}
+                            alt={altTexts[index]}
                             className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 pointer-events-none"
                             draggable="false"
                         />
@@ -148,8 +158,8 @@ const GallerySection = () => {
                             e.stopPropagation();
                             setLightboxOpen(false);
                         }}
+                        aria-label="Chiudi"
                         className="fixed top-6 right-6 mt-[env(safe-area-inset-top)] p-4 rounded-full bg-white/10 hover:bg-brand-orange text-white transition-all z-[10000] hover:scale-110 active:scale-90"
-                        title="Close Photo"
                     >
                         <X size={32} />
                     </button>
@@ -159,6 +169,7 @@ const GallerySection = () => {
                             e.stopPropagation();
                             setLightboxIndex(prev => (prev - 1 + images.length) % images.length);
                         }}
+                        aria-label="Immagine precedente"
                         className="absolute left-4 md:left-6 top-1/2 -translate-y-1/2 p-3 md:p-4 rounded-full bg-white/5 hover:bg-brand-orange text-white transition-all z-[10000] hover:scale-110 active:scale-90"
                     >
                         <ChevronLeft size={32} className="md:w-10 md:h-10" />
@@ -169,6 +180,7 @@ const GallerySection = () => {
                             e.stopPropagation();
                             setLightboxIndex(prev => (prev + 1) % images.length);
                         }}
+                        aria-label="Immagine successiva"
                         className="absolute right-4 md:right-6 top-1/2 -translate-y-1/2 p-3 md:p-4 rounded-full bg-white/5 hover:bg-brand-orange text-white transition-all z-[10000] hover:scale-110 active:scale-90"
                     >
                         <ChevronRight size={32} className="md:w-10 md:h-10" />
@@ -177,7 +189,7 @@ const GallerySection = () => {
                     <div className="relative max-w-7xl max-h-[90vh] flex flex-col items-center justify-center">
                         <img 
                             src={images[lightboxIndex]} 
-                            alt="Full size view" 
+                            alt={altTexts[lightboxIndex]}
                             className="max-w-full max-h-[85vh] object-contain shadow-2xl rounded-lg border border-white/10"
                             onClick={(e) => e.stopPropagation()}
                         />
@@ -189,12 +201,6 @@ const GallerySection = () => {
                 document.body
             )}
 
-            <style dangerouslySetInnerHTML={{
-                __html: `
-                .scrollbar-hide::-webkit-scrollbar {
-                    display: none;
-                }
-            `}} />
         </section>
     );
 };

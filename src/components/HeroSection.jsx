@@ -34,18 +34,8 @@ const HeroSection = () => {
         });
     }, []);
 
-    // GSAP animations + overlay management
+    // GSAP initial animations — runs once on mount
     useEffect(() => {
-        if (isProductsOpen) {
-            document.body.style.overflow = 'hidden';
-            gsap.fromTo(overlayRef.current,
-                { opacity: 0, scale: 0.95 },
-                { opacity: 1, scale: 1, duration: 0.4, ease: "power2.out" }
-            );
-        } else {
-            document.body.style.overflow = 'unset';
-        }
-
         let ctx = gsap.context(() => {
             const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
             tl.fromTo(headlineRef.current,
@@ -68,6 +58,22 @@ const HeroSection = () => {
 
         return () => {
             ctx.revert();
+        };
+    }, []);
+
+    // Overlay management — runs when products modal opens/closes
+    useEffect(() => {
+        if (isProductsOpen) {
+            document.body.style.overflow = 'hidden';
+            gsap.fromTo(overlayRef.current,
+                { opacity: 0, scale: 0.95 },
+                { opacity: 1, scale: 1, duration: 0.4, ease: "power2.out" }
+            );
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+
+        return () => {
             document.body.style.overflow = 'unset';
         };
     }, [isProductsOpen]);

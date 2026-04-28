@@ -187,7 +187,7 @@
                 "title": "Pickleballplätze",
                 "desc": "Das am schnellsten wachsende Sportformat der Welt. Wir gestalten spezielle Indoor- und Outdoor-Bereiche mit hochbeständigen Oberflächen.",
                 "features": [
-                    "Strikt reglementierte Spielabmessungen (13,41 m x 6,10 m) with the corresponding zones of run-off areas.",
+                    "Strikt reglementierte Spielabmessungen (13,41 m x 6,10 m) mit entsprechenden Auslaufzonen.",
                     "Mehrschichtige Acrylharz-Bodensysteme mit hoher Schallabsorption.",
                     "Hochsichtbare Linienmarkierung, verschleißfest und UV-beständig.",
                     "Lieferung und Montage von Profi-Netzen mit integrierten Spannsystemen.",
@@ -266,7 +266,7 @@
                 "desc": "Spezialisierte Teams, schnelle Montage und schlüsselfertige Baustellenverwaltung mit einem einzigen Ansprechpartner."
             },
             {
-                "title": "Vision & Support",
+                "title": "Vision & Beratung",
                 "desc": "Nicht nur Bauunternehmer: Wir unterstützen Investoren und Clubs bei der Optimierung der kommerziellen Rendite der Anlage."
             }
         ]
@@ -412,6 +412,203 @@
             "privacy": "Durch das Absenden des Formulars akzeptieren Sie unsere Datenschutzrichtlinie.",
             "successTitle": "Anfrage gesendet!",
             "successMessage": "Unser Team wird Sie in Kürze kontaktieren."
+        }
+    },
+    "faq": {
+        "label": "Häufig gestellte Fragen",
+        "title": "Alles, was Sie wissen müssen.",
+        "subtitle": "Klare Informationen zu Kosten, Genehmigungen und Baustandards für die Eröffnung Ihres Sportzentrums.",
+        "items": [
+            {
+                "q": "Wie viel kostet der Bau eines Padelplatzes?",
+                "a": "Die Kosten variieren je nach gewähltem Modell (Extra Solid, Panoramisch, Super Panoramisch), Geländetyp und Optionen (fortschrittliche LED-Beleuchtung, Glasstärke). Wir bieten individuelle Angebote nach einer sorgfältigen Vorabanalyse, um Ihre Investition zu optimieren."
+            },
+            {
+                "q": "Welche Genehmigungen sind erforderlich?",
+                "a": "Die Installation von Sportanlagen und Abdeckungen erfordert in der Regel kommunale Genehmigungen, abhängig von den örtlichen Vorschriften und dem Bebauungsplan. Auf Anfrage bietet unser Team die erforderliche technische Unterstützung, um den Verwaltungsprozess zu erleichtern."
+            },
+            {
+                "q": "Welche Arten von Abdeckungen bieten Sie an?",
+                "a": "Wir konzipieren und installieren verschiedene Lösungen für maximale Flexibilität: von hocheffizienten Traglufthallen bis hin zu hochwertigen Spannkonstruktionen aus Brettschichtholz oder Stahl, alle so ausgelegt, dass sie eine Bespielbarkeit an 365 Tagen im Jahr bei minimalem Wartungsaufwand gewährleisten."
+            },
+            {
+                "q": "Sind die Plätze zertifiziert?",
+                "a": "Absolut. Wir arbeiten in Übereinstimmung mit den geltenden baulichen Vorschriften. Alle unsere Materialien und Installationen erfüllen die strengsten europäischen Standards für sportliche Leistung und Sicherheit."
+            },
+            {
+                "q": "Wie groß ist ein Tennisplatz?",
+                "a": "Ein regulärer Einzel-Tennisplatz misst 23,77 m in der Länge und 8,23 m in der Breite (10,97 m für Doppel). Dies sind Mindestmaße, und es ist wichtig, seitliche und hintere Auslaufbereiche hinzuzufügen, die wir gemeinsam durch die Analyse der Räumlichkeiten Ihrer Anlage definieren werden."
+            }
+        ]
+    },
+    "padelPage": {
+        "title": "Padelplätze",
+        "subtitle": "Visuelles Spektakel und Extremtechnik. Premium-Padel von PlayInnovation.",
+        "description": "Unsere Padelplätze sind keine einfachen Umzäunungen, sondern fortschrittliche Sport-Ökosysteme. Von der Strukturplanung bis zu den kleinsten Details (wie dem Winkel der Scheinwerfer und der Glasstärke) ist jede Komponente auf maximale Bespielbarkeit und Widerstandsfähigkeit gegenüber den aggressivsten Wetterbedingungen ausgelegt.\n\nOb das Extra Solid-Modell für maximale Auslastung oder das Super Panoramisch für reines visuelles Spektakel – wir garantieren eine millimetergenaue Installation, die das Ansehen Ihres Sportclubs aufwertet.",
+        "features": [
+            "Feuerverzinkte Stahlkonstruktionen oder ofenlackiert.",
+            "Laminiertes Sicherheitsglas 10 oder 12 mm mit polierten Kanten.",
+            "Asymmetrische LED-Beleuchtungssysteme für Blendfreiheit.",
+            "Texturierter Kunstrasen der neuesten Generation, WPT-zugelassen.",
+            "Verdeckte Edelstahl-Beschläge für maximale Spielersicherheit."
+        ],
+        "materials": {
+            "title": "Materialien",
+            "subtitle": "Präzisionstechnik für jede Komponente.",
+            "items": [
+                { "name": "Struktur", "desc": "Fe360B-Stahl mit Stärken bis zu 3 mm, feuerverzinkt.", "icon": "hard-hat" },
+                { "name": "Glas", "desc": "12 mm Sicherheits-Einscheibenglas, zertifiziert und geprüft.", "icon": "shield" },
+                { "name": "Beleuchtung", "desc": "8 asymmetrische 200W LED-Fluter, für gleichmäßige Ausleuchtung konzipiert.", "icon": "zap" }
+            ]
+        },
+        "surfaces": {
+            "title": "Unsere Beläge",
+            "subtitle": "Oberflächen für maximalen Grip und Leistung.",
+            "items": [
+                { "name": "Texturierter Rasen", "desc": "Das Beste für das professionelle Spiel: schont die Gelenke und sorgt für konstante Sprünge.", "color": "Blau / Grün / Rot" },
+                { "name": "Faserrasen", "desc": "Hervorragende Haltbarkeit und einfache Wartung, ideal für hochfrequentierte Clubs.", "color": "Blau / Grün" }
+            ]
+        }
+    },
+    "tennisPage": {
+        "title": "Tennisplätze",
+        "subtitle": "Vom Amateurclub bis zu ATP-Turnieren. Technisch ausgefeilte Oberflächen für perfekte Absprünge.",
+        "description": "Wir wissen, dass im Tennis der Millimeter den Unterschied macht. Deshalb bauen wir Plätze mit besonderer Sorgfalt hinsichtlich der Neigungen für die Wasserableitung und der Homogenität der Oberflächen.\n\nOb der zeitlose Charme des roten Sandplatzes (hergestellt mit den besten porösen und vulkanischen Unterlagen) oder die hochtechnologischen Kunstharzbeläge (mit integrierten Stoßdämpfungspolstern zur Reduzierung von Gelenkbelastungen) – wir installieren Umzäunungen, Beleuchtungssysteme und Zubehörkomponenten mit größter Sorgfalt, um eine unvergleichliche Premium-Anlage zu schaffen.",
+        "features": [
+            "Neubau inklusive Erdarbeiten, Estrich und zertifizierten Entwässerungssystemen.",
+            "Rote Sand-, Kunstharz- oder Kunstrasenoberflächen mit ITF-Zulassung.",
+            "Absprungtests während der Abnahme nach internationalen Vorschriften.",
+            "LED-Beleuchtungsanlagen mit lichttechnischen Spezifikationen für TV-Übertragungen.",
+            "Perimeterumzäunungen und hochfeste Windschutzsysteme."
+        ],
+        "materials": {
+            "title": "Materialien",
+            "subtitle": "Solidität und Baupräzision.",
+            "items": [
+                { "name": "Umzäunung", "desc": "Hochspannungsgitter mit Polymerbeschichtung, korrosionsbeständig.", "icon": "box" },
+                { "name": "Beleuchtung", "desc": "Lichtmasten mit 400W LED-Projektoren für internationale Spielstandards.", "icon": "sun" },
+                { "name": "Entwässerung", "desc": "Wabensysteme und Drainagerohre für sofortige Bespielbarkeit nach Regen.", "icon": "droplets" }
+            ]
+        },
+        "surfaces": {
+            "title": "Unsere Beläge",
+            "subtitle": "Die perfekte Oberfläche für Ihren Spielstil.",
+            "items": [
+                { "name": "Roter Sand", "desc": "Traditioneller Charme mit Unterbau aus vulkanischem Material für extremen Komfort.", "color": "Klassisch Rot" },
+                { "name": "Acrylharz", "desc": "Schnelle Hochleistungsoberfläche mit 7 Lagen integrierter Dämpfung.", "color": "Blau / Hellblau / Grün" },
+                { "name": "Kunstrasen", "desc": "Wartungsarm und ganzjährig bespielbar, mit Quarzsandverfüllung.", "color": "Grün / Blau" }
+            ]
+        }
+    },
+    "pickleballPage": {
+        "title": "Pickleballplätze",
+        "subtitle": "Das am schnellsten wachsende Sportformat der Welt. Konzipiert für pure Action.",
+        "description": "Pickleball erfordert eine Oberfläche, die den richtigen Kompromiss zwischen Gleiten und Grip bietet, mit perfekter Sichtbarkeit des Layouts. Wir installieren sowohl Indoor- als auch Outdoor-Plätze und nutzen dabei die verfügbaren Räume optimal.\n\nUnsere mehrschichtigen Kunststoffoberflächen sind darauf ausgelegt, Aufpralle zu dämpfen, die Ermüdung der Spieler zu reduzieren und einen präzisen und konstanten Ballabsprung in jedem Bereich des Platzes zu gewährleisten. Die kompakte Größe des Platzes ermöglicht es uns, stillgelegte Bereiche leicht in hochprofitable Einnahmequellen für Ihren Club umzuwandeln.",
+        "features": [
+            "Strikt reglementierte Spielabmessungen (13,41 m x 6,10 m) mit entsprechenden Auslaufzonen.",
+            "Mehrschichtige Acrylharz-Bodensysteme mit hoher Schallabsorption.",
+            "Hochsichtbare Linienmarkierung, verschleißfest und UV-beständig.",
+            "Lieferung und Montage von Profi-Netzen mit integrierten Spannsystemen.",
+            "Flächenumwandlung: Systeme zur Überlagerung des Layouts auf bestehende Plätze."
+        ],
+        "materials": {
+            "title": "Materialien",
+            "subtitle": "Neue Standards für die neue Disziplin.",
+            "items": [
+                { "name": "Netzsystem", "desc": "Lackierte Stahlpfosten mit professionellem Ratschenspannsystem.", "icon": "anchor" },
+                { "name": "Finish", "desc": "Hochbeständige Polyurethan-Lacke gegen Abrieb und Ballschläge.", "icon": "palette" }
+            ]
+        },
+        "surfaces": {
+            "title": "Unsere Beläge",
+            "subtitle": "Grip und Absprungpräzision.",
+            "items": [
+                { "name": "Pro Cushion", "desc": "Mehrschichtharz mit 3 Gummischichten zur Dämpfung jedes Schritts.", "color": "Blau / Dunkelblau" },
+                { "name": "Hard Court", "desc": "Rigides Acryl-Finish für einen schnelleren und sensibleren Absprung.", "color": "Individuell" }
+            ]
+        }
+    },
+    "multisportPage": {
+        "title": "Multisport- & Fußballplätze",
+        "subtitle": "Ein Raum, unendliche Möglichkeiten. Technik für sportliche Vielseitigkeit.",
+        "description": "Die Optimierung von Raum ist entscheidend für Schulen, Gemeinden und Mehrzweck-Sportzentren. Wir planen und bauen Multisportbereiche, die es ermöglichen, Hallenfußball, Basketball, Volleyball und Tennis auf derselben Oberfläche zu spielen, wodurch die Betriebskosten gesenkt werden, ohne die Leistung zu beeinträchtigen.\n\nWir wählen hochbeständige Mehrzweckoberflächen (Kunstharze oder wartungsarmer Kunstrasen), die intensivem Fußgängerverkehr und dem Einsatz unterschiedlichen Schuhwerks standhalten. Durch die Integration von umwandelbaren Ausrüstungen und Kletternetzen schaffen wir sichere Arenen, vandalismusbeständig und ganzjährig einsatzbereit.",
+        "features": [
+            "Mehrzweckoberflächen zertifiziert für Basketball, Volleyball, Hallenfußball und Tennis.",
+            "Äußerst haltbarer Kunstrasen mit Leistungsverfüllung für Fußball 5/7/11.",
+            "Mehrfarbige Linienmarkierungssysteme zur klaren Identifizierung jeder Sportart.",
+            "Zubehörstrukturen: integrierte Tore mit Körben, verstellbare Netze und Bänke.",
+            "Starres Plattenzaun-System mit sehr hoher Perimeterwiderstandsfähigkeit und Ballstoppnetzen."
+        ],
+        "materials": {
+            "title": "Materialien",
+            "subtitle": "Vielseitigkeit und höchste Widerstandsfähigkeit.",
+            "items": [
+                { "name": "Umzäunung", "desc": "4,00 m h Anti-Vandalismus-Starrmodule mit Anti-Korrosionsbehandlung.", "icon": "layout" },
+                { "name": "Ausrüstung", "desc": "Integrierte Tor-/Korbsysteme aus verzinktem Stahl mit Plexiglasrückwänden.", "icon": "target" }
+            ]
+        },
+        "surfaces": {
+            "title": "Unsere Beläge",
+            "subtitle": "Für intensiven Gebrauch konzipiert.",
+            "items": [
+                { "name": "Multi-Turf", "desc": "22 mm Kunstrasen spezifisch für Hallenfußball und Amateur-Tennis.", "color": "Grün / Rot" },
+                { "name": "Polyurethan", "desc": "Fugenlose elastische Oberfläche für Basketball und schulische Aktivitäten.", "color": "Orange / Blau" }
+            ]
+        }
+    },
+    "coperturePage": {
+        "title": "Sportabdeckungen",
+        "subtitle": "Vollständiger Schutz, perfektes Licht. Maximieren Sie den Ertrag Ihrer Anlage.",
+        "description": "Eine professionelle Sportabdeckung verwandelt einen saisonalen Platz in eine kontinuierliche Einkommensstruktur an 365 Tagen im Jahr, unabhängig von den Wetterbedingungen. Wir planen und installieren feste und Traglufthallen-Abdeckungen mit zeitgenössischem Design und hoher Energieeffizienz.\n\nUnsere hochwertigen Spannkonstruktionen werden mit doppelbeschichteten PVC-Membranen hergestellt, die speziell für Wärmedämmung und zur Minimierung des Kondensationseffekts behandelt wurden. Dank individuellem Design garantieren wir optimale Spielhöhen für WPT-, ITF- und FITP-Standards und verbinden dabei extreme Funktionalität mit architektonischer Ästhetik.",
+        "features": [
+            "Einzel- oder Doppelmembran-Traglufthallen für maximale Isolierung.",
+            "Bogenspannkonstruktionen aus Stahl oder Brettschichtholz mit hohem ästhetischem Wert.",
+            "Lichtdurchlässige Gewebe, die natürliches Tageslicht ermöglichen und Energiekosten senken.",
+            "Seitliche Schiebeöffnungssysteme zur Belüftung während der Sommersaison.",
+            "Bündige Integration der LED-Beleuchtung zur Vermeidung von Schattenzonen."
+        ],
+        "materials": {
+            "title": "Materialien",
+            "subtitle": "Technologie der Abdeckungen.",
+            "items": [
+                { "name": "Brettschichtholz", "desc": "Zertifizierte Bögen aus Fichte GL24, natürliche Schönheit und strukturelle Stabilität.", "icon": "tree" },
+                { "name": "PVC-Membran", "desc": "900 g/m² Polyestergewebe mit Doppelbeschichtung, flammhemmend und UV-beständig.", "icon": "layers" },
+                { "name": "Stahl", "desc": "Warmgewalzte, feuerverzinkte Stahlträger für freie Spannweiten bis zu 40 Metern.", "icon": "component" }
+            ]
+        },
+        "surfaces": {
+            "title": "Bodenbelag",
+            "subtitle": "Die Grundlagen für eine perfekte Abdeckung.",
+            "items": [
+                { "name": "Estrich", "desc": "Stahlbeton mit Quarzfinish oder Drainageasphalt.", "color": "Grau / Schwarz" }
+            ]
+        }
+    },
+    "companyPage": {
+        "hero": {
+            "title": "Räume sportlicher Exzellenz schaffen",
+            "subtitle": "Innovation, Ingenieurtechnik und Design für Premium-Sportanlagen."
+        },
+        "about": {
+            "title": "Über uns",
+            "content": "PlayInnovation Group ist ein führendes Unternehmen in der Planung und dem Bau von hochwertigen Sportanlagen. Mit langjähriger Erfahrung in der Branche verbinden wir die fortschrittlichsten Ingenieurtechniken mit einer modernen und funktionalen Ästhetik. Unser Ziel ist es, das Spielerlebnis durch langlebige, sichere und visuell beeindruckende Infrastrukturen zu steigern. Wir arbeiten eng mit Clubs, Investoren und öffentlichen Verwaltungen zusammen, um jede Vision in die Realität umzusetzen."
+        },
+        "values": {
+            "title": "Unsere Werte",
+            "items": [
+                {
+                    "title": "Premium-Qualität",
+                    "desc": "Wir wählen nur die besten Materialien, um langfristig Haltbarkeit und Spitzenleistung zu gewährleisten."
+                },
+                {
+                    "title": "Innovation",
+                    "desc": "Wir sind stets auf der Suche nach neuen technologischen und baulichen Lösungen, um aktuelle Standards zu übertreffen."
+                },
+                {
+                    "title": "Zuverlässigkeit",
+                    "desc": "Ein Team engagierter Fachleute begleitet jedes Projekt von der Erstberatung bis zur schlüsselfertigen Übergabe."
+                }
+            ]
         }
     },
     "finalCta": {

@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useCallback } from 'react';
+import React, { createContext, useContext, useState, useCallback, useEffect } from 'react';
 
 import it from './locales/it.json';
 import en from './locales/en.json';
@@ -18,9 +18,25 @@ export const LANGUAGES = [
 ];
 
 const LanguageContext = createContext();
+const VALID_CODES = Object.keys(translations);
 
 export const LanguageProvider = ({ children }) => {
-    const [language, setLanguage] = useState('it');
+    const [language, setLanguage] = useState(() => {
+        try {
+            const stored = localStorage.getItem('pi_lang');
+            return stored && VALID_CODES.includes(stored) ? stored : 'it';
+        } catch {
+            return 'it';
+        }
+    });
+
+    useEffect(() => {
+        try {
+            localStorage.setItem('pi_lang', language);
+        } catch {
+            // localStorage non disponibile (es. SSR o privacy mode)
+        }
+    }, [language]);
 
     const t = useCallback((key) => {
         const keys = key.split('.');

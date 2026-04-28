@@ -91,9 +91,9 @@ const ProductGallery = ({ categoryKey }) => {
             {/* Reused Lightbox Logic */}
             {lightbox.open && lightbox.projectIdx !== null && (
                 <div className="fixed inset-0 z-[9999] bg-black/95 backdrop-blur-xl flex items-center justify-center">
-                    <button onClick={closeLightbox} className="absolute top-6 right-6 z-[10000] w-14 h-14 bg-brand-orange hover:bg-red-500 rounded-full flex items-center justify-center text-white"><X size={28} /></button>
-                    <button onClick={() => navigateLightbox(-1)} className="absolute left-8 z-[10000] w-14 h-14 bg-white/15 rounded-full flex items-center justify-center text-white"><ChevronLeft size={28} /></button>
-                    <button onClick={() => navigateLightbox(1)} className="absolute right-8 z-[10000] w-14 h-14 bg-white/15 rounded-full flex items-center justify-center text-white"><ChevronRight size={28} /></button>
+                    <button onClick={closeLightbox} aria-label="Chiudi" className="absolute top-6 right-6 z-[10000] w-14 h-14 bg-brand-orange hover:bg-red-500 rounded-full flex items-center justify-center text-white"><X size={28} /></button>
+                    <button onClick={() => navigateLightbox(-1)} aria-label="Immagine precedente" className="absolute left-8 z-[10000] w-14 h-14 bg-white/15 rounded-full flex items-center justify-center text-white"><ChevronLeft size={28} /></button>
+                    <button onClick={() => navigateLightbox(1)} aria-label="Immagine successiva" className="absolute right-8 z-[10000] w-14 h-14 bg-white/15 rounded-full flex items-center justify-center text-white"><ChevronRight size={28} /></button>
                     <img src={projects[lightbox.projectIdx]?.images[lightbox.imageIdx]} alt="" className="max-w-[85vw] max-h-[75vh] object-contain rounded-2xl" />
                 </div>
             )}

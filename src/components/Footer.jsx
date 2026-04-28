@@ -1,6 +1,13 @@
 import { useTranslation } from '../i18n/LanguageContext';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 
+const PLATFORM_NAMES = {
+    instagram: 'Instagram',
+    facebook: 'Facebook',
+    linkedin: 'LinkedIn',
+    tiktok: 'TikTok',
+};
+
 const SocialIcon = ({ type, href }) => {
     const icons = {
         instagram: (
@@ -34,6 +41,7 @@ const SocialIcon = ({ type, href }) => {
             href={href}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={`Seguici su ${PLATFORM_NAMES[type] ?? type}`}
             className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-brand-steel hover:text-brand-cyan hover:border-brand-cyan/50 hover:bg-brand-cyan/10 transition-all duration-300"
         >
             {icons[type]}

@@ -132,7 +132,7 @@
                 "desc": "Structures panoramiques et super panoramiques conçues pour maximiser la visibilité et garantir des performances excellentes avec du verre trempé et du gazon de dernière génération.",
                 "features": [
                     "Structures en acier galvanisé à chaud ou peint au four.",
-                    "Verre trempé feuilleté de 10 ou 12 mm with bords polis.",
+                    "Verre trempé feuilleté de 10 ou 12 mm avec bords polis.",
                     "Systèmes d'éclairage LED asymétrique pour zéro éblouissement.",
                     "Gazon synthétique texturé de dernière génération, homologué WPT.",
                     "Visseries inox cachées pour une sécurité maximale des joueurs."
@@ -168,7 +168,7 @@
                 "title": "Terrains de Pickleball",
                 "desc": "Le format sportif à la croissance la plus rapide au monde. Nous concevons des espaces indoor et outdoor dédiés avec des surfaces ultra-résistantes.",
                 "features": [
-                    "Dimensions de jeu strictement réglementaires (13,41m x 6,10m) with corresponding run-off areas.",
+                    "Dimensions de jeu strictement réglementaires (13,41m x 6,10m) avec les zones de dégagement correspondantes.",
                     "Systèmes de revêtement en résine acrylique multicouche à haute absorption acoustique.",
                     "Tracé des lignes haute visibilité, résistant à l'usure et aux rayons UV.",
                     "Fourniture et installation de filets professionnels avec systèmes de tension intégrés.",
@@ -247,7 +247,7 @@
                 "desc": "Équipes spécialisées, montages rapides et gestion de chantier clé en main avec un interlocuteur unique."
             },
             {
-                "title": "Vision & Support",
+                "title": "Vision & Accompagnement",
                 "desc": "Pas seulement constructeurs : nous accompagnons investisseurs et clubs pour optimiser le retour commercial de l'installation."
             }
         ]
@@ -393,6 +393,203 @@
             "privacy": "En soumettant ce formulaire, vous acceptez notre Politique de Confidentialité pour le traitement des données.",
             "successTitle": "Demande envoyée !",
             "successMessage": "Notre équipe vous contactera dans les plus brefs délais."
+        }
+    },
+    "faq": {
+        "label": "Foire Aux Questions",
+        "title": "Tout ce que vous devez savoir.",
+        "subtitle": "Des informations claires sur les coûts, les permis et les normes de construction pour l'ouverture de votre centre sportif.",
+        "items": [
+            {
+                "q": "Combien coûte la construction d'un terrain de padel ?",
+                "a": "Le coût varie en fonction du modèle choisi (Extra Solid, Panoramique, Super Panoramique), du type de terrain et des options (éclairage LED avancé, épaisseur du verre). Nous proposons des devis personnalisés après une analyse préliminaire approfondie afin d'optimiser votre investissement."
+            },
+            {
+                "q": "Quels permis sont nécessaires ?",
+                "a": "L'installation d'équipements sportifs et de couvertures nécessite généralement des permis municipaux en fonction des réglementations locales et du zonage. Sur demande, notre équipe fournit l'assistance technique nécessaire pour faciliter les démarches administratives."
+            },
+            {
+                "q": "Quel type de couvertures proposez-vous ?",
+                "a": "Nous concevons et installons diverses solutions pour une flexibilité maximale : des structures gonflables haute efficacité aux structures tensiles premium en bois lamellé ou en acier, toutes conçues pour garantir la jouabilité 365 jours par an en minimisant les coûts d'entretien."
+            },
+            {
+                "q": "Les terrains sont-ils certifiés ?",
+                "a": "Absolument. Nous travaillons en conformité avec les réglementations structurelles en vigueur. Tous nos matériaux et installations respectent les normes européennes les plus strictes en matière de performance sportive et de sécurité."
+            },
+            {
+                "q": "Quelle est la taille d'un terrain de tennis ?",
+                "a": "Un terrain de tennis réglementaire en simple mesure 23,77 m de longueur sur 8,23 m de largeur (10,97 m en double). Ce sont des dimensions minimales, et il est essentiel d'ajouter des zones de dégagement latérales et arrière, que nous définirons ensemble en analysant les espaces de votre installation."
+            }
+        ]
+    },
+    "padelPage": {
+        "title": "Terrains de Padel",
+        "subtitle": "Spectacle visuel et ingénierie extrême. Le padel premium par PlayInnovation.",
+        "description": "Nos terrains de padel ne sont pas de simples clôtures, mais des écosystèmes sportifs avancés. De la conception structurelle jusqu'aux micro-détails (tels que l'angle des projecteurs et l'épaisseur du verre), chaque composant est conçu pour une jouabilité maximale et une résistance aux conditions météorologiques les plus agressives.\n\nQu'il s'agisse du modèle Extra Solid conçu pour une charge de travail maximale ou du Super Panoramique dédié au pur spectacle visuel, nous garantissons une installation au millimètre près qui élèvera le prestige de votre club sportif.",
+        "features": [
+            "Structures en acier galvanisé à chaud ou peint au four.",
+            "Verre trempé feuilleté de 10 ou 12 mm avec bords polis.",
+            "Systèmes d'éclairage LED asymétrique pour zéro éblouissement.",
+            "Gazon synthétique texturé de dernière génération, homologué WPT.",
+            "Visseries inox cachées pour une sécurité maximale des joueurs."
+        ],
+        "materials": {
+            "title": "Matériaux",
+            "subtitle": "Ingénierie de précision pour chaque composant.",
+            "items": [
+                { "name": "Structure", "desc": "Acier Fe360B avec épaisseurs jusqu'à 3mm, galvanisé à chaud.", "icon": "hard-hat" },
+                { "name": "Verre", "desc": "Panneaux de verre trempé de sécurité de 12mm, certifiés et testés.", "icon": "shield" },
+                { "name": "Éclairage", "desc": "8 projecteurs LED asymétriques de 200W, conçus pour une lumière uniforme.", "icon": "zap" }
+            ]
+        },
+        "surfaces": {
+            "title": "Nos Surfaces",
+            "subtitle": "Surfaces conçues pour une adhérence et des performances maximales.",
+            "items": [
+                { "name": "Gazon Texturé", "desc": "Le top pour le jeu professionnel : réduit le stress articulaire et garantit des rebonds constants.", "color": "Bleu / Vert / Rouge" },
+                { "name": "Gazon Fibré", "desc": "Excellente durabilité et facilité d'entretien, idéal pour les clubs à fort trafic.", "color": "Bleu / Vert" }
+            ]
+        }
+    },
+    "tennisPage": {
+        "title": "Terrains de Tennis",
+        "subtitle": "Des clubs amateurs aux tournois ATP. Des surfaces d'ingénierie pour la perfection du rebond.",
+        "description": "Nous savons qu'au tennis, le millimètre fait la différence. C'est pourquoi nous construisons des terrains en prenant soin de manière obsessionnelle des pentes pour le drainage de l'eau et de l'homogénéité des surfaces.\n\nQu'il s'agisse du charme intemporel de la terre battue rouge (réalisée avec les meilleures sous-couches poreuses et volcaniques) ou des résines synthétiques haute technologie (avec des coussins amortisseurs intégrés pour réduire les traumatismes articulaires), nous installons méticuleusement les clôtures, les systèmes d'éclairage et les composants accessoires pour offrir une installation premium sans égale.",
+        "features": [
+            "Construction de A à Z incluant terrassements, chapes et systèmes de drainage certifiés.",
+            "Surfaces en terre battue rouge, résine synthétique ou gazon synthétique homologuées ITF.",
+            "Tests de rebond effectués lors de la réception conformément aux réglementations internationales.",
+            "Systèmes d'éclairage LED avec spécifications photométriques pour les retransmissions télévisées.",
+            "Clôtures périmètriques et systèmes brise-vent à haute résistance structurelle."
+        ],
+        "materials": {
+            "title": "Matériaux",
+            "subtitle": "Résistance et précision de construction.",
+            "items": [
+                { "name": "Clôture", "desc": "Grillages haute tension avec revêtement polymère, résistants à la corrosion.", "icon": "box" },
+                { "name": "Éclairage", "desc": "Mâts d'éclairage avec projecteurs LED 400W pour les standards de matchs internationaux.", "icon": "sun" },
+                { "name": "Drainage", "desc": "Systèmes alvéolaires et canalisations de drainage pour une jouabilité immédiate après la pluie.", "icon": "droplets" }
+            ]
+        },
+        "surfaces": {
+            "title": "Nos Surfaces",
+            "subtitle": "La surface parfaite pour votre style de jeu.",
+            "items": [
+                { "name": "Terre Battue Rouge", "desc": "Charme traditionnel avec sous-couche en matériau volcanique pour un confort extrême.", "color": "Rouge Classique" },
+                { "name": "Résine Acrylique", "desc": "Surface rapide et performante avec 7 couches de coussin intégré.", "color": "Bleu / Bleu Ciel / Vert" },
+                { "name": "Gazon Synthétique", "desc": "Faible entretien et jouabilité toute l'année, avec remplissage de sable de silice.", "color": "Vert / Bleu" }
+            ]
+        }
+    },
+    "pickleballPage": {
+        "title": "Terrains de Pickleball",
+        "subtitle": "Le format sportif à la croissance la plus rapide au monde. Conçu pour l'action pure.",
+        "description": "Le pickleball requiert une surface offrant le bon compromis entre glisse et adhérence, avec une visibilité parfaite du tracé. Nous installons des terrains en intérieur et en extérieur en optimisant les espaces disponibles.\n\nNos surfaces synthétiques multicouches sont conçues pour amortir les impacts, réduire la fatigue des joueurs et garantir un rebond précis et constant dans chaque zone du terrain. La taille compacte du terrain nous permet de transformer facilement des espaces inutilisés en centres de revenus très rentables pour votre club.",
+        "features": [
+            "Dimensions de jeu strictement réglementaires (13,41m x 6,10m) avec les zones de dégagement correspondantes.",
+            "Systèmes de revêtement en résine acrylique multicouche à haute absorption acoustique.",
+            "Tracé des lignes haute visibilité, résistant à l'usure et aux rayons UV.",
+            "Fourniture et installation de filets professionnels avec systèmes de tension intégrés.",
+            "Convertibilité des espaces : systèmes pour superposer le tracé sur des terrains existants."
+        ],
+        "materials": {
+            "title": "Matériaux",
+            "subtitle": "Nouveaux standards pour la nouvelle discipline.",
+            "items": [
+                { "name": "Système de Filet", "desc": "Poteaux en acier peint avec système de tension professionnel à cliquet.", "icon": "anchor" },
+                { "name": "Finition", "desc": "Peintures polyuréthanes haute résistance à l'abrasion et aux frappes de balles.", "icon": "palette" }
+            ]
+        },
+        "surfaces": {
+            "title": "Nos Surfaces",
+            "subtitle": "Grip et précision du rebond.",
+            "items": [
+                { "name": "Pro Cushion", "desc": "Résine multicouche avec 3 couches de caoutchouc pour amortir chaque pas.", "color": "Bleu / Bleu Foncé" },
+                { "name": "Hard Court", "desc": "Finition acrylique rigide pour un rebond plus rapide et sensible.", "color": "Personnalisable" }
+            ]
+        }
+    },
+    "multisportPage": {
+        "title": "Terrains Multisports & Football",
+        "subtitle": "Un espace, des possibilités infinies. L'ingénierie au service de la polyvalence sportive.",
+        "description": "Optimiser l'espace est crucial pour les écoles, les municipalités et les centres sportifs polyvalents. Nous concevons et construisons des zones multisports permettant de jouer au football à cinq, au basketball, au volleyball et au tennis sur la même surface, réduisant les coûts de gestion sans compromettre les performances.\n\nNous sélectionnons des surfaces polyvalentes très durables (résines ou gazon synthétique à faible entretien) résistant à une fréquentation intensive et à l'utilisation avec différentes chaussures. En intégrant des équipements convertibles et des clôtures anti-escalade, nous créons des arènes sûres, résistantes au vandalisme et prêtes à l'emploi 365 jours par an.",
+        "features": [
+            "Surfaces polyvalentes certifiées pour le basketball, le volleyball, le football à 5 et le tennis.",
+            "Gazon synthétique à très haute durabilité avec remplissage haute performance pour terrains de Foot 5/7/11.",
+            "Systèmes de tracé multicouleurs pour une identification claire de chaque sport.",
+            "Structures accessoires : buts intégrés avec paniers, filets réglables et bancs.",
+            "Clôtures en panneaux rigides à très haute résistance périmétrale et filets pare-ballons."
+        ],
+        "materials": {
+            "title": "Matériaux",
+            "subtitle": "Polyvalence et résistance maximale.",
+            "items": [
+                { "name": "Clôture", "desc": "Modules rigides anti-vandalisme de 4,00m h avec traitement anti-corrosion.", "icon": "layout" },
+                { "name": "Équipement", "desc": "Systèmes but/panier intégrés en acier galvanisé avec panneaux en plexiglas.", "icon": "target" }
+            ]
+        },
+        "surfaces": {
+            "title": "Nos Surfaces",
+            "subtitle": "Conçues pour un usage intensif.",
+            "items": [
+                { "name": "Multi-Turf", "desc": "Gazon synthétique de 22mm spécifique pour le foot à 5 et le tennis amateur.", "color": "Vert / Rouge" },
+                { "name": "Polyuréthane", "desc": "Surface élastique sans joints pour le basket et les activités scolaires.", "color": "Orange / Bleu" }
+            ]
+        }
+    },
+    "coperturePage": {
+        "title": "Couvertures Sportives",
+        "subtitle": "Protection totale, lumière parfaite. Maximisez le rendement de votre installation.",
+        "description": "Une couverture sportive professionnelle transforme un terrain saisonnier en une structure de revenus continus 365 jours par an, quelles que soient les conditions météorologiques. Nous concevons et installons des couvertures fixes et gonflables avec un design contemporain et une haute efficacité énergétique.\n\nNos structures tensiles premium sont réalisées avec des membranes PVC double couche, spécialement traitées pour l'isolation thermique et pour atténuer l'effet de condensation. Grâce à une conception sur mesure, nous garantissons des hauteurs de jeu optimales pour les normes WPT, ITF et FITP, en alliant fonctionnalité extrême et esthétique architecturale.",
+        "features": [
+            "Couvertures gonflables simple ou double membrane pour une isolation maximale.",
+            "Structures tensiles en arc en acier ou bois lamellé à haute valeur esthétique.",
+            "Tissus translucides permettant l'éclairage naturel réduisant les coûts énergétiques.",
+            "Systèmes d'ouverture latérale coulissante pour la ventilation durant la saison estivale.",
+            "Intégration affleurante de l'éclairage LED pour éliminer les zones d'ombre."
+        ],
+        "materials": {
+            "title": "Matériaux",
+            "subtitle": "Technologie des couvertures.",
+            "items": [
+                { "name": "Bois Lamellé", "desc": "Arcs en Épicéa GL24 certifiés, beauté naturelle et stabilité structurelle.", "icon": "tree" },
+                { "name": "Membrane PVC", "desc": "Tissu polyester double couche 900g/m², ignifuge et anti-UV.", "icon": "layers" },
+                { "name": "Acier", "desc": "Poutres profilées galvanisées à chaud pour des portées libres jusqu'à 40 mètres.", "icon": "component" }
+            ]
+        },
+        "surfaces": {
+            "title": "Revêtements de Sol",
+            "subtitle": "Les fondations d'une couverture parfaite.",
+            "items": [
+                { "name": "Chape", "desc": "Béton armé avec finition quartz ou asphalte drainant.", "color": "Gris / Noir" }
+            ]
+        }
+    },
+    "companyPage": {
+        "hero": {
+            "title": "Construire des Espaces d'Excellence Sportive",
+            "subtitle": "Innovation, ingénierie et design pour des installations sportives premium."
+        },
+        "about": {
+            "title": "Qui Sommes-Nous",
+            "content": "PlayInnovation Group est une entreprise leader dans la conception et la construction d'installations sportives haut de gamme. Avec des années d'expérience dans le secteur, nous fusionnons les techniques d'ingénierie les plus avancées avec une esthétique moderne et fonctionnelle. Notre objectif est d'élever l'expérience de jeu grâce à des infrastructures durables, sûres et visuellement saisissantes. Nous travaillons en étroite collaboration avec les clubs, les investisseurs et les administrations publiques pour transformer chaque vision en réalité."
+        },
+        "values": {
+            "title": "Nos Valeurs",
+            "items": [
+                {
+                    "title": "Qualité Premium",
+                    "desc": "Nous sélectionnons uniquement les meilleurs matériaux pour garantir durabilité et performances de haut niveau dans le temps."
+                },
+                {
+                    "title": "Innovation",
+                    "desc": "Nous recherchons constamment de nouvelles solutions technologiques et constructives pour dépasser les standards actuels."
+                },
+                {
+                    "title": "Fiabilité",
+                    "desc": "Une équipe de professionnels dédiés suit chaque projet de la phase de consultation initiale à la livraison clé en main."
+                }
+            ]
         }
     },
     "finalCta": {
