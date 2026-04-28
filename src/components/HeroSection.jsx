@@ -36,27 +36,30 @@ const HeroSection = () => {
         v.load();
 
         let st;
-        let lastSeekTime = -1;
+        let rafId;
+        let latestProgress = 0;
+
+        // RAF throttle: max 1 seek per frame, usa sempre il progress più recente
+        const seekVideo = () => {
+            rafId = undefined;
+            if (v.duration && isFinite(v.duration)) {
+                v.currentTime = v.duration * latestProgress;
+            }
+        };
 
         const setupScrub = () => {
             v.pause();
+            v.currentTime = 0;
 
+            // Nessun `scrub`: mapping 1:1 scroll→progress, reverse funziona istantaneamente
             st = ScrollTrigger.create({
                 trigger: wrapperRef.current,
                 start: 'top top',
                 end: 'bottom bottom',
-                scrub: true,
                 onUpdate: (self) => {
-                    if (!v.duration || !isFinite(v.duration)) return;
-
-                    const target = v.duration * self.progress;
-                    if (Math.abs(target - lastSeekTime) < 0.016) return;
-                    lastSeekTime = target;
-
-                    if (typeof v.fastSeek === 'function') {
-                        v.fastSeek(target);
-                    } else {
-                        v.currentTime = target;
+                    latestProgress = self.progress;
+                    if (rafId === undefined) {
+                        rafId = requestAnimationFrame(seekVideo);
                     }
                 },
             });
@@ -68,7 +71,10 @@ const HeroSection = () => {
             v.addEventListener('loadeddata', setupScrub, { once: true });
         }
 
-        return () => st?.kill();
+        return () => {
+            st?.kill();
+            if (rafId !== undefined) cancelAnimationFrame(rafId);
+        };
     }, []);
 
     // Animazioni di entrata al mount
