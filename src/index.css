@@ -87,20 +87,6 @@
   animation: fadeIn 0.2s ease-out forwards;
 }
 
-/* Hero video: on portrait mobile, zoom in so landscape video fills tall screen well */
-@media (max-width: 768px) and (orientation: portrait) {
-  #home video {
-    width: auto !important;
-    min-width: 100%;
-    min-height: 100%;
-    height: 100% !important;
-    object-fit: cover;
-    object-position: center 40%;
-    transform: translateZ(0) scale(2.8) !important;
-    -webkit-transform: translateZ(0) scale(2.8) !important;
-  }
-}
-
 /* Respect user motion preferences */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
@@ -111,15 +97,3 @@
   }
 }
 
-/* Hide ALL native video controls and play overlays */
-video::-webkit-media-controls,
-video::-webkit-media-controls-enclosure,
-video::-webkit-media-controls-panel,
-video::-webkit-media-controls-overlay-play-button,
-video::-webkit-media-controls-play-button,
-video::-webkit-media-controls-start-playback-button {
-  display: none !important;
-  -webkit-appearance: none;
-  opacity: 0 !important;
-  pointer-events: none !important;
-}
