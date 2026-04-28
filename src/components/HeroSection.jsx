@@ -21,7 +21,7 @@ const HeroSection = () => {
     const metricsRef = useRef(null);
     const overlayRef = useRef(null);
 
-    // Scroll-driven video playback — il trigger copre tutta l'altezza del wrapper
+    // Video: autoplay loop su mobile, scroll-driven su desktop
     useEffect(() => {
         const v = videoRef.current;
         if (!v) return;
@@ -35,11 +35,18 @@ const HeroSection = () => {
         v.preload = 'auto';
         v.load();
 
+        const isMobile = !window.matchMedia('(min-width: 768px)').matches;
+
+        if (isMobile) {
+            v.loop = true;
+            v.play().catch(() => {});
+            return;
+        }
+
         let st;
         let rafId;
         let latestProgress = 0;
 
-        // RAF throttle: max 1 seek per frame, usa sempre il progress più recente
         const seekVideo = () => {
             rafId = undefined;
             if (v.duration && isFinite(v.duration)) {
@@ -51,7 +58,6 @@ const HeroSection = () => {
             v.pause();
             v.currentTime = 0;
 
-            // Nessun `scrub`: mapping 1:1 scroll→progress, reverse funziona istantaneamente
             st = ScrollTrigger.create({
                 trigger: wrapperRef.current,
                 start: 'top top',
@@ -156,10 +162,10 @@ const HeroSection = () => {
 
     return (
         /*
-          Wrapper alto 250dvh: fa da "binario" per il trigger scroll.
-          Il contenuto interno è sticky così rimane visibile mentre si scrolla.
+          Mobile: 100dvh (no scroll driver, video in autoplay loop)
+          Desktop: 250dvh fa da "binario" per il trigger scroll-driven
         */
-        <div id="home" ref={wrapperRef} style={{ height: '250dvh' }}>
+        <div id="home" ref={wrapperRef} className="h-[100dvh] md:h-[250dvh]">
             <div
                 ref={stickyRef}
                 className="sticky top-0 w-full overflow-hidden"
