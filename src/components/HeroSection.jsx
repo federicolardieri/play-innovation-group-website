@@ -28,22 +28,35 @@ const HeroSection = () => {
 
         v.muted = true;
         v.defaultMuted = true;
+        v.playsInline = true;
         v.setAttribute('muted', '');
         v.setAttribute('playsinline', '');
         v.setAttribute('webkit-playsinline', '');
+        v.preload = 'auto';
         v.load();
 
         let st;
+        let lastSeekTime = -1;
 
         const setupScrub = () => {
+            v.pause();
+
             st = ScrollTrigger.create({
                 trigger: wrapperRef.current,
                 start: 'top top',
                 end: 'bottom bottom',
-                scrub: 0.8,
+                scrub: true,
                 onUpdate: (self) => {
-                    if (v.duration && isFinite(v.duration)) {
-                        v.currentTime = v.duration * self.progress;
+                    if (!v.duration || !isFinite(v.duration)) return;
+
+                    const target = v.duration * self.progress;
+                    if (Math.abs(target - lastSeekTime) < 0.016) return;
+                    lastSeekTime = target;
+
+                    if (typeof v.fastSeek === 'function') {
+                        v.fastSeek(target);
+                    } else {
+                        v.currentTime = target;
                     }
                 },
             });
@@ -156,7 +169,7 @@ const HeroSection = () => {
                         muted
                         playsInline
                         preload="auto"
-                        className="absolute left-0 w-full h-auto top-1/2 -translate-y-1/2 md:inset-0 md:h-full md:top-auto md:translate-y-0 md:object-cover md:object-center"
+                        className="absolute inset-0 w-full h-full object-cover object-[center_35%] md:object-center"
                         style={{ filter: 'brightness(0.72) contrast(1.08)' }}
                     >
                         <source src="/HERO-SECTION.mp4" type="video/mp4" />
@@ -194,7 +207,7 @@ const HeroSection = () => {
                 </svg>
 
                 {/* ─── CONTENT ─── */}
-                <div className="relative z-10 flex flex-col justify-end h-full pb-8 md:pb-20 px-5 md:px-12 pt-28 md:pt-40 container mx-auto">
+                <div className="relative z-10 flex flex-col justify-end h-full pb-6 md:pb-20 px-5 md:px-12 pt-20 md:pt-40 container mx-auto">
                     <div className="max-w-3xl">
 
                         {/* Label pill */}
