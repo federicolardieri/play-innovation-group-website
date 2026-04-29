@@ -16,8 +16,9 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Play Innovation Group | Campi da Padel, Tennis e Pickleball</title>
-        <meta name="description" content="Play Innovation Group progetta e costruisce campi da padel, tennis, pickleball e multisport di alta qualità. Soluzioni chiavi in mano con materiali premium per club, hotel e centri sportivi." />
+        <title>Costruzione Campi Sportivi Professionali | Play Innovation Group</title>
+        <meta name="description" content="Progettiamo e costruiamo campi da padel, tennis, calcio, calcetto, pickleball e coperture sportive in tutta Italia. Soluzioni chiavi in mano per club e centri sportivi. Preventivo gratuito." />
+        <meta name="keywords" content="costruzione campi padel, costruzione campi tennis, costruzione campi calcio, costruzione campi calcetto, costruzione campi pickleball, coperture sportive, costruzione campi sportivi, impianti sportivi italia" />
         <link rel="canonical" href="https://www.playinnovationgroup.com/" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
@@ -26,27 +27,32 @@ const Home = () => {
             {
               "@type": "Question",
               "name": "Quanto costa costruire un campo da padel?",
-              "acceptedAnswer": { "@type": "Answer", "text": "Il costo varia in base al modello scelto (Extra Solid, Panoramico, Super Panoramico), al tipo di terreno e agli optional (illuminazione LED avanzata, spessori vetri). Offriamo preventivi su misura dopo un'attenta analisi preliminare in modo da ottimizzare il tuo investimento." }
+              "acceptedAnswer": { "@type": "Answer", "text": "Il costo di costruzione di un campo da padel varia in base al modello scelto (Extra Solid, Panoramico, Super Panoramico), al tipo di terreno e agli optional. I prezzi partono da circa 20.000€ per il modello entry-level fino a oltre 40.000€ per il Super Panoramico. Offriamo preventivi su misura dopo un'attenta analisi preliminare." }
             },
             {
               "@type": "Question",
-              "name": "Quali permessi ci vogliono?",
-              "acceptedAnswer": { "@type": "Answer", "text": "L'installazione di impianti sportivi e coperture richiede solitamente permessi comunali (come CILA, SCIA o Permesso di Costruire) a seconda dei vincoli locali. Il nostro team, su richiesta, fornisce il supporto tecnico necessario per agevolare l'iter burocratico." }
+              "name": "Quali permessi ci vogliono per costruire un campo sportivo?",
+              "acceptedAnswer": { "@type": "Answer", "text": "La costruzione di impianti sportivi e coperture richiede solitamente permessi comunali (CILA, SCIA o Permesso di Costruire) a seconda del comune e dei vincoli locali. Il nostro team, su richiesta, fornisce supporto tecnico per agevolare l'iter burocratico." }
             },
             {
               "@type": "Question",
-              "name": "Che tipo di coperture avete?",
-              "acceptedAnswer": { "@type": "Answer", "text": "Progettiamo e installiamo diverse soluzioni: palloni pressostatici ad alta efficienza energetica, tensostrutture premium in legno lamellare o acciaio, tutte studiate per assicurare la giocabilità 365 giorni all'anno." }
+              "name": "Che tipo di coperture sportive avete?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Progettiamo e installiamo coperture per campi da padel, tennis e multisport: palloni pressostatici ad alta efficienza energetica, tensostrutture in legno lamellare o acciaio con membrane PVC a doppia spalmatura, per garantire giocabilità 365 giorni l'anno." }
             },
             {
               "@type": "Question",
-              "name": "I campi sono certificati?",
-              "acceptedAnswer": { "@type": "Answer", "text": "Assolutamente sì. Lavoriamo nel rispetto delle regole strutturali vigenti (NTC 2018). Tutti i nostri materiali e installazioni rispondono alle più severe normative europee in materia di prestazioni e sicurezza sportiva." }
+              "name": "I campi costruiti da Play Innovation Group sono certificati?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Sì. Tutti i nostri impianti sono realizzati nel rispetto delle normative strutturali NTC 2018. I campi da tennis seguono le certificazioni ITF, i campi da padel rispettano le normative WPT e FITP, i campi da calcio usano manti certificati FIFA Quality Pro." }
             },
             {
               "@type": "Question",
-              "name": "Quanto è grande un campo da tennis?",
-              "acceptedAnswer": { "@type": "Answer", "text": "Un campo da tennis regolamentare per il singolare misura 23,77 m di lunghezza per 8,23 m di larghezza (10,97 m per il doppio). A queste dimensioni si aggiungono le fasce di rispetto laterali e di fondo campo." }
+              "name": "Quanto costa costruire un campo da calcio a 5?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Il costo di costruzione di un campo da calcio a 5 parte da circa 25.000€ per una superficie in erba sintetica standard (dimensioni 40m × 20m). Il prezzo finale dipende dal tipo di manto, dai sistemi di drenaggio, dalle recinzioni e dall'illuminazione. Contattateci per un preventivo su misura." }
+            },
+            {
+              "@type": "Question",
+              "name": "Quali sport si possono praticare su un campo multisport?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Un campo multisport PlayInnovation può ospitare basket, pallavolo, tennis, badminton e hockey da sala sulla stessa superficie grazie alla tracciatura multicolore. I nostri impianti sono progettati per massimizzare la versatilità senza compromettere le performance di nessuna disciplina." }
             }
           ]
         })}</script>
