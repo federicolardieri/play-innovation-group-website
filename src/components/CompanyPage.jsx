@@ -84,8 +84,9 @@ const CompanyPage = () => {
     return (
         <div ref={pageRef} className="pt-24 md:pt-20 bg-brand-graphite min-h-screen">
             <Helmet>
-                <title>L'Azienda | Play Innovation Group</title>
-                <meta name="description" content="Scopri Play Innovation Group: esperienza, innovazione e passione nella progettazione e costruzione di impianti sportivi di alta qualità in tutta Europa." />
+                <title>Costruttori di Impianti Sportivi Premium in Italia | Play Innovation Group</title>
+                <meta name="description" content="Play Innovation Group: esperienza nella progettazione e costruzione di impianti sportivi di alta qualità in tutta Italia. Scopri chi siamo." />
+                <meta name="keywords" content="costruttori impianti sportivi, costruzione impianti sportivi italia, progettazione campi sportivi, play innovation group, edilpadel" />
                 <link rel="canonical" href="https://www.playinnovationgroup.com/azienda" />
             </Helmet>
             {/* Hero Section */}
