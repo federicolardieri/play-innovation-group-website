@@ -61,6 +61,7 @@ const Footer = () => {
         "/prodotti/padel",
         "/prodotti/tennis",
         "/prodotti/pickleball",
+        "/prodotti/calcio",
         "/prodotti/multisport",
         "/prodotti/coperture"
     ];
