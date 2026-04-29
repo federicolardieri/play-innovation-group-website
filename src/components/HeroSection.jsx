@@ -50,7 +50,10 @@ const HeroSection = () => {
             if (v.readyState >= 3) {
                 tryPlay();
             } else {
+                // Listener prima di load() per non perdere l'evento
                 v.addEventListener('canplay', tryPlay, { once: true });
+                // iOS Safari ignora preload="auto": serve v.load() esplicito per avviare il download
+                v.load();
             }
             return;
         }
