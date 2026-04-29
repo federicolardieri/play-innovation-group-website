@@ -120,7 +120,8 @@ const Navbar = () => {
                             <Link to="/prodotti/padel" className="px-4 py-2.5 text-sm text-brand-offwhite hover:bg-white/5 hover:text-brand-cyan transition-colors block">Campi da Padel</Link>
                             <Link to="/prodotti/tennis" className="px-4 py-2.5 text-sm text-brand-offwhite hover:bg-white/5 hover:text-brand-cyan transition-colors block">Campi da Tennis</Link>
                             <Link to="/prodotti/pickleball" className="px-4 py-2.5 text-sm text-brand-offwhite hover:bg-white/5 hover:text-brand-cyan transition-colors block">Campi da Pickleball</Link>
-                            <Link to="/prodotti/multisport" className="px-4 py-2.5 text-sm text-brand-offwhite hover:bg-white/5 hover:text-brand-cyan transition-colors block">Campi Multisport & Calcio</Link>
+                            <Link to="/prodotti/calcio" className="px-4 py-2.5 text-sm text-brand-offwhite hover:bg-white/5 hover:text-brand-cyan transition-colors block">Campi da Calcio</Link>
+                            <Link to="/prodotti/multisport" className="px-4 py-2.5 text-sm text-brand-offwhite hover:bg-white/5 hover:text-brand-cyan transition-colors block">Campi Multisport</Link>
                             <Link to="/prodotti/coperture" className="px-4 py-2.5 text-sm text-brand-offwhite hover:bg-white/5 hover:text-brand-cyan transition-colors block">Coperture Sportive</Link>
                         </div>
                     </div>
@@ -237,6 +238,7 @@ const Navbar = () => {
                                 <Link to="/prodotti/padel" onClick={closeMobileMenu} className="text-lg text-brand-offwhite hover:text-brand-cyan transition-colors">Campi da Padel</Link>
                                 <Link to="/prodotti/tennis" onClick={closeMobileMenu} className="text-lg text-brand-offwhite hover:text-brand-cyan transition-colors">Campi da Tennis</Link>
                                 <Link to="/prodotti/pickleball" onClick={closeMobileMenu} className="text-lg text-brand-offwhite hover:text-brand-cyan transition-colors">Campi da Pickleball</Link>
+                                <Link to="/prodotti/calcio" onClick={closeMobileMenu} className="text-lg text-brand-offwhite hover:text-brand-cyan transition-colors">Campi da Calcio</Link>
                                 <Link to="/prodotti/multisport" onClick={closeMobileMenu} className="text-lg text-brand-offwhite hover:text-brand-cyan transition-colors">Campi Multisport</Link>
                                 <Link to="/prodotti/coperture" onClick={closeMobileMenu} className="text-lg text-brand-offwhite hover:text-brand-cyan transition-colors">Coperture Sportive</Link>
                             </div>
