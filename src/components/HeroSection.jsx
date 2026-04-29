@@ -26,21 +26,38 @@ const HeroSection = () => {
         const v = videoRef.current;
         if (!v) return;
 
+        // Imposta muted come proprietà JS E come attributo DOM
+        // (workaround bug React: l'attributo muted non viene trasferito correttamente nel DOM reale,
+        //  iOS Safari controlla l'attributo al momento di valutare la policy autoplay)
         v.muted = true;
         v.defaultMuted = true;
         v.playsInline = true;
         v.setAttribute('muted', '');
         v.setAttribute('playsinline', '');
         v.setAttribute('webkit-playsinline', '');
-        v.preload = 'auto';
-        v.load();
 
         const isMobile = !window.matchMedia('(min-width: 768px)').matches;
 
+        // ── MOBILE: autoplay loop, NO v.load() ──────────────────────────────────
+        // v.load() resetta il media element e cancella l'autoplay in corso su iOS Safari.
+        // Su mobile carichiamo tramite preload="auto" (attributo HTML) e chiamiamo
+        // v.play() esplicitamente via evento canplay, con muted già impostato correttamente.
         if (isMobile) {
-            // autoPlay + loop già impostati come attributi JSX, nessuna azione JS necessaria
+            v.loop = true;
+            const tryPlay = () => {
+                v.play().catch(() => {});
+            };
+            if (v.readyState >= 3) {
+                tryPlay();
+            } else {
+                v.addEventListener('canplay', tryPlay, { once: true });
+            }
             return;
         }
+
+        // ── DESKTOP: scroll-driven scrubbing ────────────────────────────────────
+        v.preload = 'auto';
+        v.load();
 
         let st;
         let rafId;
@@ -180,8 +197,6 @@ const HeroSection = () => {
                         ref={videoRef}
                         muted
                         playsInline
-                        autoPlay
-                        loop
                         preload="auto"
                         className="absolute inset-0 w-full h-full object-cover object-[center_35%] md:object-center"
                         style={{ filter: 'brightness(0.72) contrast(1.08)' }}
