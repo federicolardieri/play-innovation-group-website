@@ -8,8 +8,8 @@ const CoperturePage = () => {
         <div>
             <Helmet>
                 <title>Coperture Sportive per Campi da Padel e Tennis | Play Innovation Group</title>
-                <meta name="description" content="Tensostrutture e palloni pressostatici per coperture campi sportivi. Legno lamellare, acciaio, membrana PVC. Giocabilità 365 giorni l'anno." />
-                <meta name="keywords" content="coperture sportive, coperture campi padel, coperture campi tennis, tensostruttura sportiva, pallone pressostatico, copertura campo sportivo indoor" />
+                <meta name="description" content="Tensostrutture e palloni pressostatici per coperture campi sportivi. Legno lamellare, acciaio, membrana PVC anti-condensa. Giocabilità 365 giorni l'anno. Preventivo gratuito." />
+                <meta name="keywords" content="coperture sportive, coperture campi padel, tensostrutture sportive, palloni pressostatici, copertura campo tennis, strutture sportive indoor, copertura campo calcio" />
                 <link rel="canonical" href="https://www.playinnovationgroup.com/prodotti/coperture" />
                 <script type="application/ld+json">{JSON.stringify({
                   "@context": "https://schema.org",
@@ -24,7 +24,7 @@ const CoperturePage = () => {
                   "@context": "https://schema.org",
                   "@type": "Service",
                   "name": "Coperture Sportive",
-                  "description": "Progettazione e installazione di coperture sportive con tensostrutture, palloni pressostatici e strutture in legno lamellare per campi da padel, tennis e altri sport.",
+                  "description": "Progettazione e installazione coperture per campi sportivi: tensostrutture in legno lamellare o acciaio e palloni pressostatici per campi da padel, tennis, calcio e multisport. Soluzioni indoor con efficienza energetica in tutta Italia.",
                   "provider": { "@type": "Organization", "name": "Play Innovation Group", "url": "https://www.playinnovationgroup.com" },
                   "areaServed": "IT",
                   "serviceType": "Coperture Sportive"
@@ -33,11 +33,31 @@ const CoperturePage = () => {
                   "@context": "https://schema.org",
                   "@type": "FAQPage",
                   "mainEntity": [
-                    { "@type": "Question", "name": "Quali tipi di coperture sportive esistono?", "acceptedAnswer": { "@type": "Answer", "text": "Realizziamo tensostrutture con membrana PVC, palloni pressostatici, strutture in legno lamellare e coperture in acciaio zincato. La scelta dipende dal tipo di campo, dal budget e dall'utilizzo previsto." } },
-                    { "@type": "Question", "name": "Quanto costa una copertura per un campo da padel?", "acceptedAnswer": { "@type": "Answer", "text": "Il costo di una copertura per campo da padel varia in base alla tipologia strutturale e alle dimensioni. Un pallone pressostatico parte da circa 80.000€, una tensostruttura permanente da circa 120.000€. Contattateci per un preventivo dettagliato." } },
-                    { "@type": "Question", "name": "Qual è la differenza tra pallone pressostatico e tensostruttura?", "acceptedAnswer": { "@type": "Answer", "text": "Il pallone pressostatico è una struttura gonfiabile tenuta in pressione, più economica e rapida da installare ma stagionale. La tensostruttura è una struttura permanente in acciaio e membrana PVC, più robusta e adatta all'uso tutto l'anno." } },
-                    { "@type": "Question", "name": "Le coperture sportive richiedono permessi edilizi?", "acceptedAnswer": { "@type": "Answer", "text": "Le coperture permanenti come tensostrutture e strutture in legno lamellare richiedono generalmente permessi edilizi. Vi assistiamo nella gestione delle pratiche burocratiche per garantire la conformità normativa." } },
-                    { "@type": "Question", "name": "Costruite coperture per campi da tennis?", "acceptedAnswer": { "@type": "Answer", "text": "Sì, realizziamo coperture per campi da tennis indoor con tensostrutture, palloni pressostatici e strutture in legno lamellare, permettendo la giocabilità 365 giorni l'anno." } }
+                    {
+                      "@type": "Question",
+                      "name": "Quali tipi di copertura sportiva esistono?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "Installiamo tre tipologie principali di copertura sportiva: palloni pressostatici (struttura gonfiabile ad alta efficienza energetica), tensostrutture ad arco in acciaio zincato e tensostrutture in legno lamellare con membrane PVC. Ogni soluzione è progettata su misura in base alle dimensioni del campo e alle esigenze estetiche." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Quanto costa una copertura per un campo da padel?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "Il costo di una copertura per campo da padel varia in base alla tipologia: un pallone pressostatico parte da circa 30.000€, mentre una tensostruttura in acciaio o legno lamellare per un singolo campo può superare i 60.000-80.000€. I prezzi per impianti multi-campo vengono definiti su preventivo specifico." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Qual è la differenza tra pallone pressostatico e tensostruttura?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "Il pallone pressostatico è una struttura gonfiabile in PVC tenuta in pressione da un impianto di pressurizzazione: costi contenuti e installazione rapida. La tensostruttura è una struttura permanente in acciaio o legno lamellare con membrane PVC: maggiore durata, estetica superiore e nessuna spesa per la pressurizzazione." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Servono permessi per installare una copertura sportiva?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "Sì, la realizzazione di una copertura sportiva richiede generalmente un permesso edilizio (SCIA o Permesso di Costruire) a seconda del comune e delle dimensioni della struttura. Il nostro team fornisce assistenza tecnica completa per le pratiche burocratiche su tutto il territorio nazionale." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Quanto dura una copertura sportiva?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "Una tensostruttura in acciaio o legno lamellare con membrana PVC di qualità ha una durata di 20-30 anni con la corretta manutenzione. I palloni pressostatici hanno una vita utile di 10-15 anni. La membrana PVC può essere sostituita senza ricostruire la struttura portante." }
+                    }
                   ]
                 })}</script>
             </Helmet>
