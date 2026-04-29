@@ -11,6 +11,7 @@ import ErrorBoundary from './components/ErrorBoundary';
 const PadelPage = lazy(() => import('./components/PadelPage'));
 const TennisPage = lazy(() => import('./components/TennisPage'));
 const PickleballPage = lazy(() => import('./components/PickleballPage'));
+const CalcioPage = lazy(() => import('./components/CalcioPage'));
 const MultisportPage = lazy(() => import('./components/MultisportPage'));
 const CoperturePage = lazy(() => import('./components/CoperturePage'));
 const CompanyPage = lazy(() => import('./components/CompanyPage'));
@@ -29,6 +30,7 @@ function App() {
                   <Route path="/prodotti/padel" element={<PadelPage />} />
                   <Route path="/prodotti/tennis" element={<TennisPage />} />
                   <Route path="/prodotti/pickleball" element={<PickleballPage />} />
+                  <Route path="/prodotti/calcio" element={<CalcioPage />} />
                   <Route path="/prodotti/multisport" element={<MultisportPage />} />
                   <Route path="/prodotti/coperture" element={<CoperturePage />} />
                   <Route path="/azienda" element={<CompanyPage />} />
