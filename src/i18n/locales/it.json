@@ -364,6 +364,14 @@
             {
                 "q": "Quanto è grande un campo da tennis?",
                 "a": "Un campo da tennis regolamentare per il singolare misura 23,77 m di lunghezza per 8,23 m di larghezza (10,97 m per il doppio). A queste dimensioni minime è fondamentale aggiungere le fasce di rispetto (run-off) laterali e di fondo campo che definiremo insieme analizzando gli spazi del tuo impianto."
+            },
+            {
+                "q": "Quanto costa costruire un campo da calcio a 5?",
+                "a": "Il costo di costruzione di un campo da calcio a 5 varia in base alle dimensioni, al tipo di manto in erba sintetica (FIFA Quality o standard) e alle opere civili necessarie. I prezzi partono indicativamente da 25.000€ per una superficie in erba sintetica standard. Contattateci per un preventivo su misura che includa drenaggio, recinzioni e illuminazione."
+            },
+            {
+                "q": "Quali sport si possono praticare su un campo multisport?",
+                "a": "Un campo multisport PlayInnovation può ospitare basket, pallavolo, tennis, badminton e hockey da sala sulla stessa superficie grazie alla tracciatura multicolore. I nostri impianti sono progettati per massimizzare la versatilità senza compromettere le performance di nessuna disciplina."
             }
         ]
     },
@@ -381,6 +389,7 @@
             "Campi Padel",
             "Campi Tennis",
             "Campi Pickleball",
+            "Campi da Calcio",
             "Impianti Multisport",
             "Coperture Sportive"
         ],
