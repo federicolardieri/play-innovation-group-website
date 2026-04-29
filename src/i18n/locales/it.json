@@ -512,6 +512,37 @@
             ]
         }
     },
+    "calcioPage": {
+        "title": "Costruzione Campi da Calcio e Calcetto",
+        "subtitle": "Progettazione e realizzazione campi da calcio a 5, 7 e 11 con erba sintetica certificata FIFA. Soluzioni chiavi in mano per club, scuole e comuni.",
+        "description": "La costruzione di un campo da calcio richiede competenze specifiche: sistemi di drenaggio certificati, sottofondi in macadam, geotessuti e manti in erba sintetica di ultima generazione. PlayInnovation Group realizza campi da calcio a 5, calcio a 7 e calcio a 11 in tutta Italia, per uso indoor e outdoor.\n\nI nostri impianti calcistici sono progettati per un utilizzo intensivo e continuativo: dalle scuole calcio ai centri sportivi comunali, dai club amatoriali alle strutture federali. Ogni installazione chiavi in mano include recinzioni, illuminazione LED, marcatura linee e collaudo finale conforme alle normative federali.",
+        "features": [
+            "Manti in erba sintetica certificata FIFA Quality Pro per calcio a 5, 7 e 11.",
+            "Sistemi di drenaggio certificati con sottofondi in macadam e geotessuto anti-radice.",
+            "Recinzioni perimetrali anti-scavalco h 4.00m con pannelli rigidi zincati a caldo.",
+            "Illuminazione LED professionale con calcolo illuminotecnico per il gioco serale.",
+            "Tracciatura multicolore per calcio a 5, calcio a 7 e calcio a 11 sulla stessa superficie.",
+            "Fornitura e installazione porte in acciaio zincato omologate FIGC."
+        ],
+        "materials": {
+            "title": "I Materiali",
+            "subtitle": "Qualità e durabilità per il gioco più amato al mondo.",
+            "items": [
+                { "name": "Erba Sintetica", "desc": "Filati in polietilene texturizzato, altezza 40-60mm, certificazione FIFA Quality Pro.", "icon": "layers" },
+                { "name": "Intaso", "desc": "Granuli di gomma EPDM riciclata con sabbia silicea per il massimo ammortizzamento e sicurezza.", "icon": "component" },
+                { "name": "Recinzione", "desc": "Pannelli rigidi zincati a caldo h 4.00m con trattamento anticorrosione e rete para-palloni.", "icon": "layout" }
+            ]
+        },
+        "surfaces": {
+            "title": "I Nostri Manti",
+            "subtitle": "Certificati per ogni disciplina calcistica.",
+            "items": [
+                { "name": "Erba Sintetica 40mm", "desc": "Ideale per calcio a 5 indoor e outdoor, bassa manutenzione e grip ottimale.", "color": "Verde / Bianco" },
+                { "name": "Erba Sintetica 60mm", "desc": "Specifica per calcio a 7 e calcio a 11, certificata FIFA Quality Pro per l'uso federale.", "color": "Verde" },
+                { "name": "Poliuretanica Indoor", "desc": "Superficie senza intaso per calcio a 5 indoor ad alta intensità e palasport.", "color": "Verde / Arancio" }
+            ]
+        }
+    },
     "coperturePage": {
         "title": "Coperture Sportive per Campi da Padel e Tennis",
         "subtitle": "Tensostrutture e palloni pressostatici per coprire campi sportivi indoor. Giocabilità garantita 365 giorni l'anno con efficienza energetica massima.",
