@@ -485,15 +485,15 @@
         }
     },
     "multisportPage": {
-        "title": "Campi Multisport & Calcio",
-        "subtitle": "Unico spazio, infinite possibilità. Ingegneria per la versatilità sportiva.",
-        "description": "Ottimizzare lo spazio è fondamentale per scuole, comuni e centri sportivi polivalenti. Progettiamo e realizziamo aree multisport che permettono di praticare calcio a 5, basket, pallavolo e tennis sulla stessa superficie, abbattendo i costi di gestione senza compromessi sulle performance.\n\nScegliamo manti polivalenti ad alta durabilità (resine o erba sintetica a ridotta manutenzione) resistenti al calpestio intensivo e all’utilizzo con calzature diverse. Integrando attrezzature convertibili e recinzioni anti-scavalco, creiamo arene sicure, resistenti al vandalismo e pronte all’uso 365 giorni l’anno.",
+        "title": "Costruzione Campi Multisport",
+        "subtitle": "Realizzazione campi polivalenti per basket, pallavolo, tennis e hockey. Un unico spazio, infinite discipline sportive.",
+        "description": "La costruzione di un campo multisport è la soluzione ideale per scuole, comuni e centri sportivi polivalenti che vogliono massimizzare lo spazio disponibile senza rinunciare alla qualità. PlayInnovation Group realizza impianti che permettono di praticare basket, pallavolo, tennis e hockey da sala sulla stessa superficie.\n\nUtilizziamo pavimentazioni poliuretaniche e resine certificate FIBA, con sistemi di tracciatura multicolore per identificare chiaramente ogni disciplina. Recinzioni anti-scavalco, canestri integrati, reti regolabili e sistemi di illuminazione LED completano ogni installazione chiavi in mano.",
         "features": [
-            "Superfici polivalenti certificate per basket, volley, calcetto e tennis.",
-            "Erba sintetica di altissima durabilità con intaso prestazionale per campi da Calcio a 5/7/11.",
-            "Sistemi di tracciatura multicolore per una chiara identificazione di ogni sport.",
-            "Strutture accessorie: porte integrate con canestri, reti regolabili e panchine.",
-            "Recinzioni a pannelli rigidi ad altissima resistenza perimetrale e reti para-palloni."
+            "Superfici polivalenti certificate FIBA per basket, pallavolo, tennis e hockey da sala.",
+            "Pavimentazioni poliuretaniche antitrauma senza giunte per massimo assorbimento degli urti.",
+            "Sistemi di tracciatura multicolore per la chiara identificazione di ogni disciplina sportiva.",
+            "Attrezzature convertibili: canestri pieghevoli, porte integrate, reti regolabili e panchine.",
+            "Recinzioni a pannelli rigidi anti-vandalismo h 4.00m con trattamento anticorrosione."
         ],
         "materials": {
             "title": "I Materiali",
@@ -507,8 +507,8 @@
             "title": "I Nostri Manti",
             "subtitle": "Progettati per l'uso intensivo.",
             "items": [
-                { "name": "Multi-Turf", "desc": "Erba sintetica 22mm specifica per calcio a 5 e tennis amatoriale.", "color": "Verde / Rosso" },
-                { "name": "Poliuretanica", "desc": "Superficie elastica senza giunte per basket e attività scolastiche.", "color": "Arancio / Blu" }
+                { "name": "Poliuretanica Premium", "desc": "Superficie elastica senza giunte, certificata FIBA per basket e pallavolo indoor.", "color": "Rosso / Blu / Arancio" },
+                { "name": "Resina Acrilica", "desc": "Finitura liscia ad alta resistenza per ambienti outdoor, tennis e attività scolastiche.", "color": "Verde / Blu / Arancio" }
             ]
         }
     },
