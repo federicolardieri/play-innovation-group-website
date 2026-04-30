@@ -37,6 +37,36 @@
     <link rel="icon" type="image/png" href="/logo.png?v=2" />
     <link rel="apple-touch-icon" href="/logo.png?v=2" />
 
+    <!-- Google Consent Mode v2 — deve precedere qualsiasi tag Google Ads -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'analytics_storage': 'denied',
+        'wait_for_update': 500
+      });
+      // Ripristina consenso se già espresso in sessioni precedenti
+      (function(){
+        try {
+          var raw = localStorage.getItem('pi_consent');
+          if (raw) {
+            var data = JSON.parse(raw);
+            if (data && data.version === '1') {
+              var state = data.advertising ? 'granted' : 'denied';
+              gtag('consent', 'update', {
+                'ad_storage': state,
+                'ad_user_data': state,
+                'ad_personalization': state
+              });
+            }
+          }
+        } catch(e) {}
+      })();
+    </script>
+
     <!-- Preconnect for Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

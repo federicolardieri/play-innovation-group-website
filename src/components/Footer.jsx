@@ -187,9 +187,10 @@ const Footer = () => {
 
             <div className="container mx-auto px-4 md:px-12 mt-12 md:mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-[10px] md:text-xs text-brand-steel gap-4">
                 <p>&copy; {new Date().getFullYear()} PlayInnovation Group. {t('footer.rights')}</p>
-                <div className="flex space-x-6">
-                    <a href="#" className="hover:text-white transition-colors">{t('footer.privacy')}</a>
-                    <a href="#" className="hover:text-white transition-colors">{t('footer.cookie')}</a>
+                <div className="flex flex-wrap gap-x-6 gap-y-2 justify-center md:justify-start">
+                    <Link to="/privacy-policy" className="hover:text-white transition-colors">{t('footer.privacy')}</Link>
+                    <Link to="/cookie-policy" className="hover:text-white transition-colors">{t('footer.cookie')}</Link>
+                    <Link to="/termini-condizioni" className="hover:text-white transition-colors">{t('footer.terms')}</Link>
                 </div>
             </div>
         </footer>

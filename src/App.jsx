@@ -6,6 +6,7 @@ import PageLayout from './components/PageLayout';
 import Home from './pages/Home';
 import ScrollToHash from './components/ScrollToHash';
 import ErrorBoundary from './components/ErrorBoundary';
+import CookieBanner from './components/CookieBanner';
 
 // Lazy-loaded pages for code splitting
 const PadelPage = lazy(() => import('./components/PadelPage'));
@@ -15,6 +16,9 @@ const CalcioPage = lazy(() => import('./components/CalcioPage'));
 const MultisportPage = lazy(() => import('./components/MultisportPage'));
 const CoperturePage = lazy(() => import('./components/CoperturePage'));
 const CompanyPage = lazy(() => import('./components/CompanyPage'));
+const PrivacyPolicyPage = lazy(() => import('./components/PrivacyPolicyPage'));
+const CookiePolicyPage = lazy(() => import('./components/CookiePolicyPage'));
+const TerminiCondizioniPage = lazy(() => import('./components/TerminiCondizioniPage'));
 
 function App() {
   return (
@@ -34,8 +38,12 @@ function App() {
                   <Route path="/prodotti/multisport" element={<MultisportPage />} />
                   <Route path="/prodotti/coperture" element={<CoperturePage />} />
                   <Route path="/azienda" element={<CompanyPage />} />
+                  <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+                  <Route path="/cookie-policy" element={<CookiePolicyPage />} />
+                  <Route path="/termini-condizioni" element={<TerminiCondizioniPage />} />
                 </Routes>
               </Suspense>
+              <CookieBanner />
             </PageLayout>
           </ErrorBoundary>
         </Router>

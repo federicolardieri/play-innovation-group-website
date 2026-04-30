@@ -639,6 +639,133 @@
         "requestQuote": "Angebot anfordern",
         "rights": "Alle Rechte vorbehalten.",
         "privacy": "Datenschutz",
-        "cookie": "Cookie-Richtlinie"
+        "cookie": "Cookie-Richtlinie",
+        "terms": "AGB & Nutzungsbedingungen"
+    },
+    "cookieBanner": {
+        "title": "Wir verwenden Cookies",
+        "description": "Wir verwenden technische Cookies (immer aktiv) und mit Ihrer Zustimmung Werbe-Cookies von Google Ads zur Conversion-Messung und zur Anzeige relevanter Werbung. Vercel Analytics verarbeitet aggregierte Daten ohne Cookies und erfordert keine Zustimmung.",
+        "acceptAll": "Alle akzeptieren",
+        "rejectAll": "Alle ablehnen",
+        "customize": "Anpassen",
+        "savePreferences": "Einstellungen speichern",
+        "requiredLabel": "Technische Cookies",
+        "requiredDesc": "Für den ordnungsgemäßen Betrieb der Website erforderlich. Sie können nicht deaktiviert werden.",
+        "advertisingLabel": "Werbe-Cookies (Google Ads)",
+        "advertisingDesc": "Google Ads-Cookies zur Conversion-Messung und zum Remarketing. Nur mit Ihrer Zustimmung aktiv.",
+        "alwaysActive": "Immer aktiv",
+        "learnMore": "Cookie-Richtlinie lesen"
+    },
+    "privacyPage": {
+        "title": "Datenschutzerklärung",
+        "subtitle": "Gemäß Art. 13 der EU-Verordnung 2016/679 (DSGVO)",
+        "lastUpdate": "Letzte Aktualisierung: April 2026",
+        "legalNote": "Der italienische Text ist die offizielle Version und gilt bei Abweichungen gegenüber Versionen in anderen Sprachen.",
+        "s1Title": "1. Verantwortlicher für die Verarbeitung",
+        "s1": "EDIL PADEL S.R.L. — Handelsmarke Play Innovation Group\nVia Michele Amari 39, Treppe A, Int. 8 — 00179 Rom (RM), Italien\nUStIdNr. / Steuernummer: 16121331009 — REA RM-1635979\nE-Mail: info@playinnovationgroup.com\nZertifizierte E-Mail: 16121331009@impresa.italia.it",
+        "s2Title": "2. Arten der erhobenen Daten",
+        "s2aTitle": "2.1 Navigationsdaten",
+        "s2a": "Die Computersysteme der Website erheben automatisch Navigationsdaten: IP-Adressen (anonymisiert), Browsertyp, Betriebssystem, Zugriffszeit, besuchte Seiten und Referrer-URL. Diese Daten werden von Vercel Inc. in aggregierter und anonymisierter Form ohne Cookies und ohne Erhebung personenbezogener Daten verarbeitet. Aufbewahrungsdauer: 90 Tage.",
+        "s2bTitle": "2.2 Über das Kontaktformular bereitgestellte Daten",
+        "s2b": "Über das Anfrageformular stellt der Nutzer freiwillig folgende Daten bereit: Vor- und Nachname, E-Mail-Adresse, Telefonnummer, Art der gewünschten Sportanlage und Nachricht. Die Daten werden über die N8N-Automatisierung ausschließlich zur Bearbeitung der Anfrage übermittelt. Aufbewahrungsdauer: 24 Monate ab Eingang, sofern keine frühere Löschung beantragt wird.",
+        "s2cTitle": "2.3 Daten für Werbezwecke",
+        "s2c": "Mit ausdrücklicher Einwilligung des Nutzers verwendet die Website Google Ads-Cookies zur Conversion-Messung und zum Remarketing. Einzelheiten finden Sie in der Cookie-Richtlinie.",
+        "s3Title": "3. Zwecke und Rechtsgrundlagen",
+        "s3ColFinalita": "Zweck",
+        "s3ColBase": "Rechtsgrundlage",
+        "s3Rows": [
+            ["Bearbeitung von Angebotsanfragen und Geschäftskontakten", "Art. 6.1.b DSGVO — vorvertragliche Maßnahmen"],
+            ["Anonyme Analyse des Web-Traffics (Vercel Analytics)", "Art. 6.1.f DSGVO — berechtigte Interessen des Verantwortlichen"],
+            ["Online-Werbung und Conversion-Messung (Google Ads)", "Art. 6.1.a DSGVO — Einwilligung der betroffenen Person"]
+        ],
+        "s3Note": "Das berechtigte Interesse gemäß Art. 6.1.f wurde gegen die Rechte der betroffenen Personen abgewogen: Vercel Analytics erhebt keine personenbezogenen Daten und verwendet keine Cookies.",
+        "s4Title": "4. Empfänger und Auftragsverarbeiter",
+        "s4Intro": "Daten können an folgende Stellen übermittelt werden, die gemäß Art. 28 DSGVO als Auftragsverarbeiter benannt wurden:",
+        "s4Items": [
+            "Vercel Inc. (San Francisco, USA) — Hosting und aggregierte Analyse. Übermittlung außerhalb der EU auf Basis der von der Europäischen Kommission genehmigten Standardvertragsklauseln (SCC).",
+            "N8N — Workflow-Automatisierungsplattform für die Bearbeitung von Angebotsanfragen.",
+            "Google LLC (Mountain View, USA) — Werbung und Remarketing (nur mit vorheriger Einwilligung). Übermittlung außerhalb der EU auf Basis von SCC."
+        ],
+        "s4Note": "Die Daten werden nicht für eigene Zwecke an Dritte weitergegeben oder verkauft.",
+        "s5Title": "5. Speicherdauer",
+        "s5Items": [
+            "Daten aus dem Kontaktformular: 24 Monate ab Eingang, sofern keine frühere Löschung beantragt wird.",
+            "Analysedaten (Vercel): 90 Tage (Vercel-Standardkonfiguration).",
+            "Google Ads-Werbe-Cookies: höchstens 13 Monate (siehe Cookie-Richtlinie).",
+            "Banner-Präferenz-Cookie: 12 Monate."
+        ],
+        "s6Title": "6. Rechte der betroffenen Person",
+        "s6Intro": "Gemäß Art. 15–22 DSGVO hat jede betroffene Person das Recht auf:",
+        "s6Items": [
+            "Auskunft (Art. 15): Bestätigung der Verarbeitung und Kopie der personenbezogenen Daten.",
+            "Berichtigung (Art. 16): Korrektur unrichtiger oder unvollständiger Daten.",
+            "Löschung (Art. 17): Verlangen der Datenlöschung ('Recht auf Vergessenwerden').",
+            "Einschränkung (Art. 18): Verlangen der Einschränkung der Verarbeitung in bestimmten Fällen.",
+            "Datenübertragbarkeit (Art. 20): Erhalt der Daten in einem strukturierten, maschinenlesbaren Format.",
+            "Widerspruch (Art. 21): Widerspruch gegen die auf berechtigten Interessen gestützte Verarbeitung.",
+            "Widerruf der Einwilligung (Art. 7.3): jederzeitiger Widerruf der erteilten Einwilligung, ohne die Rechtmäßigkeit der bisherigen Verarbeitung zu berühren."
+        ],
+        "s6Contact": "Zur Ausübung Ihrer Rechte senden Sie eine Anfrage an info@playinnovationgroup.com. Der Verantwortliche antwortet innerhalb von 30 Tagen (verlängerbar um weitere 60 Tage bei komplexen Fällen, mit entsprechender Mitteilung).",
+        "s7Title": "7. Beschwerderecht",
+        "s7": "Die betroffene Person hat das Recht, eine Beschwerde beim Garante per la Protezione dei Dati Personali (www.garanteprivacy.it), Piazza Venezia 11, 00187 Rom, einzureichen.",
+        "s8Title": "8. Änderungen dieser Erklärung",
+        "s8": "Der Verantwortliche behält sich vor, diese Erklärung zu aktualisieren. Die aktualisierte Version wird auf dieser Seite mit Angabe des Überarbeitungsdatums veröffentlicht. Bei wesentlichen Änderungen wird eine entsprechende Mitteilung an die betroffenen Personen gemacht."
+    },
+    "cookiePage": {
+        "title": "Cookie-Richtlinie",
+        "lastUpdate": "Letzte Aktualisierung: April 2026",
+        "s1Title": "1. Was sind Cookies",
+        "s1": "Cookies sind kleine Textdateien, die Websites an den Browser des Nutzers senden und auf dem Gerät gespeichert werden. Sie ermöglichen das Speichern von Einstellungen, die Analyse des Nutzungsverhaltens und das Anzeigen personalisierter Werbung.",
+        "s2Title": "2. Auf dieser Website verwendete Cookies",
+        "s2ColName": "Name",
+        "s2ColCategory": "Kategorie",
+        "s2ColProvider": "Anbieter",
+        "s2ColDuration": "Dauer",
+        "s2ColPurpose": "Zweck",
+        "s2ColConsent": "Einwilligung",
+        "s2Rows": [
+            ["pi_consent", "Technisch", "Play Innovation Group", "12 Monate", "Speichert Cookie-Einstellungen des Nutzers", "Nein"],
+            ["_gcl_au", "Werbung", "Google Ads", "90 Tage", "Misst Werbekonversionen", "Ja"],
+            ["_gcl_aw", "Werbung", "Google Ads", "90 Tage", "Verfolgt Klicks auf Anzeigen", "Ja"],
+            ["_ga", "Werbung", "Google", "13 Monate", "Identifiziert Sitzungen für Remarketing", "Ja"],
+            ["IDE", "Werbung", "Google DoubleClick", "13 Monate", "Profilerstellung für personalisierte Anzeigen", "Ja"]
+        ],
+        "s2Note": "Diese Website verwendet Vercel Web Analytics, das keine Cookies auf dem Gerät des Nutzers installiert. Navigationsdaten werden serverseitig in aggregierter und anonymisierter Form verarbeitet. Für diese Komponente ist keine Einwilligung erforderlich.",
+        "s3Title": "3. Technische Cookies (immer aktiv)",
+        "s3": "Technische Cookies sind für den ordnungsgemäßen Betrieb der Website erforderlich. Dazu gehört der Cookie pi_consent, der die Banner-Einstellungen speichert. Sie erfordern keine Einwilligung und können nicht deaktiviert werden.",
+        "s4Title": "4. Werbe-Cookies (mit Einwilligung)",
+        "s4Intro": "Google Ads-Cookies werden nur nach ausdrücklicher Einwilligung des Nutzers installiert. Sie dienen zur:",
+        "s4Items": [
+            "Messung von Konversionen, die durch Google Ads-Kampagnen generiert wurden.",
+            "Anzeige personalisierter Werbung für Nutzer, die die Website besucht haben (Remarketing)."
+        ],
+        "s5Title": "5. Einstellungen verwalten",
+        "s5Items": [
+            "Über das Banner: Beim ersten Besuch können Sie Cookie-Kategorien akzeptieren oder ablehnen. Einstellungen können jederzeit über die Schaltfläche unten geändert werden.",
+            "Über den Browser: Jeder Browser ermöglicht das Blockieren oder Löschen von Cookies in den Einstellungen.",
+            "Google Ads Opt-out: https://adssettings.google.com"
+        ],
+        "s6Title": "6. Google Consent Mode v2",
+        "s6": "Diese Website implementiert Google Consent Mode v2, das den Einwilligungsstatus an Google signalisiert, bevor Werbetags geladen werden. Ohne Einwilligung arbeitet Google im Konversionsmodellierungsmodus, ohne personenbezogene Daten zu erheben.",
+        "changePrefs": "Cookie-Einstellungen verwalten"
+    },
+    "terminiPage": {
+        "title": "AGB & Nutzungsbedingungen",
+        "lastUpdate": "Letzte Aktualisierung: April 2026",
+        "legalNote": "Der italienische Text stellt die offizielle Version dar und gilt bei Abweichungen gegenüber übersetzten Versionen in anderen Sprachen.",
+        "s1Title": "1. Über diese Website",
+        "s1": "Die Website playinnovationgroup.com gehört EDIL PADEL S.R.L. (Handelsmarke Play Innovation Group), UStIdNr. 16121331009, mit Sitz in Via Michele Amari 39, 00179 Rom (RM), Italien. Die Website ist rein informativ: Es werden keine Online-Käufe, Fernverträge oder Abonnementdienste angeboten.",
+        "s2Title": "2. Geistiges Eigentum",
+        "s2": "Alle Inhalte der Website — Texte, Bilder, Logos, Videos, Grafiken, Website-Struktur, Quellcode — sind ausschließliches Eigentum von EDIL PADEL S.R.L. oder von Dritten lizenziert und durch italienisches und internationales Urheber- und Immaterialgüterrecht (Gesetz 633/1941, EU-Richtlinie 2019/790) geschützt. Jede Vervielfältigung, Verbreitung oder gewerbliche Nutzung ohne schriftliche Genehmigung des Inhabers ist verboten.",
+        "s3Title": "3. Informativer Charakter und Haftungsbeschränkung",
+        "s3": "Die Informationen auf der Website (technische Beschreibungen, Anlagenmerkmale, Prozessangaben) dienen nur zur Veranschaulichung und stellen kein bindendes Vertragsangebot dar. Preise, Zeitpläne und technische Spezifikationen werden fallweise im Rahmen der Geschäftsbeziehung festgelegt. EDIL PADEL S.R.L. garantiert nicht, dass die Website fehlerfrei oder immer verfügbar ist, und haftet nicht für Dienstunterbrechungen aufgrund höherer Gewalt oder Wartungsarbeiten.",
+        "s4Title": "4. Links zu Websites Dritter",
+        "s4": "Die Website kann Links zu Websites Dritter enthalten. EDIL PADEL S.R.L. hat keine Kontrolle über solche Websites und übernimmt keine Verantwortung für deren Inhalte, Datenschutzrichtlinien oder Geschäftspraktiken.",
+        "s5Title": "5. Anwendbares Recht und Gerichtsstand",
+        "s5": "Diese AGB unterliegen italienischem Recht. Für alle Streitigkeiten aus der Nutzung der Website ist ausschließlich das Gericht Rom zuständig.",
+        "s6Title": "6. Offizielle Sprachversion",
+        "s6": "Der italienische Text dieser AGB stellt die offizielle Version dar und gilt bei Abweichungen gegenüber übersetzten Versionen in anderen Sprachen.",
+        "s7Title": "7. Aktualisierungen",
+        "s7": "EDIL PADEL S.R.L. behält sich vor, diese AGB jederzeit zu ändern. Änderungen treten mit ihrer Veröffentlichung auf der Website in Kraft."
     }
 }
